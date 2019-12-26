@@ -82,6 +82,14 @@
 ##
 ##	Original source: WOLFMAN'S color bash promt
 ##	https://wiki.chakralinux.org/index.php?title=Color_Bash_Prompt#Wolfman.27s
+##   	
+
+
+
+
+
+
+##Copy starting here
 ##
 bash_prompt_command() {
 	# How many characters of the $PWD should be kept
