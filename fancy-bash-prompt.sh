@@ -88,8 +88,8 @@
 
 
 
-##Copy starting from the next line
-##Bash Customization
+##	Copy starting from the next line
+##	Bash Customization
 ##
 bash_prompt_command() {
 	# How many characters of the $PWD should be kept
