@@ -1,12 +1,6 @@
 #!/bin/sh
 
-
-
-
-
-
 ##
-##	Copy starting from the next line
 ##	Bash Customization
 ##
 bash_prompt_command() {
