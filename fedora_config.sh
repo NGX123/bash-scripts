@@ -44,6 +44,6 @@ mkdir ~/Files/github
 cls
 echo other changes in changes.txt
 echo "Shortcuts = switch desktops - meta + f(num); carry to desktop - ctrl + f(num); terminator - ctrl + alt + T" >> changes.txt
-echo "fancy_bash prompt.sh copy into ~/.bashrc" >> changes.txt
+echo fancy_bash prompt.sh >> ~/.bashrc
  
 cat changes.txt
