@@ -46,3 +46,4 @@ echo other changes in changes.txt
 echo Shortcuts = switch desktops - meta + f(num); carry to desktop - ctrl + f(num); terminator - ctrl + alt + T >> changes.txt
 echo fancy_bash prompt.sh copy into ~/.bashrc
  
+cat changes.txt
