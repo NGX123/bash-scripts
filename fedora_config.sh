@@ -1,11 +1,11 @@
 #! /bin/bash
 
-sudo dnf update
+sudo dnf -y update
 
 # RPM fusion
 sudo dnf install -y https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
 
-sudo dnf update
+sudo dnf -y update
 
 # Apps
 sudo dnf install -y  terminator
@@ -43,7 +43,7 @@ mkdir ~/Files/github
 #Others
 cls
 echo other changes in changes.txt
-echo Shortcuts = switch desktops - meta + f(num); carry to desktop - ctrl + f(num); terminator - ctrl + alt + T >> changes.txt
-echo fancy_bash prompt.sh copy into ~/.bashrc
+echo "Shortcuts = switch desktops - meta + f(num); carry to desktop - ctrl + f(num); terminator - ctrl + alt + T" >> changes.txt
+echo "fancy_bash prompt.sh copy into ~/.bashrc" >> changes.txt
  
 cat changes.txt
