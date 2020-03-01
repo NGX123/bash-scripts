@@ -48,12 +48,13 @@ mkdir ~/Files/code/c  ~/Files/code/different ~/Files/code/python
 mkdir ~/Files/github
 
 #Customize bash prompt
-echo fancy_bash prompt.sh >> ~/.bashrc
+cat fancy_bash prompt.sh >> ~/.bashrc
 
 #Others
 clear
-echo "other changes" in changes.txt
+echo "other changes in changes.txt"
 echo "Shortcuts = switch desktops - meta + f(num); carry to desktop - ctrl + f(num); terminator - ctrl + alt + T" >> changes.txt
+echo "Change Theme" >> changes.txt
+echo "MOve Panel and add widgets" >> changes.txt
 
- 
 cat changes.txt
