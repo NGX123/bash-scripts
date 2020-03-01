@@ -17,7 +17,14 @@ sudo dnf install -y vlc
 sudo dnf install -y libreoffice
 sudo dnf install -y qbittorrent
 sudo dnf install -y notepadqq
+
 # VS code
+sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc
+sudo sh -c 'echo -e "[code]\nname=Visual Studio Code\nbaseurl=https://packages.microsoft.com/yumrepos/vscode\nenabled=1\ngpgcheck=1\ngpgkey=https://packages.microsoft.com/keys/microsoft.asc" > /etc/yum.repos.d/vscode.repo'
+sudo dnf -y update
+sudo dnf install code
+
+
 sudo dnf install -y logisim
 
 sudo dnf install -y htop
