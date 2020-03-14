@@ -49,7 +49,7 @@ rm -rf ~/Music ~/Pictures ~/Public ~/Templates ~/Videos
 
 #Customize bash prompt
 mv color.sh ~/.scripts 
-cat ./source >> ~/.bashrc
+echo '[ -f $HOME/.scripts/color.sh ] && . $HOME/.scripts/color.sh' >> ~/.bashrc
 
 #Make Folders
 mkdir ~/Files
