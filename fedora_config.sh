@@ -62,5 +62,6 @@ echo "other changes in changes.txt"
 echo "Shortcuts = switch desktops - meta + f(num); carry to desktop - ctrl + f(num); terminator - ctrl + alt + T" >> changes.txt
 echo "System settings - Global theme" >> changes.txt
 echo "Panel - Add widget - Icons only task manager" >> changes.txt
-
+echo "Panel - Configure panel - remove show desktop" >> changes.txt
+echo "Panel - Lock widgets" >> changes.txt
 cat changes.txt
