@@ -22,11 +22,14 @@ sudo dnf install -y notepadqq
 sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc
 sudo sh -c 'echo -e "[code]\nname=Visual Studio Code\nbaseurl=https://packages.microsoft.com/yumrepos/vscode\nenabled=1\ngpgcheck=1\ngpgkey=https://packages.microsoft.com/keys/microsoft.asc" > /etc/yum.repos.d/vscode.repo'
 sudo dnf -y update
-sudo dnf install code
+sudo dnf install -y code
 
+#Google chrome
+wget -P ~/Downloads https://dl.google.com/linux/direct/google-chrome-stable_current_x86_64.rpm 
+sudo dnf install -y ~/Downloads/google-chrome*
+rm ~/Downloads/google-chrome*
 
 sudo dnf install -y logisim
-
 sudo dnf install -y htop
 sudo dnf install -y timeshift
 sudo dnf install -y stacer
@@ -41,22 +44,23 @@ sudo nano /etc/xdg/user-dirs.conf
 rm -rf ~/Music ~/Pictures ~/Public ~/Templates ~/Videos
 mkdir ~/Files
 
-mkdir ~/Documents/temp/
+#Make Folders
+mkdir ~/Documents/
 mkdir ~/Files/backups/
+mkdir ~/Files/temp
 mkdir ~/Files/code 
 mkdir ~/Files/github
 mkdir ~/.scripts
 
-mv 
-
 #Customize bash prompt
-cat fancy_bash prompt.sh >> ~/.bashrc
+mv color.sh ~/.scripts 
+cat ./source.sh >> ~/.bashrc
 
 #Others
 clear
 echo "other changes in changes.txt"
 echo "Shortcuts = switch desktops - meta + f(num); carry to desktop - ctrl + f(num); terminator - ctrl + alt + T" >> changes.txt
-echo "Change Theme" >> changes.txt
-echo "MOve Panel and add widgets" >> changes.txt
+echo "System settings - Global theme" >> changes.txt
+echo "Panel - Add widget - Icons only task manager" >> changes.txt
 
 cat changes.txt
