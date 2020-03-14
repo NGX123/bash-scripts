@@ -54,7 +54,7 @@ mkdir ~/.scripts
 
 #Customize bash prompt
 mv color.sh ~/.scripts 
-cat ./source.sh >> ~/.bashrc
+cat ./source >> ~/.bashrc
 
 #Others
 clear
