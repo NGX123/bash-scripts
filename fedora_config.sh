@@ -44,8 +44,10 @@ mkdir ~/Files
 mkdir ~/Documents/temp/
 mkdir ~/Files/backups/
 mkdir ~/Files/code 
-mkdir ~/Files/code/c  ~/Files/code/different ~/Files/code/python
 mkdir ~/Files/github
+mkdir ~/.scripts
+
+mv 
 
 #Customize bash prompt
 cat fancy_bash prompt.sh >> ~/.bashrc
