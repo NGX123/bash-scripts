@@ -1,0 +1,3 @@
+if [ -f ~/.scripts/color.sh ]; then
+   . color.sh
+fi
