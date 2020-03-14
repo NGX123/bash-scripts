@@ -1,7 +1,7 @@
 # scripts
 
 
-
+`
 # Credits and Description for Bash_Prompt
 
 ##	+-----------------------------------+-----------------------------------+
@@ -87,3 +87,4 @@
 ##	Original source: WOLFMAN'S color bash promt
 ##	https://wiki.chakralinux.org/index.php?title=Color_Bash_Prompt#Wolfman.27s
 ##   	
+`
