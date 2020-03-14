@@ -8,19 +8,20 @@ sudo dnf -y update
 
 
 ## APPS ##
-sudo dnf install -y  terminator
+sudo dnf install -y terminator
 sudo dnf install -y git
 sudo dnf install -y gcc
 sudo dnf install -y wireshark
 
+#Base
 sudo dnf install -y vlc
 sudo dnf install -y libreoffice
 sudo dnf install -y qbittorrent
 sudo dnf install -y notepadqq
 
+#Special 
 sudo dnf install -y logisim
 sudo dnf install -y htop
-sudo dnf install -y timeshift
 sudo dnf install -y stacer
 sudo dnf install -y steam
 sudo dnf install -y clamav
