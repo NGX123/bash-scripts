@@ -8,22 +8,21 @@ sudo dnf -y update
 
 
 ## APPS ##
-sudo dnf install -y terminator
-sudo dnf install -y git
+#Programming
 sudo dnf install -y gcc
-sudo dnf install -y wireshark
+sudo dnf install -y python3
+sudo dnf install -y git
 
 #Base
 sudo dnf install -y vlc
 sudo dnf install -y libreoffice
 sudo dnf install -y qbittorrent
-sudo dnf install -y notepadqq
+sudo dnf install -y steam
+sudo dnf install -y stacer
 
 #Special 
-sudo dnf install -y logisim
-sudo dnf install -y htop
-sudo dnf install -y stacer
-sudo dnf install -y steam
+sudo dnf install -y terminator
+sudo dnf install -y wireshark
 sudo dnf install -y clamav
 sudo dnf install -y clamtk
 
