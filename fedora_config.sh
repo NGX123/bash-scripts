@@ -71,6 +71,7 @@ echo "Shortcuts = switch desktops - meta + f(num); carry to desktop - ctrl + f(n
 echo "System settings - Global theme" >> changes.txt
 echo "Configure Desktop -Change Wallapaper" >> changes.txt
 echo "System settings - Energy Saving - Change" >> changes.txt
+echo "System settings - Applications - Change default applications" >> changes.txt
 echo "Screen Locking - change wallpaper, lock time" >> changes.txt
 echo "Panel - Add widget - Icons only task manager" >> changes.txt
 echo "Panel - Configure panel - remove show desktop" >> changes.txt
