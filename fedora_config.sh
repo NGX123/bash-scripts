@@ -44,6 +44,14 @@ rm ~/Downloads/google-chrome*
 
 
 ## CONFIGURATION ##
+#Make Folders
+mkdir ~/Files
+mkdir ~/Files/backups/
+mkdir ~/Files/temp
+mkdir ~/Files/code 
+mkdir ~/Files/github
+mkdir ~/.scripts
+
 #Stop Recreation of default folders and remove them
 sudo nano /etc/xdg/user-dirs.conf
 rm -rf ~/Music ~/Pictures ~/Public ~/Templates ~/Videos
@@ -52,13 +60,7 @@ rm -rf ~/Music ~/Pictures ~/Public ~/Templates ~/Videos
 mv color.sh ~/.scripts 
 echo '[ -f $HOME/.scripts/color.sh ] && . $HOME/.scripts/color.sh' >> ~/.bashrc
 
-#Make Folders
-mkdir ~/Files
-mkdir ~/Files/backups/
-mkdir ~/Files/temp
-mkdir ~/Files/code 
-mkdir ~/Files/github
-mkdir ~/.scripts
+
 
 
 
