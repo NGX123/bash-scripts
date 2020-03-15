@@ -69,6 +69,9 @@ clear
 echo "other changes in changes.txt"
 echo "Shortcuts = switch desktops - meta + f(num); carry to desktop - ctrl + f(num); terminator - ctrl + alt + T" >> changes.txt
 echo "System settings - Global theme" >> changes.txt
+echo "Configure Desktop -Change Wallapaper" >> changes.txt
+echo "System settings - Energy Saving - Change" >> changes.txt
+echo "Screen Locking - change wallpaper, lock time" >> changes.txt
 echo "Panel - Add widget - Icons only task manager" >> changes.txt
 echo "Panel - Configure panel - remove show desktop" >> changes.txt
 echo "Panel - Lock widgets" >> changes.txt
