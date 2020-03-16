@@ -1,6 +1,6 @@
-# scripts
+# Scripts
 
-# Credits and Description for Bash_Prompt
+##### Credits and Description for Bash_Prompt
 
 `
 The original author of the contents in color.sh is 
