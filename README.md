@@ -1,5 +1,4 @@
 # Scripts
-
 ##### Credits and Description for Bash_Prompt
 
 `
