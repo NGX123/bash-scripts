@@ -11,13 +11,19 @@ special=( terminator wireshark clamav clamtk
 
 lists=( $programming $base $special )
 
-for list in "${lists[@]}"
+for item in "${programming[@]}"
 do
-   : 
-   for prog in "${list[@]}"
-   do
-      :
-      sudo dnf install -y $prog
+    sudo dnf install $item
+done
+
+for item in "${base[@]}"
+do
+    sudo dnf install $item
+done
+
+for item in "${special[@]}"
+do
+    sudo dnf install $item
 done
 
 
