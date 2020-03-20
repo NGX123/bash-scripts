@@ -5,27 +5,20 @@
 sudo dnf install -y https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
 sudo dnf -y update
 
+programming=( gcc python3 git )
+base=( vlc libreoffice qbittorrent steam stacer )
+special=( terminator wireshark clamav clamtk
 
+lists=( $programming $base $special )
 
-## APPS ##
-#Programming
-sudo dnf install -y gcc
-sudo dnf install -y python3
-sudo dnf install -y git
-
-#Base
-sudo dnf install -y vlc
-sudo dnf install -y libreoffice
-sudo dnf install -y qbittorrent
-sudo dnf install -y steam
-sudo dnf install -y stacer
-
-#Special 
-sudo dnf install -y terminator
-sudo dnf install -y wireshark
-sudo dnf install -y clamav
-sudo dnf install -y clamtk
-
+for list in "${lists[@]}"
+do
+   : 
+   for prog in "${list[@]}"
+   do
+      :
+      sudo dnf install -y $prog
+done
 
 
 ## SPECIAL INSTALLATION ##
