@@ -1,29 +1,37 @@
 #! /bin/bash
 
+## USER INPUT
+read -p "Package Manager: " pm
+read -p "Destktop Environment: " de
+
 ## REPOSITORIES ##
 # RPM fusion
 sudo dnf install -y https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
 sudo dnf -y update
 
+## INSTALLING PROGRAMMS ##
+#Programm Lists
 programming=( gcc python3 git )
 base=( vlc libreoffice qbittorrent steam stacer )
 special=( terminator wireshark clamav clamtk
 
+#List of programm lists
 lists=( $programming $base $special )
 
+#Installation - to be changed to more effective(one loop)
 for item in "${programming[@]}"
 do
-    sudo dnf install $item
+    sudo $pm install $item
 done
 
 for item in "${base[@]}"
 do
-    sudo dnf install $item
+    sudo $pm install $item
 done
 
 for item in "${special[@]}"
 do
-    sudo dnf install $item
+    sudo $pm install $item
 done
 
 
@@ -39,7 +47,16 @@ wget -P ~/Downloads https://dl.google.com/linux/direct/google-chrome-stable_curr
 sudo dnf install -y ~/Downloads/google-chrome*
 rm ~/Downloads/google-chrome*
 
+## REMOVE BLOAT ##
+kde_bloat=( calligra-sheets calligra-stage calligra-words dragon juk k3b kamoso kmail kaddressbook kamera kget ktorrent kmahjongg kmines kolourpaint kpat kwalletmanager )
 
+if [ $de == kde ]; then
+    for app in "${kde_bloat[@]}"
+    do
+        sudo $pm remove $app
+    done
+fi
+    
 
 ## CONFIGURATION ##
 #Make Folders
