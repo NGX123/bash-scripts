@@ -85,14 +85,14 @@ echo '[ -f $HOME/.scripts/bash_aliases.sh ] && . $HOME/.scripts/bash_aliases.sh'
 
 ## GUI Configuration ##
 clear
-echo "other changes in changes.txt"
-echo "Shortcuts = switch desktops - meta + f(num); carry to desktop - ctrl + f(num); terminator - ctrl + alt + T" >> changes.txt
-echo "System settings - Global theme" >> changes.txt
-echo "Configure Desktop -Change Wallapaper" >> changes.txt
-echo "System settings - Energy Saving - Change" >> changes.txt
-echo "System settings - Applications - Change default applications" >> changes.txt
-echo "Screen Locking - change wallpaper, lock time" >> changes.txt
-echo "Panel - Add widget - Icons only task manager" >> changes.txt
-echo "Panel - Configure panel - remove show desktop" >> changes.txt
-echo "Panel - Lock widgets" >> changes.txt
+echo "other changes in changes.txt
+Shortcuts = switch desktops - meta + f(num); carry to desktop - ctrl + f(num); terminator - ctrl + alt + T
+System settings - Global theme
+Configure Desktop -Change Wallapaper
+System settings - Energy Saving - Change
+System settings - Applications - Change default applications
+Screen Locking - change wallpaper, lock time
+Panel - Add widget - Icons only task manager
+Panel - Configure panel - remove show desktop
+Panel - Lock widgets" >> changes.txt
 cat changes.txt
