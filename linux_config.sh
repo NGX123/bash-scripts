@@ -77,8 +77,10 @@ rm -rf ~/Music ~/Pictures ~/Public ~/Templates ~/Videos
 mv color.sh ~/.scripts 
 echo '[ -f $HOME/.scripts/color.sh ] && . $HOME/.scripts/color.sh' >> ~/.bashrc
 
+#Scripts
+mv -r scripts/* ~/.scripts
+
 #Aliases file
-touch ~/.scripts/bash_aliases.sh
 echo '[ -f $HOME/.scripts/bash_aliases.sh ] && . $HOME/.scripts/bash_aliases.sh' >> ~/.bashrc
 
 
