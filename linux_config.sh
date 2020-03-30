@@ -62,6 +62,9 @@ fi
 #Make Folders
 mkdir ~/Files
 mkdir ~/Special
+mkdir ~/Special/vm
+mkdir ~/Special/disk-images
+mkdir ~/Special/src
 mkdir ~/.scripts
 mkdir ~/Files/backups/
 mkdir ~/Files/temp
