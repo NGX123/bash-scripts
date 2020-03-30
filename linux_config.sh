@@ -16,22 +16,22 @@ base=( vlc libreoffice qbittorrent steam stacer )
 special=( terminator wireshark clamav clamtk
 
 #List of programm lists
-lists=( $programming $base $special )
+#lists=( $programming $base $special )
 
 #Installation - to be changed to more effective(one loop)
 for item in "${programming[@]}"
 do
-    sudo $pm install $item
+    sudo $pm install -y $item
 done
 
 for item in "${base[@]}"
 do
-    sudo $pm install $item
+    sudo $pm install -y $item
 done
 
 for item in "${special[@]}"
 do
-    sudo $pm install $item
+    sudo $pm install -y $item
 done
 
 
@@ -53,7 +53,7 @@ kde_bloat=( calligra-sheets calligra-stage calligra-words dragon juk k3b kamoso 
 if [ $de == kde ]; then
     for app in "${kde_bloat[@]}"
     do
-        sudo $pm remove $app
+        sudo $pm remove -y $app
     done
 fi
     
