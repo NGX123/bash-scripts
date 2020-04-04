@@ -13,7 +13,7 @@ sudo dnf -y update
 #Programm Lists
 programming=( gcc python3 git )
 base=( vlc libreoffice qbittorrent steam stacer )
-special=( terminator wireshark clamav clamtk
+special=( terminator wireshark clamav clamtk )
 
 #List of programm lists
 #lists=( $programming $base $special )
