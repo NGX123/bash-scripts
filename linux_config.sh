@@ -5,12 +5,15 @@ read -p "Package Manager: " pm
 read -p "Destktop Environment: " de
 read -p "Install command: " inst
 read -p "Remove command: " rm
+read -p "Update command: " up
 
+sudo $pm $up
 
 ## REPOSITORIES ##
 # RPM fusion
-sudo dnf install -y https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
-sudo dnf -y update
+if [ $pm == dnf ]; then
+    sudo dnf install -y https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
+    sudo dnf -y update
 
 ## INSTALLING PROGRAMMS ##
 #Programm Lists
