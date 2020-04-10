@@ -3,6 +3,9 @@
 ## USER INPUT
 read -p "Package Manager: " pm
 read -p "Destktop Environment: " de
+read -p "Install command: " inst
+read -p "Remove command: " rm
+
 
 ## REPOSITORIES ##
 # RPM fusion
@@ -21,17 +24,17 @@ special=( terminator wireshark clamav clamtk )
 #Installation - to be changed to more effective(one loop)
 for item in "${programming[@]}"
 do
-    sudo $pm install -y $item
+    sudo $pm $inst -y $item
 done
 
 for item in "${base[@]}"
 do
-    sudo $pm install -y $item
+    sudo $pm $inst -y $item
 done
 
 for item in "${special[@]}"
 do
-    sudo $pm install -y $item
+    sudo $pm $inst -y $item
 done
 
 
@@ -54,14 +57,14 @@ gnome_bloat=( gnome-maps gnome-screenshot gnome-calendar cheese gnome-contacts r
 if [ $de == kde ]; then
     for app in "${kde_bloat[@]}"
     do
-        sudo $pm remove -y $app
+        sudo $pm $rm -y $app
     done
 fi
 
 if [ $de == gnome ]; then
     for app in "${gnome_bloat[@]}"
     do
-        sudo $pm remove -y $app
+        sudo $pm $rm -y $app
     done
 fi
     
