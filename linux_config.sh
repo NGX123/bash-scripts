@@ -17,7 +17,7 @@ if [ $pm == dnf ]; then
 
 ## INSTALLING PROGRAMMS ##
 #Programm Lists
-osdev=( binutils gcc build-essential python )
+osdev=( binutils gcc build-essential python diffutils )
 programming=( gcc python3 git )
 base=( vlc libreoffice qbittorrent steam stacer )
 special=( terminator wireshark clamav clamtk )
