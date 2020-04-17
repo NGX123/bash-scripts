@@ -86,11 +86,8 @@ sudo nano /etc/xdg/user-dirs.conf
 rm -rf ~/Music ~/Pictures ~/Public ~/Templates ~/Videos
 
 #Customize bash prompt
-mv color.sh ~/.scripts 
-echo '[ -f $HOME/.scripts/bash_scripts/color.sh ] && . $HOME/.scripts/bash_scripts/color.sh' >> ~/.bashrc
-
-#Scripts
 mv ./scripts/* ~/.scripts
+echo '[ -f $HOME/.scripts/bash_scripts/color.sh ] && . $HOME/.scripts/bash_scripts/color.sh' >> ~/.bashrc
 
 #Aliases file
 echo '[ -f $HOME/.scripts/bash_aliases.sh ] && . $HOME/.scripts/bash_aliases.sh' >> ~/.bashrc
