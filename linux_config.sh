@@ -13,6 +13,8 @@ if [ $cnf == y ]; then
     read -p "Install cmd: " inst
     read -p "Remove cmd: " rm
     read -p "Update cmd: " up
+    
+    read -p "Remove bloat(y/n): " bloat
 
 
 
@@ -57,18 +59,20 @@ done
 kde_bloat=( calligra-sheets calligra-stage calligra-words dragon juk k3b kamoso kmail kaddressbook kamera kget ktorrent kmahjongg kmines kolourpaint kpat kwalletmanager )
 gnome_bloat=( gnome-maps gnome-screenshot gnome-calendar cheese gnome-contacts rhythmbox totem gnome-weather gnome-photos simple-scan gedit )
 
-if [ $de == kde ]; then
-    for app in "${kde_bloat[@]}"
-    do
-        sudo $pm $rm -y $app
-    done
-fi
+if [ $bloat == y ]; then 
+    if [ $de == kde ]; then
+        for app in "${kde_bloat[@]}"
+        do
+            sudo $pm $rm -y $app
+        done
+    fi
 
-if [ $de == gnome ]; then
-    for app in "${gnome_bloat[@]}"
-    do
-        sudo $pm $rm -y $app
-    done
+    if [ $de == gnome ]; then
+        for app in "${gnome_bloat[@]}"
+        do
+            sudo $pm $rm -y $app
+        done
+    fi
 fi
 
 
