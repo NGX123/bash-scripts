@@ -51,10 +51,6 @@ do
     sudo $pm $inst -y $item
 done
 
-
-## SPECIAL INSTALLATION ##
-
-
 ## REMOVE BLOAT ##
 kde_bloat=( calligra-sheets calligra-stage calligra-words dragon juk k3b kamoso kmail kaddressbook kamera kget ktorrent kmahjongg kmines kolourpaint kpat kwalletmanager )
 gnome_bloat=( gnome-maps gnome-screenshot gnome-calendar cheese gnome-contacts rhythmbox totem gnome-weather gnome-photos simple-scan gedit )
