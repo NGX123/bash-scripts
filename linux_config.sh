@@ -3,18 +3,33 @@
 ## USER INPUT
 read -p "Package Manager: " pm
 read -p "Destktop Environment: " de
-read -p "Install command: " inst
-read -p "Remove command: " rm
-read -p "Update command: " up
 
 sudo $pm $up
 
-## REPOSITORIES ##
-# RPM fusion
+## DNF ##
 if [ $pm == dnf ]; then
+    #Variables
+    inst = install
+    rm = remove
+    up = update
+    
+    #RPM Fusion
     sudo dnf install -y https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
     sudo dnf -y update
+    
+    # VS code
+    sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc
+    sudo sh -c 'echo -e "[code]\nname=Visual Studio Code\nbaseurl=https://packages.microsoft.com/yumrepos/vscode\nenabled=1\ngpgcheck=1\ngpgkey=https://packages.microsoft.com/keys/microsoft.asc" > /etc/yum.repos.d/vscode.repo'
+    sudo dnf -y update
+    sudo dnf install -y code
+
+    #Google chrome
+    wget -P ~/Downloads https://dl.google.com/linux/direct/google-chrome-stable_current_x86_64.rpm 
+    sudo dnf install -y ~/Downloads/google-chrome*
+    rm ~/Downloads/google-chrome*
 fi
+
+
 
 ## INSTALLING PROGRAMMS ##
 #Programm Lists
@@ -38,16 +53,7 @@ done
 
 
 ## SPECIAL INSTALLATION ##
-# VS code
-sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc
-sudo sh -c 'echo -e "[code]\nname=Visual Studio Code\nbaseurl=https://packages.microsoft.com/yumrepos/vscode\nenabled=1\ngpgcheck=1\ngpgkey=https://packages.microsoft.com/keys/microsoft.asc" > /etc/yum.repos.d/vscode.repo'
-sudo dnf -y update
-sudo dnf install -y code
 
-#Google chrome
-wget -P ~/Downloads https://dl.google.com/linux/direct/google-chrome-stable_current_x86_64.rpm 
-sudo dnf install -y ~/Downloads/google-chrome*
-rm ~/Downloads/google-chrome*
 
 ## REMOVE BLOAT ##
 kde_bloat=( calligra-sheets calligra-stage calligra-words dragon juk k3b kamoso kmail kaddressbook kamera kget ktorrent kmahjongg kmines kolourpaint kpat kwalletmanager )
