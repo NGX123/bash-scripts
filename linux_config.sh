@@ -7,6 +7,15 @@ read -p "Configuration(y/n): " cnf
 
 sudo $pm $up
 
+## Configuration ##
+if [ $cnf == y ]; then
+    #Variables
+    read -p "Install cmd: " inst
+    read -p "Remove cmd: " rm
+    read -p "Update cmd: " up
+
+
+
 ## DNF ##
 if [ $pm == dnf ]; then
     #Variables
