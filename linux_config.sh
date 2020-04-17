@@ -15,6 +15,7 @@ if [ $cnf == y ]; then
     read -p "Update cmd: " up
     
     read -p "Remove bloat(y/n): " bloat
+    read -p "Remove Folders(y/n): " fldrs
 
 
 
