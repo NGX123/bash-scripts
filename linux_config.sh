@@ -36,10 +36,6 @@ fi
 osdev=( binutils gcc build-essential python diffutils )
 apps =( terminator wireshark clamtk vlc qbittorrent python3 git )
 
-#List of programm lists
-#lists=( $programming $base $special )
-
-#Installation - to be changed to more effective(one loop)
 for item in "${apps[@]}"
 do
     sudo $pm $inst -y $item
