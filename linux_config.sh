@@ -18,19 +18,13 @@ if [ $pm == dnf ]; then
 ## INSTALLING PROGRAMMS ##
 #Programm Lists
 osdev=( binutils gcc build-essential python diffutils )
-programming=( gcc python3 git )
-base=( vlc libreoffice qbittorrent steam )
+base=( vlc qbittorrent steam python3 git )
 special=( terminator wireshark clamav clamtk )
 
 #List of programm lists
 #lists=( $programming $base $special )
 
 #Installation - to be changed to more effective(one loop)
-for item in "${programming[@]}"
-do
-    sudo $pm $inst -y $item
-done
-
 for item in "${base[@]}"
 do
     sudo $pm $inst -y $item
@@ -96,7 +90,7 @@ mv color.sh ~/.scripts
 echo '[ -f $HOME/.scripts/color.sh ] && . $HOME/.scripts/color.sh' >> ~/.bashrc
 
 #Scripts
-mv -r ./scripts/* ~/.scripts
+mv ./scripts/* ~/.scripts
 
 #Aliases file
 echo '[ -f $HOME/.scripts/bash_aliases.sh ] && . $HOME/.scripts/bash_aliases.sh' >> ~/.bashrc
