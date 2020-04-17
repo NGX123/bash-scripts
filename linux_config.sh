@@ -3,6 +3,7 @@
 ## USER INPUT
 read -p "Package Manager: " pm
 read -p "Destktop Environment: " de
+read -p "Configuration(y/n): " cnf
 
 sudo $pm $up
 
