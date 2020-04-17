@@ -93,7 +93,7 @@ echo '[ -f $HOME/.scripts/color.sh ] && . $HOME/.scripts/color.sh' >> ~/.bashrc
 mv ./scripts/* ~/.scripts
 
 #Aliases file
-echo '[ -f $HOME/.scripts/bash_aliases.sh ] && . $HOME/.scripts/bash_aliases.sh' >> ~/.bashrc
+echo '[ -f $HOME/.scripts/bash_scripts/bash_aliases.sh ] && . $HOME/.scripts/bash_scripts/bash_aliases.sh' >> ~/.bashrc
 
 
 
