@@ -34,22 +34,18 @@ fi
 ## INSTALLING PROGRAMMS ##
 #Programm Lists
 osdev=( binutils gcc build-essential python diffutils )
-base=( vlc qbittorrent steam python3 git )
-special=( terminator wireshark clamtk )
+apps =( terminator wireshark clamtk vlc qbittorrent python3 git )
 
 #List of programm lists
 #lists=( $programming $base $special )
 
 #Installation - to be changed to more effective(one loop)
-for item in "${base[@]}"
+for item in "${apps[@]}"
 do
     sudo $pm $inst -y $item
 done
 
-for item in "${special[@]}"
-do
-    sudo $pm $inst -y $item
-done
+
 
 ## REMOVE BLOAT ##
 kde_bloat=( calligra-sheets calligra-stage calligra-words dragon juk k3b kamoso kmail kaddressbook kamera kget ktorrent kmahjongg kmines kolourpaint kpat kwalletmanager )
@@ -68,7 +64,8 @@ if [ $de == gnome ]; then
         sudo $pm $rm -y $app
     done
 fi
-    
+
+
 
 ## CONFIGURATION ##
 #Make Folders
