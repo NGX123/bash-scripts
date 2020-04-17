@@ -19,7 +19,7 @@ if [ $pm == dnf ]; then
 #Programm Lists
 osdev=( binutils gcc build-essential python diffutils )
 programming=( gcc python3 git )
-base=( vlc libreoffice qbittorrent steam stacer )
+base=( vlc libreoffice qbittorrent steam )
 special=( terminator wireshark clamav clamtk )
 
 #List of programm lists
