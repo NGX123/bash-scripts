@@ -20,7 +20,7 @@ fi
 #Programm Lists
 osdev=( binutils gcc build-essential python diffutils )
 base=( vlc qbittorrent steam python3 git )
-special=( terminator wireshark clamav clamtk )
+special=( terminator wireshark clamtk )
 
 #List of programm lists
 #lists=( $programming $base $special )
