@@ -87,13 +87,13 @@ rm -rf ~/Music ~/Pictures ~/Public ~/Templates ~/Videos
 
 #Customize bash prompt
 mv color.sh ~/.scripts 
-echo '[ -f $HOME/.scripts/color.sh ] && . $HOME/.scripts/color.sh' >> ~/.bashrc
+echo '[ -f $HOME/.scripts/bash_scripts/color.sh ] && . $HOME/.scripts/bash_scripts/color.sh' >> ~/.bashrc
 
 #Scripts
 mv ./scripts/* ~/.scripts
 
 #Aliases file
-echo '[ -f $HOME/.scripts/bash_scripts/bash_aliases.sh ] && . $HOME/.scripts/bash_scripts/bash_aliases.sh' >> ~/.bashrc
+echo '[ -f $HOME/.scripts/bash_aliases.sh ] && . $HOME/.scripts/bash_aliases.sh' >> ~/.bashrc
 
 
 
