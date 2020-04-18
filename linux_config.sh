@@ -97,12 +97,13 @@ if [ $bloat == y ]; then
     fi
 fi
 
-#Stop Recreation of default folders and remove them
+## Default Folders
 if [ $fldrs == y ]; then
     sudo nano /etc/xdg/user-dirs.conf
     rm -rf ~/Music ~/Pictures ~/Public ~/Templates ~/Videos
 fi
 
+#KDE GUI
 if [ $de == kde ]; then
     clear
     echo "other changes in changes.txt
