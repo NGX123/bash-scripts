@@ -55,8 +55,27 @@ do
 done
 
 
+## CONFIGURATION ##
+#Make Folders
+mkdir ~/Files
+mkdir ~/Special
+mkdir ~/Special/vm
+mkdir ~/Special/disk-images
+mkdir ~/Special/src
+mkdir ~/.scripts
+mkdir ~/Files/backups/
+mkdir ~/Files/temp
+mkdir ~/Files/code 
+mkdir ~/Files/github
 
-## REMOVE BLOAT ##
+## Terminal Configurations ##
+mv ./scripts/* ~/.scripts
+echo '[ -f $HOME/.scripts/bash_scripts/color.sh ] && . $HOME/.scripts/bash_scripts/color.sh' >> ~/.bashrc
+echo '[ -f $HOME/.scripts/bash_aliases.sh ] && . $HOME/.scripts/bash_aliases.sh' >> ~/.bashrc
+
+
+### OPTIONAL ###
+## Remove Bloat ##
 kde_bloat=( calligra-sheets calligra-stage calligra-words dragon juk k3b kamoso kmail kaddressbook kamera kget ktorrent kmahjongg kmines kolourpaint kpat kwalletmanager )
 gnome_bloat=( gnome-maps gnome-screenshot gnome-calendar cheese gnome-contacts rhythmbox totem gnome-weather gnome-photos simple-scan gedit )
 
@@ -76,34 +95,11 @@ if [ $bloat == y ]; then
     fi
 fi
 
-
-
-## CONFIGURATION ##
-#Make Folders
-mkdir ~/Files
-mkdir ~/Special
-mkdir ~/Special/vm
-mkdir ~/Special/disk-images
-mkdir ~/Special/src
-mkdir ~/.scripts
-mkdir ~/Files/backups/
-mkdir ~/Files/temp
-mkdir ~/Files/code 
-mkdir ~/Files/github
-
-
 #Stop Recreation of default folders and remove them
-sudo nano /etc/xdg/user-dirs.conf
-rm -rf ~/Music ~/Pictures ~/Public ~/Templates ~/Videos
-
-#Customize bash prompt
-mv ./scripts/* ~/.scripts
-echo '[ -f $HOME/.scripts/bash_scripts/color.sh ] && . $HOME/.scripts/bash_scripts/color.sh' >> ~/.bashrc
-
-#Aliases file
-echo '[ -f $HOME/.scripts/bash_aliases.sh ] && . $HOME/.scripts/bash_aliases.sh' >> ~/.bashrc
-
-
+if [ $fldrs == y ]
+    sudo nano /etc/xdg/user-dirs.conf
+    rm -rf ~/Music ~/Pictures ~/Public ~/Templates ~/Videos
+fi
 
 ## GUI Configuration ##
 clear
