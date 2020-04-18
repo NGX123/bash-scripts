@@ -96,21 +96,22 @@ if [ $bloat == y ]; then
 fi
 
 #Stop Recreation of default folders and remove them
-if [ $fldrs == y ]
+if [ $fldrs == y ]; then
     sudo nano /etc/xdg/user-dirs.conf
     rm -rf ~/Music ~/Pictures ~/Public ~/Templates ~/Videos
 fi
 
-## GUI Configuration ##
-clear
-echo "other changes in changes.txt
-Shortcuts = switch desktops - meta + f(num); carry to desktop - ctrl + f(num); terminator - ctrl + alt + T
-System settings - Global theme
-Configure Desktop -Change Wallapaper
-System settings - Energy Saving - Change
-System settings - Applications - Change default applications
-Screen Locking - change wallpaper, lock time
-Panel - Add widget - Icons only task manager
-Panel - Configure panel - remove show desktop
-Panel - Lock widgets" >> changes.txt
-cat changes.txt
+if [ $de == kde ]; then
+    clear
+    echo "other changes in changes.txt
+    Shortcuts = switch desktops - meta + f(num); carry to desktop - ctrl + f(num); terminator - ctrl + alt + T
+    System settings - Global theme
+    Configure Desktop -Change Wallapaper
+    System settings - Energy Saving - Change
+    System settings - Applications - Change default applications
+    Screen Locking - change wallpaper, lock time
+    Panel - Add widget - Icons only task manager
+    Panel - Configure panel - remove show desktop
+    Panel - Lock widgets" >> changes.txt
+    cat changes.txt
+fi
