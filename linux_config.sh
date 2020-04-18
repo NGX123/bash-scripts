@@ -99,7 +99,7 @@ fi
 
 ## Default Folders
 if [ $fldrs == y ]; then
-    echo 
+    less ./scripts/bash_scripts/dirs >> ~/.config/user-dirs.dirs
     rm -rf ~/Music ~/Pictures ~/Public ~/Templates ~/Videos
 fi
 
