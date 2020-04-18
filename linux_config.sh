@@ -99,7 +99,7 @@ fi
 
 ## Default Folders
 if [ $fldrs == y ]; then
-    sudo nano /etc/xdg/user-dirs.conf
+    echo 
     rm -rf ~/Music ~/Pictures ~/Public ~/Templates ~/Videos
 fi
 
