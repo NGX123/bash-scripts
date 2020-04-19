@@ -52,7 +52,7 @@ fi
 ## INSTALLING PROGRAMMS ##
 #Programm Lists
 osdev=( binutils gcc build-essential python diffutils )
-apps=( terminator wireshark clamtk vlc qbittorrent python3 git )
+apps=( terminator wireshark clamtk vlc qbittorrent krusader python3 git )
 
 for item in "${apps[@]}"
 do
