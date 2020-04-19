@@ -14,6 +14,7 @@ if [ $cnf == y ]; then
     
     read -p "Remove bloat(y/n): " bloat
     read -p "Remove Folders(y/n): " fldrs
+fi
 
 sudo $pm $up
 
