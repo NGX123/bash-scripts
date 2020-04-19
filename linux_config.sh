@@ -5,8 +5,6 @@ read -p "Package Manager: " pm
 read -p "Destktop Environment: " de
 read -p "Configuration(y/n): " cnf
 
-sudo $pm $up
-
 ## Configuration ##
 if [ $cnf == y ]; then
     #Variables
@@ -17,7 +15,7 @@ if [ $cnf == y ]; then
     read -p "Remove bloat(y/n): " bloat
     read -p "Remove Folders(y/n): " fldrs
 
-
+sudo $pm $up
 
 ## DNF ##
 if [ $pm == dnf ]; then
