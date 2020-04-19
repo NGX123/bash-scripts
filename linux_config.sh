@@ -16,6 +16,12 @@ if [ $cnf == y ]; then
     read -p "Remove Folders(y/n): " fldrs
 fi
 
+if [ $pm == apt ]; then
+    inst = install
+    rm = purge
+    up = upgrade
+fi
+
 sudo $pm -y $up
 
 ## DNF ##
