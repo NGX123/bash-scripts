@@ -68,7 +68,7 @@ mkdir ~/Files/code
 mkdir ~/Files/github
 
 ## Terminal Configurations ##
-mv ./scripts/* ~/.scripts
+cp ./scripts/* ~/.scripts
 echo '[ -f $HOME/.scripts/bash_scripts/color.sh ] && . $HOME/.scripts/bash_scripts/color.sh' >> ~/.bashrc
 echo '[ -f $HOME/.scripts/bash_aliases.sh ] && . $HOME/.scripts/bash_aliases.sh' >> ~/.bashrc
 
