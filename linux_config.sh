@@ -16,7 +16,7 @@ if [ $cnf == y ]; then
     read -p "Remove Folders(y/n): " fldrs
 fi
 
-sudo $pm $up
+sudo $pm -y $up
 
 ## DNF ##
 if [ $pm == dnf ]; then
