@@ -22,8 +22,6 @@ if [ $pm == apt ]; then
     up = upgrade
 fi
 
-sudo $pm -y $up
-
 ## DNF ##
 if [ $pm == dnf ]; then
     #Variables
@@ -47,7 +45,7 @@ if [ $pm == dnf ]; then
     rm ~/Downloads/google-chrome*
 fi
 
-
+sudo $pm -y $up
 
 ## INSTALLING PROGRAMMS ##
 #Programm Lists
