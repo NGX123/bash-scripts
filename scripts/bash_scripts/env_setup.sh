@@ -57,7 +57,7 @@ make install-target-libgcc
 
 
 # Building GRUB
-cd ~/Special/src/grub
+cd ~/Special/src/grub/grub
 ./bootstrap
 ./configure --prefix="$HOME/opt/grub" --target=i386 --with-platform=efi
 make
