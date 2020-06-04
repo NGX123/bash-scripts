@@ -1,5 +1,5 @@
 # Install the dependencies
-sudo dnf -y install gcc gcc-c++ make bison flex gmp-devel libmpc-devel mpfr-devel texinfo automake autoconf
+sudo dnf -y install gcc gcc-c++ make bison flex gmp-devel libmpc-devel mpfr-devel texinfo automake autoconf xorriso
 sudo dnf -y install binutils @development-tools
 
 # Create directories to store source and build directory
