@@ -119,3 +119,19 @@ if [ $de == kde ]; then
     Panel - Lock widgets" >> changes.txt
     cat changes.txt
 fi
+
+# Gnome GUI
+if [ $de == kde ]; then
+    clear
+    echo "
+    Appearance - Applications(Adwaita-dark), change other optionally
+    Windows Titlebars - Titlebar Buttons - Turn on minimize and maximize
+    Notifications - notifications - manage notifications
+    Indexing - Search - Turn off everything except(Files(optional), Calc, Calendar, Software, Terminal
+    Privacy - Privacy - Turn everything except Screen Lock OFF
+    Power - Set needed if not set
+    Default Apps - details - default applications - set needed" >> changes.txt
+    cat changes.txt
+fi
+
+
