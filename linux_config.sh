@@ -121,7 +121,7 @@ if [ $de == kde ]; then
 fi
 
 # Gnome GUI
-if [ $de == kde ]; then
+if [ $de == gnome ]; then
     clear
     echo "
     Appearance - Applications(Adwaita-dark), change other optionally
