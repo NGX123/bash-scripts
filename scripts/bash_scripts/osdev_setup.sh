@@ -2,6 +2,10 @@
 sudo dnf -y install gcc gcc-c++ make bison flex gmp-devel libmpc-devel mpfr-devel texinfo automake autoconf xorriso
 sudo dnf -y install binutils @development-tools
 
+# Packages for osdev
+sudo dnf install binutils-riscv64-linux-gnu-2.32-3.fc31.x86_64 
+sudo dnf install gcc-riscv64-linux-gnu-9.2.1-1.fc31.x86_64 
+
 # Create directories to store source and build directory
 mkdir -p ~/Special/src/cross-compiler/binutils2.30/build
 mkdir -p ~/Special/src/cross-compiler/gcc9.3.0/build
