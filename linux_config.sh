@@ -130,7 +130,8 @@ if [ $de == gnome ]; then
     Indexing - Search - Turn off everything except(Files(optional), Calc, Calendar, Software, Terminal
     Privacy - Privacy - Turn everything except Screen Lock OFF
     Power - Set needed if not set
-    Default Apps - details - default applications - set needed" >> changes.txt
+    Default Apps - details - default applications - set needed
+    Extensions - TopIcons Plus for system tray" >> changes.txt
     cat changes.txt
 fi
 
