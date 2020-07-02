@@ -1,15 +1,17 @@
+# DNF Installations
 # Install the dependencies
 sudo dnf -y install gcc gcc-c++ make bison flex gmp-devel libmpc-devel mpfr-devel texinfo automake autoconf xorriso
 sudo dnf -y install binutils @development-tools
 
-# Packages for osdev
-sudo dnf install 
-sudo dnf install 
+# Packages 
+sudo dnf install kernel-headers
+sudo dnf install kernel-devel
+
+
 
 # Create directories to store source and build directory
 mkdir -p ~/Special/src/cross-compiler/binutils2.30/build
 mkdir -p ~/Special/src/cross-compiler/gcc9.3.0/build
-
 
 # Download and unpack source code  
 cd ~/Special/src/cross-compiler/binutils2.30/
@@ -26,7 +28,6 @@ rm gcc-9.3.0.tar.gz
 
 # Get ready for the build
 mkdir -p ~/opt/cross-compiler
-
 export PREFIX="$HOME/opt/cross-compiler"
 export TARGET=i686-elf
 export PATH="$PREFIX/bin:$PATH"
@@ -39,12 +40,9 @@ cd $HOME/Special/src/cross-compiler/binutils2.30/build
 make 
 make install
 
-
-
 # Building GCC
 cd $HOME/Special/src/cross-compiler/gcc9.3.0/build
 which -- $TARGET-as || echo $TARGET-as is not in the PATH
-
 ../gcc-9.3.0/configure --target=$TARGET --prefix="$PREFIX" --disable-nls --enable-language=c,c++ --without-headers
 make all-gcc
 make all-target-libgcc
