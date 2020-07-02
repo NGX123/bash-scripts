@@ -12,6 +12,8 @@ sudo apt install linux-headers-(uname -r) # if does not work update and use sudo
 
 
 
+
+# i386 CROSS COMPILER
 # Create directories to store source and build directory
 mkdir -p ~/Special/src/cross-compiler/binutils2.30/build
 mkdir -p ~/Special/src/cross-compiler/gcc9.3.0/build
@@ -28,13 +30,11 @@ tar -xzf gcc-9.3.0.tar.gz
 rm gcc-9.3.0.tar.gz
 
 
-
 # Get ready for the build
 mkdir -p ~/opt/cross-compiler
 export PREFIX="$HOME/opt/cross-compiler"
 export TARGET=i686-elf
 export PATH="$PREFIX/bin:$PATH"
-
 
 
 # Building binutils
@@ -51,6 +51,7 @@ make all-gcc
 make all-target-libgcc
 make install-gcc
 make install-target-libgcc
+
 
 
 
