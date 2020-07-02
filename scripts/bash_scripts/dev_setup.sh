@@ -8,7 +8,7 @@ sudo dnf install kernel-headers kernel-devel
 
 
 # APT Installation
-sudo apt install linux-headers-(uname -r) # if does not work update and use sudo apt-cache search linux-headers then install sudo apt install linux-headers-available-version e.g4.19.0-8-amd64
+#sudo apt install linux-headers-(uname -r) # if does not work update and use sudo apt-cache search linux-headers then install sudo apt install linux-headers-available-version e.g4.19.0-8-amd64
 
 
 
