@@ -1,11 +1,10 @@
 # DNF Installations
 # Install the dependencies
 sudo dnf -y install gcc gcc-c++ make bison flex gmp-devel libmpc-devel mpfr-devel texinfo automake autoconf xorriso
-sudo dnf -y install binutils @development-tools
 
 # Packages 
-sudo dnf install kernel-headers
-sudo dnf install kernel-devel
+sudo dnf -y install binutils @development-tools
+sudo dnf install kernel-headers kernel-devel
 
 
 
