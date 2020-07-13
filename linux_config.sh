@@ -127,7 +127,7 @@ if [ $de == gnome ]; then
     Tweaks
     General - Suspend when laptop lid is closed, turn off animations
     Appearance - Applications(Adwaita-dark)
-    Extensions - TopIcons Plus for system tray
+    Extensions - Turn off. Install: TopIcons(system tray)
     Keyboard & mouse - Mouse click emulation set to area(OPTIONAL)
     Windows Titlebars - Titlebar Buttons - Turn on minimize and maximize
     
