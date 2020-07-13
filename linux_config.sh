@@ -137,6 +137,7 @@ if [ $de == gnome ]; then
     Search - Turn off search(application search stays
     Privacy - Turn off everything except Screen Lock 
     Power - Automatic suspend, blank screen, dim when inactive
+    Devices - Keyboard Shortcuts - Set
     Details - Default Apps - Set" >> changes.txt
     cat changes.txt
 fi
