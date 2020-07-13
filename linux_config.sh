@@ -12,7 +12,7 @@ if [ $cnf == y ]; then
     read -p "Remove cmd: " rm
     read -p "Update cmd: " up
     
-    read -p "Remove bloat(y/n): " bloat
+    read -p "Remove bloat(Not recommended for gnome)(y/n): " bloat
     read -p "Remove Folders(y/n): " fldrs
 fi
 
