@@ -134,7 +134,7 @@ if [ $de == gnome ]; then
     
     Settings
     Notifications - manage notifications
-    Search - Turn off everything except Files and Software
+    Search - Turn off search(application search stays
     Privacy - Turn off everything except Screen Lock 
     Power - Automatic suspend, blank screen, dim when inactive
     Details - Default Apps - Set" >> changes.txt
