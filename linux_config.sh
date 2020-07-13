@@ -124,14 +124,20 @@ fi
 if [ $de == gnome ]; then
     clear
     echo "
-    Appearance - Applications(Adwaita-dark), change other optionally
+    Tweaks
+    General - Suspend when laptop lid is closed, turn off animations
+    Appearance - Applications(Adwaita-dark)
+    Extensions - TopIcons Plus for system tray
+    Keyboard & mouse - Mouse click emulation set to area(OPTIONAL)
     Windows Titlebars - Titlebar Buttons - Turn on minimize and maximize
-    Notifications - notifications - manage notifications
-    Indexing - Search - Turn off everything except(Files(optional), Calc, Calendar, Software, Terminal
-    Privacy - Privacy - Turn everything except Screen Lock OFF
-    Power - Set needed if not set
-    Default Apps - details - default applications - set needed
-    Extensions - TopIcons Plus for system tray" >> changes.txt
+    
+    
+    Settings
+    Notifications - manage notifications
+    Search - Turn off everything except Files and Software
+    Privacy - Turn off everything except Screen Lock 
+    Power - Automatic suspend, blank screen, dim when inactive
+    Details - Default Apps - Set" >> changes.txt
     cat changes.txt
 fi
 
