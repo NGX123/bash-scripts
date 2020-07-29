@@ -9,7 +9,7 @@ read -p "Configuration(y/n): " cnf
 if [ $cnf == y ]; then
     #Variables
     read -p "Install cmd: " inst
-    read -p "Remove cmd: " rm
+    read -p "Remove cmd: " rmc
     read -p "Update cmd: " up
     
     read -p "Remove bloat(Not recommended for gnome)(y/n): " bloat
@@ -18,7 +18,7 @@ fi
 
 if [ $pm == apt ]; then
     inst = install
-    rm = purge
+    rmc = purge
     up = upgrade
 fi
 
@@ -26,7 +26,7 @@ fi
 if [ $pm == dnf ]; then
     #Variables
     inst = install
-    rm = remove
+    rmc = remove
     up = update
     
     #RPM Fusion
@@ -86,14 +86,14 @@ if [ $bloat == y ]; then
     if [ $de == kde ]; then
         for app in "${kde_bloat[@]}"
         do
-            sudo $pm $rm -y $app
+            sudo $pm $rmc -y $app
         done
     fi
 
     if [ $de == gnome ]; then
         for app in "${gnome_bloat[@]}"
         do
-            sudo $pm $rm -y $app
+            sudo $pm $rmc -y $app
         done
     fi
 fi
