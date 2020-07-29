@@ -50,7 +50,7 @@ sudo $pm -y $up
 ## INSTALLING PROGRAMMS ##
 #Programm Lists
 osdev=( binutils gcc build-essential python diffutils )
-apps=( terminator wireshark clamtk vlc qbittorrent python3 git htop )
+apps=( terminator wireshark clamtk mpv qbittorrent python3 git htop )
 
 for item in "${apps[@]}"
 do
