@@ -16,13 +16,14 @@ if [ $cnf == y ]; then
     read -p "Remove Folders(y/n): " fldrs
 fi
 
+### Config for APT ###
 if [ $pm == apt ]; then
     inst = install
     rmc = purge
     up = upgrade
 fi
 
-## DNF ##
+## Config for DNF ##
 if [ $pm == dnf ]; then
     #Variables
     inst = install
@@ -55,14 +56,7 @@ done
 
 ## CONFIGURATION ##
 #Make Folders
-mkdir ~/Files
-mkdir ~/Special
-mkdir ~/src
-mkdir ~/.scripts
-mkdir ~/Files/backups/
-mkdir ~/Files/temp
-mkdir ~/Files/code 
-mkdir ~/Files/github
+mkdir ~/Files ~/src ~/.scripts ~/Files/backups/ ~/Files/code ~/Files/github
 
 ## Terminal Configurations ##
 cp -r ./scripts/* ~/.scripts
