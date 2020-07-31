@@ -38,11 +38,6 @@ if [ $pm == dnf ]; then
     sudo sh -c 'echo -e "[code]\nname=Visual Studio Code\nbaseurl=https://packages.microsoft.com/yumrepos/vscode\nenabled=1\ngpgcheck=1\ngpgkey=https://packages.microsoft.com/keys/microsoft.asc" > /etc/yum.repos.d/vscode.repo'
     sudo dnf -y update
     sudo dnf install -y code
-
-    #Google chrome
-    wget -P ~/Downloads https://dl.google.com/linux/direct/google-chrome-stable_current_x86_64.rpm 
-    sudo dnf install -y ~/Downloads/google-chrome*
-    rm ~/Downloads/google-chrome*
 fi
 
 sudo $pm -y $up
@@ -50,7 +45,7 @@ sudo $pm -y $up
 ## INSTALLING PROGRAMMS ##
 #Programm Lists
 osdev=( binutils gcc build-essential diffutils )
-apps=( terminator mpv qbittorrent git )
+apps=( terminator mpv qbittorrent git chromium )
 
 for item in "${apps[@]}"
 do
