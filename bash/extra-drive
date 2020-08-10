@@ -3,6 +3,6 @@ sudo blkid # List the disks - select the UUID of needed one and copy it
 sudo nano /etc/fstab
 sudo mkdir /media/folder-name
 add line - UUID="COPIED" /media/folder-name ext4 rw,user,exec 0 0 
-sudo mount -a
+sudo mount -a # if error - undo changes in /etc/fstab
 reboot
 sudo chown group:user /media/folder-name  
