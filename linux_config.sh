@@ -3,17 +3,22 @@
 ## USER INPUT
 read -p "Package Manager: " pm
 read -p "Destktop Environment: " de
-read -p "Configuration(y/n): " cnf
+read -p "Remove bloat(Not recommended for gnome)(y/n): " bloat
+read -p "Remove Folders(y/n): " fldrs
+read -p "PM Configuration(y/n): " cnf
+
+
+
 
 ## Configuration ##
 if [ $cnf == y ]; then
-    #Variables
     read -p "Install cmd: " inst
     read -p "Remove cmd: " rmc
     read -p "Update cmd: " up
-    
-    read -p "Remove bloat(Not recommended for gnome)(y/n): " bloat
-    read -p "Remove Folders(y/n): " fldrs
+
+    sudo $pm -y $up
+    sudo $pm $inst -y terminator mpv qbittorrent git chromium
+    # sudo $pm $inst -y binutils gcc build-essential diffutils
 fi
 
 ### Config for APT ###
@@ -21,16 +26,35 @@ if [ $pm == apt ]; then
     inst = install
     rmc = purge
     up = upgrade
+
+    sudo apt -y update && sudo apt -y upgrade
+
+    # VS code
+    curl https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > packages.microsoft.gpg
+    sudo install -o root -g root -m 644 packages.microsoft.gpg /etc/apt/trusted.gpg.d/
+    sudo sh -c 'echo "deb [arch=amd64 signed-by=/etc/apt/trusted.gpg.d/packages.microsoft.gpg] https://packages.microsoft.com/repos/vscode stable main" > /etc/apt/sources.list.d/vscode.list'
+
+    sudo apt-get install apt-transport-https
+    sudo apt-get update
+    sudo apt-get install code
+
+    # Apps
+    sudo apt install -y terminator mpv qbittorrent git chromium
+
+    # Development
+    sudo apt install -y binutils build-essential diffutils
 fi
 
 ## Config for DNF ##
 if [ $pm == dnf ]; then
-    #Variables
+    # Variables
     inst = install
     rmc = remove
     up = update
     
-    #RPM Fusion
+    sudo dnf -y update
+
+    # RPM Fusion
     sudo dnf install -y https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
     sudo dnf -y update
     
@@ -39,23 +63,19 @@ if [ $pm == dnf ]; then
     sudo sh -c 'echo -e "[code]\nname=Visual Studio Code\nbaseurl=https://packages.microsoft.com/yumrepos/vscode\nenabled=1\ngpgcheck=1\ngpgkey=https://packages.microsoft.com/keys/microsoft.asc" > /etc/yum.repos.d/vscode.repo'
     sudo dnf -y update
     sudo dnf install -y code
+    
+    # Apps
+    sudo dnf install -y terminator mpv qbittorrent git chromium
+    
+    # Development
+    sudo dnf install -y @development-tools diffutils
 fi
 
-sudo $pm -y $up
 
-## INSTALLING PROGRAMMS ##
-#Programm Lists
-osdev=( binutils gcc build-essential diffutils )
-apps=( terminator mpv qbittorrent git chromium )
-
-for item in "${apps[@]}"
-do
-    sudo $pm $inst -y $item
-done
 
 
 ## CONFIGURATION ##
-#Make Folders
+# Make Folders
 mkdir ~/Files ~/src ~/.scripts ~/Files/backups/ ~/Files/code ~/Files/github
 
 ## Terminal Configurations ##
@@ -68,22 +88,13 @@ echo '[ -f $HOME/.scripts/bash_aliases.sh ] && . $HOME/.scripts/bash_aliases.sh'
 
 ### OPTIONAL ###
 ## Remove Bloat ##
-kde_bloat=( calligra-sheets calligra-stage calligra-words dragon juk k3b kamoso kmail kaddressbook kamera kget ktorrent kmahjongg kmines kolourpaint kpat kwalletmanager kde-connect kdeconnect konqueror krdc )
-gnome_bloat=( gnome-maps gnome-screenshot gnome-calendar cheese gnome-contacts rhythmbox totem gnome-weather gnome-photos simple-scan gedit )
-
 if [ $bloat == y ]; then 
     if [ $de == kde ]; then
-        for app in "${kde_bloat[@]}"
-        do
-            sudo $pm $rmc -y $app
-        done
+        sudo $pm $rmc -y calligra-sheets calligra-stage calligra-words dragon juk k3b kamoso kmail kaddressbook kamera kget ktorrent kmahjongg kmines kolourpaint kpat kwalletmanager kde-connect kdeconnect konqueror krdc
     fi
 
     if [ $de == gnome ]; then
-        for app in "${gnome_bloat[@]}"
-        do
-            sudo $pm $rmc -y $app
-        done
+        sudo $pm $rmc -y gnome-maps gnome-screenshot gnome-calendar cheese gnome-contacts rhythmbox totem gnome-weather gnome-photos simple-scan gedit
     fi
 fi
 
