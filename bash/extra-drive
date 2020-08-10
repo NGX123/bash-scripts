@@ -1,3 +1,4 @@
+# Script to add extra drives to the system
 sudo blkid # List the disks - select the UUID of needed one and copy it
 sudo nano /etc/fstab
 sudo mkdir /media/folder-name
