@@ -42,7 +42,7 @@ if [ $pm == apt ]; then
     sudo apt install -y terminator mpv qbittorrent git chromium
 
     # Development
-    sudo apt install -y binutils build-essential diffutils
+    sudo apt install -y binutils build-essential diffutils valgrind
 fi
 
 ## Config for DNF ##
@@ -68,7 +68,7 @@ if [ $pm == dnf ]; then
     sudo dnf install -y terminator mpv qbittorrent git chromium
     
     # Development
-    sudo dnf install -y @development-tools diffutils
+    sudo dnf install -y @development-tools diffutils valgrind
 fi
 
 
