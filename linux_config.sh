@@ -138,7 +138,7 @@ if [ $de == gnome ]; then
     Search - Turn off search(application search stays)
     Privacy - Turn off everything except Screen Lock 
     Power - Automatic suspend, blank screen, dim when inactive
-    Devices - Keyboard Shortcuts - super + e = nautilus, ctrl + alt + t = terminator, ctrl + shift + esc = gnome-system monitor, super + f* = switch to workspace *
+    Devices - Keyboard Shortcuts - super + e = nautilus, ctrl + alt + t = terminator, ctrl + shift + esc = gnome-system monitor, super + f* = switch to workspace *, ctrl + f* = move window to workspace *
     Details - Default Apps - Set" >> changes.txt
     cat changes.txt
 fi
