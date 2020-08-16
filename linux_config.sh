@@ -129,6 +129,7 @@ if [ $de == gnome ]; then
     Appearance - Applications(Adwaita-dark)
     Extensions - Turn off. Install: TopIcons(system tray)
     Keyboard & mouse - Mouse click emulation set to area(OPTIONAL)
+    Top Bar - Disable everything
     Windows Titlebars - Titlebar Buttons - Turn on minimize and maximize
     
     
