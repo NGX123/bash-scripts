@@ -101,7 +101,7 @@ fi
 ## Default Folders
 if [ $fldrs == y ]; then
     cat ./scripts/bash_scripts/dirs > ~/.config/user-dirs.dirs
-    rm -rf ~/Music ~/Pictures ~/Public ~/Templates ~/Videos
+    rmdir ~/Music ~/Pictures ~/Public ~/Templates ~/Videos
 fi
 
 #KDE GUI
