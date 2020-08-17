@@ -8,5 +8,4 @@ adduser <username> sudo
 sudo dnf update
 sudo dnf install nvidia-akmod
 reboot
-lsmod | grep nvidia           # check if nvidia modules are running
-# check if nvidia control panel is an application
+lsmod | grep nvidia           # check if nvidia modules are running, check if nvidia control panel is an application
