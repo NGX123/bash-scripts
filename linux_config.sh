@@ -5,6 +5,7 @@ read -p "Package Manager: " pm
 read -p "Destktop Environment: " de
 read -p "Remove bloat(Not recommended for gnome)(y/n): " bloat
 read -p "Remove Folders(y/n): " fldrs
+read -p "Remove ssh(y/n): " sshd_remove
 read -p "PM Configuration(y/n): " cnf
 
 
@@ -103,6 +104,18 @@ if [ $fldrs == y ]; then
     cat ./scripts/bash_scripts/dirs > ~/.config/user-dirs.dirs
     rmdir ~/Music ~/Pictures ~/Public ~/Templates ~/Videos
 fi
+
+## Remove ssh-server
+if [ $sshd_remove == y ]; then
+    if [ $pm == dnf ]; then 
+        sudo chkconfig sshd off
+        sudo service sshd stop
+        sudo dnf erase openssh-server
+    fi
+    
+    if [ $pm == apt ]; then 
+        sudo apt-get --purge remove openssh-server
+    fi
 
 #KDE GUI
 if [ $de == kde ]; then
