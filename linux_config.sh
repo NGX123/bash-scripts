@@ -116,6 +116,7 @@ if [ $sshd_remove == y ]; then
     if [ $pm == apt ]; then 
         sudo apt-get --purge remove openssh-server
     fi
+fi
 
 #KDE GUI
 if [ $de == kde ]; then
