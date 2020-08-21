@@ -91,7 +91,7 @@ echo '[ -f $HOME/.scripts/bash_aliases.sh ] && . $HOME/.scripts/bash_aliases.sh'
 ## Remove Bloat ##
 if [ $bloat == y ]; then 
     if [ $de == kde ]; then
-        sudo $pm $rmc -y calligra-sheets calligra-stage calligra-words dragon juk k3b kamoso kmail kaddressbook kamera kget ktorrent kmahjongg kmines kolourpaint kpat kwalletmanager kde-connect kdeconnect konqueror krdc
+        sudo $pm $rmc -y calligra-sheets calligra-stage calligra-words dragon juk k3b kamoso kmail kaddressbook kamera kget ktorrent kmahjongg kmines kolourpaint kpat kwalletmanager #kde-connect kdeconnect konqueror krdc
     fi
 
     if [ $de == gnome ]; then
