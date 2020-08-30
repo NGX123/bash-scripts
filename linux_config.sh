@@ -1,12 +1,14 @@
 #! /bin/bash
 
-## USER INPUT
+## Variables
 read -p "Package Manager: " pm
 read -p "Destktop Environment: " de
 read -p "Remove bloat(Not recommended for gnome)(y/n): " bloat
 read -p "Remove Folders(y/n): " fldrs
 read -p "Remove ssh(y/n): " sshd_remove
 read -p "PM Configuration(y/n): " cnf
+
+apps=(terminator mpv transmission git chromium)
 
 
 
@@ -40,7 +42,7 @@ if [ $pm == apt ]; then
     sudo apt-get install code
 
     # Apps
-    sudo apt install -y terminator mpv qbittorrent git chromium
+    sudo apt install -y ${apps[*]}
 
     # Development
     sudo apt install -y binutils build-essential diffutils valgrind
@@ -66,7 +68,7 @@ if [ $pm == dnf ]; then
     sudo dnf install -y code
     
     # Apps
-    sudo dnf install -y terminator mpv qbittorrent git chromium
+    sudo dnf install -y ${apps[*]}
     
     # Development
     sudo dnf install -y @development-tools diffutils valgrind
