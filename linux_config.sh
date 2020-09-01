@@ -8,7 +8,7 @@ read -p "Remove Folders(y/n): " fldrs
 read -p "Remove ssh(y/n): " sshd_remove
 read -p "PM Configuration(y/n): " cnf
 
-apps=(terminator mpv transmission git chromium)
+apps=(terminator mpv transmission git chromium nano)
 
 
 
@@ -118,6 +118,13 @@ if [ $sshd_remove == y ]; then
     if [ $pm == apt ]; then 
         sudo apt-get --purge remove openssh-server
     fi
+fi
+
+# Program configurations
+# NANO
+if [ $configurenano == y ]; then
+    touch .nanorc
+    mkdir $HOME/.config/nano
 fi
 
 #KDE GUI
