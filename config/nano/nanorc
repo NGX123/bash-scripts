@@ -1,3 +1,9 @@
+# Put “.nanorc” file in home directory, custom configurations added there will override the systemwide config of nano 
+# To make custom configs for file extensions - 
+#  - “mkdir ~/.config/nano”
+#  - add this line to nano - “include “include “/home/username/.config/nano/*.nanorc”
+#  - add files with name - extension.nanorc into .config/nano and put config into them
+  
 # OTHER OPTIONS CAN BE FOUND WITH - man nanorc
 # When setting colors - not specifying background means removing it
 
