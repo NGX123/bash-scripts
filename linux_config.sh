@@ -162,7 +162,10 @@ if [ $de == gnome ]; then
     Privacy - Turn off everything except Screen Lock 
     Power - Automatic suspend, blank screen, dim when inactive
     Devices - Keyboard Shortcuts - super + e = nautilus, ctrl + alt + t = terminator, ctrl + shift + esc = gnome-system monitor, super + f* = switch to workspace *, ctrl + f* = move window to workspace *, ctrl + space = change input language
-    Details - Default Apps - Set" >> changes.txt
+    Details - Default Apps - Set
+    
+    Extensions(may be needed in some cases)
+    TopIcons by ag - adds system tray back" >> changes.txt
     cat changes.txt
 fi
 
