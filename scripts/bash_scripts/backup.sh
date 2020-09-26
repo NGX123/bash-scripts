@@ -1,11 +1,11 @@
 #! /bin/bash
 
-cd ~/Files/github/tos
+cd ~/Files/github/tos-repo
 git add .
 git commit -m "backup"
-git push tos master
+git push t master
 
-cd ~/Files/github/tutorials-repo
+cd ~/Files/github/programming-repo
 git add .
 git commit -m "backup"
 git push t master
