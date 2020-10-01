@@ -88,6 +88,7 @@ fi
 
 ## Default Folders
 if [ $fldrs == y ]; then
+    mkdir ~/.stdfldrs
     cat ./scripts/bash_scripts/dirs > ~/.config/user-dirs.dirs
     rmdir ~/Music ~/Pictures ~/Public ~/Templates ~/Videos
 fi
