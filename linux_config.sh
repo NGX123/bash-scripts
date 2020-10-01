@@ -6,23 +6,8 @@ read -p "Destktop Environment: " de
 read -p "Remove bloat(Not recommended for gnome)(y/n): " bloat
 read -p "Remove Folders(y/n): " fldrs
 read -p "Remove ssh(y/n): " sshd_remove
-read -p "PM Configuration(y/n): " cnf
 
 apps=(terminator mpv transmission git chromium nano)
-
-
-
-
-## Configuration ##
-if [ $cnf == y ]; then
-    read -p "Install cmd: " inst
-    read -p "Remove cmd: " rmc
-    read -p "Update cmd: " up
-
-    sudo $pm -y $up
-    sudo $pm $inst -y terminator mpv qbittorrent git chromium
-    # sudo $pm $inst -y binutils gcc build-essential diffutils
-fi
 
 ### Config for APT ###
 if [ $pm == apt ]; then
@@ -125,22 +110,6 @@ fi
 if [ $configurenano == y ]; then
     touch .nanorc
     mkdir $HOME/.config/nano
-fi
-
-#KDE GUI
-if [ $de == kde ]; then
-    clear
-    echo "other changes in changes.txt
-    Shortcuts = switch desktops - meta + f(num); carry to desktop - ctrl + f(num); terminator - ctrl + alt + T
-    System settings - Global theme
-    Configure Desktop -Change Wallapaper
-    System settings - Energy Saving - Change
-    System settings - Applications - Change default applications
-    Screen Locking - change wallpaper, lock time
-    Panel - Add widget - Icons only task manager
-    Panel - Configure panel - remove show desktop
-    Panel - Lock widgets" >> changes.txt
-    cat changes.txt
 fi
 
 # Gnome GUI
