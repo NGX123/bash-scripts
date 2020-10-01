@@ -9,11 +9,11 @@ XDG_DESKTOP_DIR="$HOME/Desktop"
 XDG_DOWNLOAD_DIR="$HOME/Downloads"
 XDG_DOCUMENTS_DIR="$HOME/Documents"
 XDG_FILES_DIR="$HOME/Files"
-#XDG_TEMPLATES_DIR="$HOME/.default-user-folders/Templates"
-#XDG_PUBLICSHARE_DIR="$HOME/.default-user-folders/Public"
-#XDG_MUSIC_DIR="$HOME/.default-user-folders/Music"
-#XDG_PICTURES_DIR="$HOME/.default-user-folders/Pictures"
-#XDG_VIDEOS_DIR="$HOME/.default-user-folders/Videos"
+XDG_TEMPLATES_DIR="$HOME/.stdfldrs/Templates"
+XDG_PUBLICSHARE_DIR="$HOME/.stdfldrs/Public"
+XDG_MUSIC_DIR="$HOME/.stdfldrs/Music"
+XDG_PICTURES_DIR="$HOME/.stdfldrs/Pictures"
+XDG_VIDEOS_DIR="$HOME/.stdfldrs/Videos"
 
 
 
