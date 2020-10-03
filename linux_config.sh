@@ -136,7 +136,7 @@ if [ $de == gnome ]; then
     
     Extensions(may be needed in some cases)
     TopIcons by ag - adds system tray back
-    Desktop Icons by rastersoft" >> changes.txt
+    Desktop Icons by rastersoft/type Desktop icons in Software and find one from(https://gitlab.gnome.org/World/ShellExtensions/desktop-icons)" >> changes.txt
     cat changes.txt
 fi
 
