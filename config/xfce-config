@@ -37,11 +37,11 @@ Settings Manager
 		+ Background - Change wallpaper
 		+ Icons - Default icons - All except Removable Devices(OFF)
 
-# Not recommended all after xfce4-notes
-Remove - sudo apt remove libreoffice libreoffice-draw libreoffice-base libreoffice-calc libreoffice-math libreoffice-writer libreoffice-common xfce4-notes xfburn xsane ristretto exfalso # parole 
-sudo apt autoremove
-
 Notes:
+# Not recommended all after xfce4-notes
+ + Remove bloatware
+ 	+ Remove - sudo apt remove libreoffice libreoffice-draw libreoffice-base libreoffice-calc libreoffice-math libreoffice-writer libreoffice-common xfce4-notes xfburn xsane ristretto exfalso # parole 
+	+ sudo apt autoremove
  + To customize docky, hold control and click anywhere on it
  + Plank buf - shows panel as a task - FIX: just restart plank
  + Customization video - https://www.youtube.com/watch?v=Y_x5svD2sZQ
