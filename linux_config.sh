@@ -135,7 +135,8 @@ if [ $de == gnome ]; then
     Details - Default Apps - Set
     
     Extensions(may be needed in some cases)
-    TopIcons by ag - adds system tray back" >> changes.txt
+    TopIcons by ag - adds system tray back
+    Desktop Icons by rastersoft" >> changes.txt
     cat changes.txt
 fi
 
