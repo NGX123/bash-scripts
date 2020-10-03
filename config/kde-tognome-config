@@ -1,4 +1,27 @@
--- Look like Gnome GUI --
+-- Look like Gnome - Way 1 --
+	+ Go  to desktop
+	+ Right click on evey panel -> Edit panel -> (Trash bin)Remove
+	
+	+ Right click on desktop -> Add Panel -> Default Panel
+	+ Right click on the application launcher on the panel -> Show alternatives -> Application Dashboard
+	+ Right click on the area where task manager is -> Show alternatives -> Icons only task manager
+	+ Right click on this Panel(Panel 1) -> Edit Panel
+		+ Put it on the left screen edge
+		+ Make it's width bigger
+		+ Remove all of the widgets except the App dash board and task manager
+		+ change length to leave space for second panel
+	+ Right click on the desktop -> Add Panel -> Emptry Panel
+	+ Right click on newly created panel -> Edit panel
+		+ Move the panel to upper screen edge
+		+ Make it's width smaller and so it touches second panel
+	+ Right click on newly created panel -> Add widgets
+		+ Add global menu
+		+ Add digital clock
+		+ Add lock/logout
+		+ Add system tray
+		
+
+-- Look like Gnome GUI - Way 2 --
 	+ (terminal) sudo apt install latte-dock
 	+ Go to desktop
 	+ Launch latte-dock
