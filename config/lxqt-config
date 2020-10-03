@@ -7,6 +7,8 @@
 		+ Widgets
 			+ Choose Desktop Switcher - (-) Remove
 			+ Choose Task Manager - Settings button - Button style(Only icon), Maximum button width(30px)
+			
+			
 -- Preferences --
 	+ Kvantum
 		+ (Terminal) sudo apt install qt5-style-kvantum
@@ -22,6 +24,7 @@
 				+ GTK 3 Theme(Adwaita-dark)
 			+ Icon Theme
 				+ Choose(Papirus-Dark)
+
 
 -- Extra --
 	+ Remove libre office - sudo apt-get remove --purge libreoffice*
