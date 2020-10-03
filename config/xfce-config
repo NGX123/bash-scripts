@@ -1,4 +1,4 @@
-Panels
+-- Panels --
 1. Remove all panels: Right click on panel -> Panel preferences -> (+) create new, (-) select and remove old ones
 2. Right click on newly created blanck panel -> Panel preferences ->
 	+ Display
@@ -24,7 +24,8 @@ Panels
 		+ (+) Add -> Separator
 		 + Click on spearator, choose edit option on the right -> Expand(ON), Style(TRANSPARENT)
 
-Settings
+
+-- Settings --
 Settings Manager
 	+ Keyboard - Application Shortcuts
 		+ Choose each(except xflock4) - (-) Remove
@@ -37,7 +38,8 @@ Settings Manager
 		+ Background - Change wallpaper
 		+ Icons - Default icons - All except Removable Devices(OFF)
 
-Notes:
+
+-- Extra --
 # Not recommended all after xfce4-notes
  + Remove bloatware
  	+ Remove - sudo apt remove libreoffice libreoffice-draw libreoffice-base libreoffice-calc libreoffice-math libreoffice-writer libreoffice-common xfce4-notes xfburn xsane ristretto exfalso # parole 
