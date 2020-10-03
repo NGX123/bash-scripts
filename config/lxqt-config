@@ -1,4 +1,4 @@
-Panel
+-- Panel --
 	+ Right click - Configure panel
 		+ Panel
 			+ Size(30px)
@@ -7,7 +7,7 @@ Panel
 		+ Widgets
 			+ Choose Desktop Switcher - (-) Remove
 			+ Choose Task Manager - Settings button - Button style(Only icon), Maximum button width(30px)
-Preferences
+-- Preferences --
 	+ Kvantum
 		+ (Terminal) sudo apt install qt5-style-kvantum
 		+ (Optional) Download and unpack - https://store.kde.org/p/1373831 - Files - *.zip - Download
@@ -23,6 +23,6 @@ Preferences
 			+ Icon Theme
 				+ Choose(Papirus-Dark)
 
-Extra:
+-- Extra --
 	+ Remove libre office - sudo apt-get remove --purge libreoffice*
 	+ Remove other unneeded apps - sudo apt remove k3b trojita quassel skanlite 2048-qt noblenote
