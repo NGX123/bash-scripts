@@ -53,7 +53,7 @@ fi
 
 ## Print the final message
 echo "
-1. $apps_list were installed
+1. $apps_list were installed(they might not be installed if you use apt and one of the packages does not exist in repos, becuase for apt to work all packages supplied at once need to be in the repos)
 2. Development tools were installed
 3. Bash aliases were added
 4. Bash was coloured
