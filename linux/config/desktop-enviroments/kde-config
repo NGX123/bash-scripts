@@ -6,6 +6,10 @@
 		+ Make height smaller
 		+ Put it on the upper screen edge
 		+ Remove "Minimize all Windows"
+		+ Remove "Pager"
+		+ Remove "Task Manager"
+	Right click on panel -> Add widgets
+		+ Add "Icons only task manager" after the app dashboard
 	+ Right click on Application Launcher on Panel -> Show Alternatives -> Application Dashboard
 	+ Right click on Application Launcher on Panel -> Configure Application Dashboard
 		+ Show categories
