@@ -43,8 +43,11 @@
 				+ Switch to Desktop num(meta + f(num))
 				+ Windows to Desktop num(ctrl + f(num))
 			+ Add(+) - terminator(ctrl + alt + t)
+	+ Personalization
+		+ Account Details -> Kde Wallet -> Enable the KDE wallet subsystem(OFF)
+		+ Applications -> Set default
+		
 			
-System settings - Global theme
 Configure Desktop -Change Wallapaper
 System settings - Energy Saving - Change
 System settings - Applications - Change default applications
