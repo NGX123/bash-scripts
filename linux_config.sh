@@ -10,7 +10,7 @@ read -p "Destktop Environment: " de_var
 read -p "Configure install(y/n): " configureInstall_var
 
 # Extra script configuration
-if [ "$configureInstall_var" == "y" ]; then
+if [ $configureInstall_var == y ]; then
     read -p "Remove bloat(Not recommended for gnome)(y/n): " removeBloat_var
     read -p "Remove Folders(y/n): " removeFldrs_var
     read -p "Remove ssh(y/n): " removeSshd_var
@@ -24,7 +24,11 @@ if [ $pm_var == apt ]; then
     rmc=purge
     up=upgrade
 
+    # Update
     sudo apt -y update && sudo apt -y upgrade
+    
+    # Install any dependencies
+    sudo apt -y install curl
 
     # VS code
     curl https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > packages.microsoft.gpg
@@ -49,6 +53,7 @@ if [ $pm_var == dnf ]; then
     rmc=remove
     up=update
     
+    # Update
     sudo dnf -y update
 
     # RPM Fusion
