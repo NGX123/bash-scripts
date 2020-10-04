@@ -50,3 +50,15 @@ if [ $de_var == xfce ]; then
     clear
     cat ./config/desktop-enviroments/xfce-config
 fi
+
+## Print the final message
+echo "
+1. $apps_list were installed
+2. Development tools were installed
+3. Bash aliases were added
+4. Bash was coloured
+
+5. (Optional) bloat was uninstalled
+6. (Optional) the default folders were deleted
+7. (Optional) ssh was removed
+8. (Optional) app configurations were set"
