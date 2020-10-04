@@ -9,3 +9,8 @@ sudo dnf update
 sudo dnf install nvidia-akmod
 reboot
 lsmod | grep nvidia           # check if nvidia modules are running, check if nvidia control panel is an application
+
+
+
+# mkdir File exists error - use "-p" option and it will not try to create if already exists(the option also has another effect)
+mkdir -p folder...
