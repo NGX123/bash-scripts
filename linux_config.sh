@@ -1,12 +1,6 @@
 #! /bin/bash
 
 ## Variable Declarations
-pm_var="0"
-de_var="0"
-removeBloat_var=n
-removeFldrs_var=n
-removeSshd_var=n
-configureInstall_var=n
 apps_list=(terminator mpv transmission git chromium nano)
 
 
