@@ -11,15 +11,15 @@ apps_list = (terminator mpv transmission git chromium nano)
 
 
 ## User input
-read -p "Package Manager: " pm_var
-read -p "Destktop Environment: " de_var
-read -p "Configure install(y/n): " configureInstall_var
+read -p "Package Manager: " $pm_var
+read -p "Destktop Environment: " $de_var
+read -p "Configure install(y/n): " $configureInstall_var
 
 # Extra script configuration
 if [ $configureInstall_var == y ]; then
-    read -p "Remove bloat(Not recommended for gnome)(y/n): " removeBloat_var
-    read -p "Remove Folders(y/n): " removeFldrs_var
-    read -p "Remove ssh(y/n): " removeSshd_var
+    read -p "Remove bloat(Not recommended for gnome)(y/n): " $removeBloat_var
+    read -p "Remove Folders(y/n): " $removeFldrs_var
+    read -p "Remove ssh(y/n): " $removeSshd_var
 fi
 
 
