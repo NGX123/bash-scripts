@@ -1,8 +1,8 @@
 #! /bin/bash
 
 ## Variable Declarations
-pm_var=0
-de_var=0
+pm_var='0'
+de_var='0'
 removeBloat_var=n
 removeFldrs_var=n
 removeSshd_var=n
