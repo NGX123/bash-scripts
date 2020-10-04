@@ -28,33 +28,29 @@
 		+ Clipboard(Disabled)
 		+ Night Color Color(Disabled)
 		+ Vaults(Disabled)
+	+ Right click on desktop -> Configure Desktop -> Wallpaper -> Change
 	
 -- Configure system --
 	+ Open system settings
 	+ Appearance
 		+ Global theme -> Breeze Dark
 	+ Workspace
-		+ Worksapce Behavior
+		+ Workspace
 			+ General Behavior -> Animation Speed(Instant)
 			+ Desktop Effects -> Screen Edge(OFF)
-			+ Screen Locking -> Appearance -> CHange wallpaper
+			+ Screen Locking -> Appearance -> Change wallpaper
 		+ Shortcuts
 			+ Kwin
 				+ Switch to Desktop num(meta + f(num))
 				+ Windows to Desktop num(ctrl + f(num))
+				+ Show Desktop Grid(meta + esc)
 			+ Add(+) - terminator(ctrl + alt + t)
 	+ Personalization
 		+ Account Details -> Kde Wallet -> Enable the KDE wallet subsystem(OFF)
 		+ Applications -> Set default
+	+ Hardware
+		+ Power Management -> Settings are device specific
 		
-			
-Configure Desktop -Change Wallapaper
-System settings - Energy Saving - Change
-System settings - Applications - Change default applications
-Screen Locking - change wallpaper, lock time
-
-
-
 -- Extra --
  + Remove bloatware
 	+ (terminal) sudo apt remove skanlite okular vlc kate kcalc
