@@ -39,4 +39,17 @@ if [ $de_var == gnome ]; then
     cat ./config/desktop-enviroments/gnome-config
 fi
 
+if [ $de_var == kde]; then
+    clear
+    cat ./config/desktop-enviroments/kde-config
+fi
 
+if [ $de_var == lxqt]; then
+    clear
+    cat ./config/desktop-enviroments/lxqt-config
+fi
+
+if [ $de_var == xfce]; then
+    clear
+    cat ./config/desktop-enviroments/xfce-config
+fi
