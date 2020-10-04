@@ -24,7 +24,7 @@ if [ $pm_var == apt ]; then
     sudo apt-get update
     sudo apt-get install code
 
-    # Apps
+    # Apps(might not install becuase apt requires all of them to be in repos, otherwise it fails)
     sudo apt-get install -y $apps_list
 
     # Development
