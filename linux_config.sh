@@ -18,7 +18,7 @@ fi
 
 
 ### Config for APT ###
-if [ "$pm_var" == "apt" ]; then
+if [ $pm_var == apt ]; then
     # Variables
     inst = install
     rmc = purge
@@ -43,7 +43,7 @@ if [ "$pm_var" == "apt" ]; then
 fi
 
 ## Config for DNF ##
-if [ "$pm_var" == "dnf" ]; then
+if [ $pm_var == dnf ]; then
     # Variables
     inst = install
     rmc = remove
@@ -85,45 +85,45 @@ echo '[ -f $HOME/.scripts/bash_aliases.sh ] && . $HOME/.scripts/bash_aliases.sh'
 
 ### OPTIONAL ###
 ## Remove Bloat ##
-if [ "$removeBloat_var" == "y" ]; then 
-    if [ "$de_var" == "kde" ]; then
+if [ $removeBloat_var == y ]; then 
+    if [ $de_var == kde ]; then
         sudo $pm_var $rmc -y calligra-sheets calligra-stage calligra-words dragon juk k3b kamoso kmail kaddressbook kamera kget ktorrent kmahjongg kmines kolourpaint kpat kwalletmanager #kde-connect kdeconnect konqueror krdc
     fi
 
-    if [ "$de_var" == "gnome" ]; then
+    if [ $de_var == gnome ]; then
         sudo $pm_var $rmc -y gnome-maps gnome-screenshot gnome-calendar cheese gnome-contacts rhythmbox totem gnome-weather gnome-photos simple-scan gedit
     fi
 fi
 
 ## Default Folders
-if [ "$removeFldrs_var" == "y" ]; then
+if [ $removeFldrs_var == y ]; then
     mkdir ~/.stdfldrs
     cat ./scripts/bash_scripts/dirs > ~/.config/user-dirs.dirs
     rmdir ~/Music ~/Pictures ~/Public ~/Templates ~/Videos
 fi
 
 ## Remove ssh-server
-if [ "$removeSshd_var" == "y" ]; then
-    if [ "$pm_var" == "dnf" ]; then 
+if [ $removeSshd_var == y ]; then
+    if [ $pm_var == dnf ]; then 
         sudo chkconfig sshd off
         sudo service sshd stop
         sudo dnf erase openssh-server
     fi
     
-    if [ "$pm_var" == "apt" ]; then 
+    if [ $pm_var == apt ]; then 
         sudo apt-get --purge remove openssh-server
     fi
 fi
 
 # Program configurations
 # NANO
-if [ "$configurenano" == "y" ]; then
+if [ $configurenano == y ]; then
     touch .nanorc
     mkdir $HOME/.config/nano
 fi
 
 # Gnome GUI
-if [ "$de_var" == "gnome" ]; then
+if [ $de_var == gnome ]; then
     clear
     echo "
     Tweaks
