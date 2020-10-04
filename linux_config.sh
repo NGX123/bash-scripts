@@ -20,9 +20,9 @@ fi
 ### Config for APT ###
 if [ $pm_var == apt ]; then
     # Variables
-    inst = install
-    rmc = purge
-    up = upgrade
+    inst=install
+    rmc=purge
+    up=upgrade
 
     sudo apt -y update && sudo apt -y upgrade
 
@@ -45,9 +45,9 @@ fi
 ## Config for DNF ##
 if [ $pm_var == dnf ]; then
     # Variables
-    inst = install
-    rmc = remove
-    up = update
+    inst=install
+    rmc=remove
+    up=update
     
     sudo dnf -y update
 
