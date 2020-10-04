@@ -1,5 +1,33 @@
 -- Desktop look --
-
+	+ Go to desktop
+	+ Right click on every panel -> (bin) Remove panel
+	+ Right click on desktop -> Add Panel -> Default Panel
+	+ Right click on panel -> Edit Panel
+		+ Make height smaller
+		+ Put it on the upper screen edge
+		+ Remove "Minimize all Windows"
+	+ Right click on Application Launcher on Panel -> Show Alternatives -> Application Dashboard
+	+ Right click on Application Launcher on Panel -> Configure Application Dashboard
+		+ Show categories
+			+ Recent application(OFF)
+			+ Recent documents(OFF)
+		+ Expand search to bookmarks, files and emails(OFF)
+	+ Right click on Lock/Logout -> Configure Lock/Logout
+		+ Show actions -> Lock(OFF)
+	+ Right click on System tray -> Configure System tray
+		+ Media Player(Disabled)
+		+ Updates(Always hidden)
+		+ Device Notifier(Disabled)
+		+ Keyboard Indicator(Disabled)
+		+ Networks(Always shown)
+		+ Printers(Disabled)
+		+ Clipboard(Disabled)
+		+ Night Color Color(Disabled)
+		+ Vaults(Disabled)
+	
+		
+		
+	
 
 
 
