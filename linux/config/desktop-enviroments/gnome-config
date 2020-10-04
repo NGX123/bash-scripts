@@ -1,0 +1,20 @@
+Tweaks
+General - Suspend when laptop lid is closed, turn off animations
+Appearance - Applications(Adwaita-dark)
+Extensions - Turn off. Install: TopIcons(system tray)
+Keyboard & mouse - Mouse click emulation set to area(OPTIONAL)
+Top Bar - Disable everything
+Windows Titlebars - Titlebar Buttons - Turn on minimize and maximize
+
+
+Settings
+Notifications - manage notifications
+Search - Turn off search(application search stays)
+Privacy - Turn off everything except Screen Lock 
+Power - Automatic suspend, blank screen, dim when inactive
+Devices - Keyboard Shortcuts - super + e = nautilus, ctrl + alt + t = terminator, ctrl + shift + esc = gnome-system monitor, super + f* = switch to workspace *, ctrl + f* = move window to workspace *, ctrl + space = change input language
+Details - Default Apps - Set
+
+Extensions(may be needed in some cases)
+TopIcons by ag - adds system tray back
+Desktop Icons by rastersoft/type Desktop icons in Software and find one from(https://gitlab.gnome.org/World/ShellExtensions/desktop-icons)
