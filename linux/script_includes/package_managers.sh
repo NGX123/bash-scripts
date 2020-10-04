@@ -1,5 +1,7 @@
 # Includes the code for package managers configuration for main configurations script
 
+apps_list="terminator mpv transmission git chromium nano"
+
 ### Config for APT ###
 if [ $pm_var == apt ]; then
     # Variables
@@ -23,7 +25,7 @@ if [ $pm_var == apt ]; then
     sudo apt-get install code
 
     # Apps
-    sudo apt install -y ${apps_list[*]}
+    sudo apt-get install -y $apps_list
 
     # Development
     sudo apt install -y binutils build-essential diffutils valgrind
@@ -50,7 +52,7 @@ if [ $pm_var == dnf ]; then
     sudo dnf install -y code
     
     # Apps
-    sudo dnf install -y ${apps_list[*]}
+    sudo dnf install -y $apps_list
     
     # Development
     sudo dnf install -y @development-tools diffutils valgrind

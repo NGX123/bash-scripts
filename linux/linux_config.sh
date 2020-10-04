@@ -1,9 +1,6 @@
 #! /bin/bash
 
 ## SCRIPT SETUP ##
-## Variable Declarations
-apps_list=(terminator mpv transmission git chromium nano)
-
 ## User input
 read -p "Package Manager: " pm_var
 read -p "Destktop Environment: " de_var
@@ -39,17 +36,17 @@ if [ $de_var == gnome ]; then
     cat ./config/desktop-enviroments/gnome-config
 fi
 
-if [ $de_var == kde]; then
+if [ $de_var == kde ]; then
     clear
     cat ./config/desktop-enviroments/kde-config
 fi
 
-if [ $de_var == lxqt]; then
+if [ $de_var == lxqt ]; then
     clear
     cat ./config/desktop-enviroments/lxqt-config
 fi
 
-if [ $de_var == xfce]; then
+if [ $de_var == xfce ]; then
     clear
     cat ./config/desktop-enviroments/xfce-config
 fi
