@@ -1,6 +1,6 @@
 # Includes the code for package managers configuration for main configurations script
 
-apps_list="terminator mpv transmission git chromium nano"
+apps_list="terminator mpv transmission chromium nano"
 
 ### Config for APT ###
 if [ $pm_var == apt ]; then
