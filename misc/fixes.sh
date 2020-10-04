@@ -12,5 +12,8 @@ lsmod | grep nvidia           # check if nvidia modules are running, check if nv
 
 
 
-# mkdir File exists error - use "-p" option and it will not try to create if already exists(the option also has another effect)
+# mkdir "folder exists error" - use "-p" option and it will not try to create if already exists(the option also has another effect)
 mkdir -p folder...
+
+# rmdir or rm "file/folder exists error" - use "-f" option
+rm -rf file/folder...

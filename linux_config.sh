@@ -73,7 +73,7 @@ fi
 
 ## CONFIGURATION ##
 # Make Folders
-mkdir ~/Files ~/src ~/.scripts ~/Files/backups/ ~/Files/code ~/Files/github
+mkdir -p ~/Files ~/src ~/.scripts ~/Files/backups/ ~/Files/code ~/Files/github
 
 ## Terminal Configurations ##
 cp -r ./scripts/* ~/.scripts
@@ -97,9 +97,9 @@ fi
 
 ## Default Folders
 if [ $removeFldrs_var == y ]; then
-    mkdir ~/.stdfldrs
+    mkdir -p ~/.stdfldrs
     cat ./scripts/bash_scripts/dirs > ~/.config/user-dirs.dirs
-    rmdir ~/Music ~/Pictures ~/Public ~/Templates ~/Videos
+    rm -rf ~/Music ~/Pictures ~/Public ~/Templates ~/Videos
 fi
 
 ## Remove ssh-server
