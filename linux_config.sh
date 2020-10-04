@@ -1,16 +1,31 @@
 #! /bin/bash
 
-## Variables
-read -p "Package Manager: " pm
-read -p "Destktop Environment: " de
-read -p "Remove bloat(Not recommended for gnome)(y/n): " bloat
-read -p "Remove Folders(y/n): " fldrs
-read -p "Remove ssh(y/n): " sshd_remove
+## Variable Declarations
+pm_var = 0
+de_var = 0
+removeBloat_var = n
+removeFldrs_var = n
+removeSshd_var = n
+configureInstall_var = n
+apps_list = (terminator mpv transmission git chromium nano)
 
-apps=(terminator mpv transmission git chromium nano)
+
+## User input
+read -p "Package Manager: " pm_var
+read -p "Destktop Environment: " de_var
+read -p "Configure install(y/n): " configureInstall_var
+
+# Extra script configuration
+if [ $configureInstall_var == y ]; then
+    read -p "Remove bloat(Not recommended for gnome)(y/n): " removeBloat_var
+    read -p "Remove Folders(y/n): " removeFldrs_var
+    read -p "Remove ssh(y/n): " removeSshd_var
+fi
+
 
 ### Config for APT ###
-if [ $pm == apt ]; then
+if [ $pm_var == apt ]; then
+    # Variables
     inst = install
     rmc = purge
     up = upgrade
@@ -27,14 +42,14 @@ if [ $pm == apt ]; then
     sudo apt-get install code
 
     # Apps
-    sudo apt install -y ${apps[*]}
+    sudo apt install -y ${apps_list[*]}
 
     # Development
     sudo apt install -y binutils build-essential diffutils valgrind
 fi
 
 ## Config for DNF ##
-if [ $pm == dnf ]; then
+if [ $pm_var == dnf ]; then
     # Variables
     inst = install
     rmc = remove
@@ -53,7 +68,7 @@ if [ $pm == dnf ]; then
     sudo dnf install -y code
     
     # Apps
-    sudo dnf install -y ${apps[*]}
+    sudo dnf install -y ${apps_list[*]}
     
     # Development
     sudo dnf install -y @development-tools diffutils valgrind
@@ -76,32 +91,32 @@ echo '[ -f $HOME/.scripts/bash_aliases.sh ] && . $HOME/.scripts/bash_aliases.sh'
 
 ### OPTIONAL ###
 ## Remove Bloat ##
-if [ $bloat == y ]; then 
-    if [ $de == kde ]; then
-        sudo $pm $rmc -y calligra-sheets calligra-stage calligra-words dragon juk k3b kamoso kmail kaddressbook kamera kget ktorrent kmahjongg kmines kolourpaint kpat kwalletmanager #kde-connect kdeconnect konqueror krdc
+if [ $removeBloat_var == y ]; then 
+    if [ $de_var == kde ]; then
+        sudo $pm_var $rmc -y calligra-sheets calligra-stage calligra-words dragon juk k3b kamoso kmail kaddressbook kamera kget ktorrent kmahjongg kmines kolourpaint kpat kwalletmanager #kde-connect kdeconnect konqueror krdc
     fi
 
-    if [ $de == gnome ]; then
-        sudo $pm $rmc -y gnome-maps gnome-screenshot gnome-calendar cheese gnome-contacts rhythmbox totem gnome-weather gnome-photos simple-scan gedit
+    if [ $de_var == gnome ]; then
+        sudo $pm_var $rmc -y gnome-maps gnome-screenshot gnome-calendar cheese gnome-contacts rhythmbox totem gnome-weather gnome-photos simple-scan gedit
     fi
 fi
 
 ## Default Folders
-if [ $fldrs == y ]; then
+if [ $removeFldrs_var == y ]; then
     mkdir ~/.stdfldrs
     cat ./scripts/bash_scripts/dirs > ~/.config/user-dirs.dirs
     rmdir ~/Music ~/Pictures ~/Public ~/Templates ~/Videos
 fi
 
 ## Remove ssh-server
-if [ $sshd_remove == y ]; then
-    if [ $pm == dnf ]; then 
+if [ $removeSshd_var == y ]; then
+    if [ $pm_var == dnf ]; then 
         sudo chkconfig sshd off
         sudo service sshd stop
         sudo dnf erase openssh-server
     fi
     
-    if [ $pm == apt ]; then 
+    if [ $pm_var == apt ]; then 
         sudo apt-get --purge remove openssh-server
     fi
 fi
@@ -114,7 +129,7 @@ if [ $configurenano == y ]; then
 fi
 
 # Gnome GUI
-if [ $de == gnome ]; then
+if [ $de_var == gnome ]; then
     clear
     echo "
     Tweaks
