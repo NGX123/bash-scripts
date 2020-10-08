@@ -1,33 +1,19 @@
 -- Desktop look --
 	+ Go to desktop
 	+ Right click on every panel -> (bin) Remove panel
-	+ Right click on desktop -> Add Panel -> Default Panel
+	+ Right click on desktop -> Add Panel -> Empty Panel
+	+ Right click on panel -> Add widgets
+		+ Add these widgets in the following order: Application Menu, Icons only task manager, System tray, Digital clock
 	+ Right click on panel -> Edit Panel
 		+ Make height smaller
 		+ Put it on the upper screen edge
-		+ Remove "Minimize all Windows"
-		+ Remove "Pager"
-		+ Remove "Task Manager"
-	Right click on panel -> Add widgets
-		+ Add "Icons only task manager" after the app dashboard
-	+ Right click on Application Launcher on Panel -> Show Alternatives -> Application Dashboard
-	+ Right click on Application Launcher on Panel -> Configure Application Dashboard
-		+ Show categories
-			+ Recent application(OFF)
-			+ Recent documents(OFF)
-		+ Expand search to bookmarks, files and emails(OFF)
-	+ Right click on Lock/Logout -> Configure Lock/Logout
-		+ Show actions -> Lock(OFF)
+	
+	+ Right click on Application Launcher on Panel -> Configure Application Dashboard/menu
+		+ Show categories: Recent application(OFF), Recent documents(OFF)
+		+ Search: Expand search to bookmarks, files and emails(OFF)
+		+ Keyboard Shortcuts(Meta+F1)
 	+ Right click on System tray -> Configure System tray
-		+ Media Player(Disabled)
-		+ Updates(Always hidden)
-		+ Device Notifier(Disabled)
-		+ Keyboard Indicator(Disabled)
-		+ Networks(Always shown)
-		+ Printers(Disabled)
-		+ Clipboard(Disabled)
-		+ Night Color Color(Disabled)
-		+ Vaults(Disabled)
+		+ Disable unneeded information
 	+ Right click on desktop -> Configure Desktop -> Wallpaper -> Change
 	
 -- Configure system --
@@ -56,3 +42,5 @@
 	+ (terminal) sudo apt remove skanlite okular vlc kate kcalc
 	+ (terminal) sudo apt remove kdeconnect #optional 
   + (terminal) sudo apt autoremove
+  
+  + To bind a shortcut to Meta(Windows) key, just bind it to Meta+F1 which has the same effect(will work with both meta and meta+F1)
