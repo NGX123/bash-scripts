@@ -23,6 +23,10 @@
 			 + Every toggle except shows on all monitors(OFF)
 		+ (+) Add -> Separator
 		 + Click on spearator, choose edit option on the right -> Expand(ON), Style(TRANSPARENT)
+		+ (+) Add -> Notifications Plugin(xfce4-notifyd)
+		+ (+) Add -> PulseAudio Plugin
+		+ (Optional) (+) Add -> Power Manager Plugin
+		+ (+) Add -> Clock
 
 
 -- Settings --
