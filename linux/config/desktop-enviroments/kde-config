@@ -22,10 +22,10 @@
 		+ Global theme -> Arc Dark(by x-varlesh-x)
 		+ Plasma theme -> Arc Dark(by x-varlesh-x)
 		+ Application Style
-			+ Application style -> Set to Breeze
+			+ Application style(Breeze)
 			+ Application Style -> Configure GTK Application Style -> Breeze-Dark
 			+ Window Decorations -> Arc Dark(by x-varlesh-x)
-			+ Icons -> Icons(Papirus-Dark)
+		+ Icons -> Icons(Papirus-Dark)
 	+ Workspace
 		+ Workspace Behavior
 			+ General Behavior -> Animation Speed(Instant)
@@ -47,7 +47,7 @@
  + Remove bloatware
 	+ (terminal) sudo apt remove skanlite okular vlc kate kcalc
 	+ (terminal) sudo apt remove kdeconnect #optional 
-  + (terminal) sudo apt autoremove
-  
+  	+ (terminal) sudo apt autoremove
   + To bind a shortcut to Meta(Windows) key, just bind it to Meta+F1 which has the same effect(will work with both meta and meta+F1)
   + Cool themes - Dark Breeze, Nordic, Adapta
+  + Config videos - https://www.youtube.com/watch?v=Vi65-wT3o20
