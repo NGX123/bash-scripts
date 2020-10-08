@@ -2,8 +2,9 @@
 1. Remove all panels: Right click on panel -> Panel preferences -> (+) create new, (-) select and remove old ones
 2. Right click on newly created blanck panel -> Panel preferences ->
 	+ Display
-		+ Mode = vertical
-		+ Automatically hide the oanel = Intelligently
+		+ Mode = horizontal
+		+ Lockpanel(OFF)(And then move it to the upper edge and turn lock ON)
+		+ Automatically hide the panel = Never
 		+ Row size = 30
 		+ Number of rows = 1
 		+ Length = 100
