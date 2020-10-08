@@ -19,9 +19,13 @@
 -- Configure system --
 	+ Open system settings
 	+ Appearance
-		+ Global theme -> Breeze Dark
-		+ Plasma theme -> Adapta(should be installed)/Breeze dark
-		+ Application Style -> Application style -> Configure GTK Application Style -> Breeze-Dark
+		+ Global theme -> Arc Dark(by x-varlesh-x)
+		+ Plasma theme -> Arc Dark(by x-varlesh-x)
+		+ Application Style
+			+ Application style -> Set to Breeze
+			+ Application Style -> Configure GTK Application Style -> Breeze-Dark
+			+ Window Decorations -> Arc Dark(by x-varlesh-x)
+			+ Icons -> Icons(Papirus-Dark)
 	+ Workspace
 		+ Workspace Behavior
 			+ General Behavior -> Animation Speed(Instant)
@@ -46,3 +50,4 @@
   + (terminal) sudo apt autoremove
   
   + To bind a shortcut to Meta(Windows) key, just bind it to Meta+F1 which has the same effect(will work with both meta and meta+F1)
+  + Cool themes - Dark Breeze, Nordic, Adapta
