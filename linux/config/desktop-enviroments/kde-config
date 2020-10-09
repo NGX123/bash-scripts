@@ -9,11 +9,12 @@
 		+ Put it on the upper screen edge
 	
 	+ Right click on Application Launcher on Panel -> Configure Application Dashboard/menu
-		+ Show categories: Recent application(OFF), Recent documents(OFF)
-		+ Search: Expand search to bookmarks, files and emails(OFF)
+		+ Show categories: 
+			+ Recent application(OFF); 
+			+ Recent documents(OFF)
+		+ Search -> Expand search to bookmarks, files and emails(OFF)
 		+ Keyboard Shortcuts(Meta+F1)
-	+ Right click on System tray -> Configure System tray
-		+ Disable unneeded entries
+	+ Right click on System tray -> Configure System tray -> Disable unneeded entries
 	+ Right click on desktop -> Configure Desktop -> Wallpaper -> Change
 	
 -- Configure system --
@@ -22,8 +23,8 @@
 		+ Global theme -> Arc Dark(by x-varlesh-x)
 		+ Plasma theme -> Arc Dark(by x-varlesh-x)
 		+ Application Style
-			+ Application style(Breeze)
-			+ Application Style -> Configure GTK Application Style -> Breeze-Dark
+			+ Application Style(Breeze)
+				+ Configure GTK Application Style -> Breeze Dark
 			+ Window Decorations -> Arc Dark(by x-varlesh-x)
 		+ Icons -> Icons(Papirus-Dark)
 		
@@ -33,10 +34,9 @@
 			+ Desktop Effects -> Screen Edge and ther bloat(OFF)
 			+ Screen Locking
 				+ Appearance -> Change wallpaper
-				+ Lock screen(3min)
+				+ Lock screen(2 min)
 				+ Allow unlocking without password for(Immediatly)
-		+ Window Management
-			+ Task Switcher -> Main -> Visulatization(Large Icons)
+		+ Window Management -> Task Switcher -> Main -> Visulatization(Large Icons)
 		+ Shortcuts
 			+ Kwin
 				+ Switch to Desktop num(meta + f(num))
@@ -50,7 +50,19 @@
 		+ Account Details -> Kde Wallet -> Enable the KDE wallet subsystem(OFF)
 		+ Applications -> Set default, Diagnostics(OFF)
 	+ Hardware
-		+ Power Management -> Settings are device specific
+		+ Power Management
+			(On battery)
+			+ Keyboard backlight(OFF)
+			+ Dim screen(3 min)
+			+ Screen Energy Saving(4 min)
+			+ Suspend Session(Sleep after 10 min)
+			+ Button events handling(When laptop lid close even when exeternal monitor connected - sleep)
+			
+			(On AC)
+			+ Dim screen(5 min)
+			+ Screen Energy Saving(10 min)
+			+ Suspend session(Sleep after 20 min)
+			+ Button events handling(When laptop lid closed - sleep)
 		
 -- Extra --
 + Remove bloatware
