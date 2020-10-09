@@ -31,7 +31,10 @@
 		+ Workspace Behavior
 			+ General Behavior -> Animation Speed(Instant)
 			+ Desktop Effects -> Screen Edge and ther bloat(OFF)
-			+ Screen Locking -> Appearance -> Change wallpaper
+			+ Screen Locking
+				+ Appearance -> Change wallpaper
+				+ Lock screen(3min)
+				+ Allow unlocking without password for(Immediatly)
 		+ Window Management
 			+ Task Switcher -> Main -> Visulatization(Large Icons)
 		+ Shortcuts
