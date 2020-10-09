@@ -51,10 +51,10 @@
 		
 -- Extra --
 + Remove bloatware
-	+ (terminal) sudo apt remove skanlite okular vlc kate kcalc
-	+ (terminal) sudo apt remove kdeconnect # optional 
-	+ (terminal) sudo apt remove kvantum	# optional 0 remove if there are theme problems(if there is no such package remove using discover)
-  	+ (terminal) sudo apt autoremove
+	+ (terminal) sudo apt/dnf remove skanlite okular vlc kate kcalc
+	+ (terminal) sudo apt/dnf remove kdeconnect # optional 
+	+ (terminal) sudo apt/dnf remove kvantum	# optional 0 remove if there are theme problems(if there is no such package remove using discover)
+  	+ (terminal) sudo apt/dnf autoremove
 + To bind a shortcut to Meta(Windows) key, just bind it to Meta+F1 which has the same effect(will work with both meta and meta+F1)
 + Cool themes - Dark Breeze, Nordic, Adapta
 + Config videos - https://www.youtube.com/watch?v=Vi65-wT3o20
