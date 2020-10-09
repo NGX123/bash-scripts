@@ -13,7 +13,7 @@
 			+ Recent application(OFF); 
 			+ Recent documents(OFF)
 		+ Search -> Expand search to bookmarks, files and emails(OFF)
-		+ Keyboard Shortcuts(Meta+F1)
+		+ Keyboard Shortcuts(Meta+1)
 	+ Right click on System tray -> Configure System tray -> Disable unneeded entries
 	+ Right click on desktop -> Configure Desktop -> Wallpaper -> Change
 	
@@ -74,6 +74,6 @@
 	+ (terminal) sudo apt/dnf remove kdeconnect # optional 
 	+ (terminal) sudo apt/dnf remove kvantum	# optional 0 remove if there are theme problems(if there is no such package remove using discover)
   	+ (terminal) sudo apt/dnf autoremove
-+ To bind a shortcut to Meta(Windows) key, just bind it to Meta+F1 which has the same effect(will work with both meta and meta+F1)
++ To bind a shortcut to Meta(Windows) key, just bind it to Meta+1 which has the same effect(will work with both meta and meta+1)
 + Cool themes - Dark Breeze, Nordic, Adapta
 + Config videos - https://www.youtube.com/watch?v=Vi65-wT3o20
