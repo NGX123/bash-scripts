@@ -26,20 +26,26 @@
 			+ Application Style -> Configure GTK Application Style -> Breeze-Dark
 			+ Window Decorations -> Arc Dark(by x-varlesh-x)
 		+ Icons -> Icons(Papirus-Dark)
+		
 	+ Workspace
 		+ Workspace Behavior
 			+ General Behavior -> Animation Speed(Instant)
 			+ Desktop Effects -> Screen Edge and ther bloat(OFF)
 			+ Screen Locking -> Appearance -> Change wallpaper
+		+ Window Management
+			+ Task Switcher -> Main -> Visulatization(Large Icons)
 		+ Shortcuts
 			+ Kwin
 				+ Switch to Desktop num(meta + f(num))
 				+ Windows to Desktop num(ctrl + f(num))
 				+ Show Desktop Grid(meta + esc)
 			+ Add(+) - terminator(ctrl + alt + t)
+		+ Startup and Shutdown -> Splash Screen(None)
+		+ Search -> File Search -> Enable File Search(OFF)
+			
 	+ Personalization
 		+ Account Details -> Kde Wallet -> Enable the KDE wallet subsystem(OFF)
-		+ Applications -> Set default
+		+ Applications -> Set default, Diagnostics(OFF)
 	+ Hardware
 		+ Power Management -> Settings are device specific
 		
@@ -47,7 +53,7 @@
 + Remove bloatware
 	+ (terminal) sudo apt remove skanlite okular vlc kate kcalc
 	+ (terminal) sudo apt remove kdeconnect # optional 
-	+ (terminal) sudo apt remove kvantum	# optional(if there is no such package remove using discover)
+	+ (terminal) sudo apt remove kvantum	# optional 0 remove if there are theme problems(if there is no such package remove using discover)
   	+ (terminal) sudo apt autoremove
 + To bind a shortcut to Meta(Windows) key, just bind it to Meta+F1 which has the same effect(will work with both meta and meta+F1)
 + Cool themes - Dark Breeze, Nordic, Adapta
