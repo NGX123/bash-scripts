@@ -51,7 +51,7 @@
 		+ Search -> File Search -> Enable File Search(OFF)
 			
 	+ Personalization
-		+ Account Details -> Kde Wallet -> Enable the KDE wallet subsystem(OFF)
+		+ Account Details -> Kde Wallet -> Enable the KDE wallet subsystem(OFF)(No passwords(e.g. WiFi) will be saved)
 		+ Applications -> Set default, Diagnostics(OFF)
 	+ Hardware
 		+ Power Management
