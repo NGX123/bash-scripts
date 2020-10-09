@@ -45,7 +45,9 @@
 				+ Windows to Desktop num(ctrl + f(num))
 				+ Show Desktop Grid(meta + esc)
 			+ Add(+) - terminator(ctrl + alt + t)
-		+ Startup and Shutdown -> Splash Screen(None)
+		+ Startup and Shutdown
+			+ Splash Screen(None)
+			+ Login Screen -> Breeze -> Background(set your own)
 		+ Search -> File Search -> Enable File Search(OFF)
 			
 	+ Personalization
