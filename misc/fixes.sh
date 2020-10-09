@@ -19,6 +19,7 @@ mkdir -p folder...
 # rmdir or rm "file/folder exists error" - use "-f" option
 rm -rf file/folder...
 
+
 # Remove snaps
 snap list                # currently installed snaps
 sudo snap remove program # remove all installed
