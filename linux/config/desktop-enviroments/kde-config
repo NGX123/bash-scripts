@@ -25,7 +25,9 @@
 		+ Application Style
 			+ Application Style(Breeze)
 				+ Configure GTK Application Style -> Breeze Dark
-			+ Window Decorations -> Arc Dark(by x-varlesh-x)
+			+ Window Decorations
+				+ Theme(Arc Dark(by x-varlesh-x))
+				+ Titlebar Buttons -> Remove "On all desktops", "Context help"
 		+ Icons -> Icons(Papirus-Dark)
 		
 	+ Workspace
