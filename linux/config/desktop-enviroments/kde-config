@@ -34,6 +34,7 @@
 		+ Workspace Behavior
 			+ General Behavior -> Animation Speed(Instant)
 			+ Desktop Effects -> Screen Edge and ther bloat(OFF)
+			+ Screen Edges -> Click on each -> set action(No action)
 			+ Screen Locking
 				+ Appearance -> Change wallpaper
 				+ Lock screen(2 min)
