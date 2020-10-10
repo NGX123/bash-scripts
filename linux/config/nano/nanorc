@@ -23,6 +23,9 @@ set smooth
 # Make tab look like 2 spaces instead of 8
 set tabsize 2
 
+# Remove two help lines at the bottom
+set nohelp
+
 
 
 ## COLOR SETTINGS ##
