@@ -29,16 +29,16 @@ fi
 
 # i386 CROSS COMPILER
 # Create directories to store source and build directory
-mkdir -p ~/Special/src/cross-compiler/binutils2.30/build
-mkdir -p ~/Special/src/cross-compiler/gcc9.3.0/build
+mkdir -p ~/src/cross-compiler/binutils2.30/build
+mkdir -p ~/src/cross-compiler/gcc9.3.0/build
 
 # Download and unpack source code  
-cd ~/Special/src/cross-compiler/binutils2.30/
+cd ~/src/cross-compiler/binutils2.30/
 wget https://ftp.gnu.org/gnu/binutils/binutils-2.30.tar.gz
 tar -xzf binutils-2.30.tar.gz
 rm binutils-2.30.tar.gz
 
-cd ~/Special/src/cross-compiler/gcc9.3.0
+cd ~/src/cross-compiler/gcc9.3.0
 wget https://ftp.gnu.org/gnu/gcc/gcc-9.3.0/gcc-9.3.0.tar.gz
 tar -xzf gcc-9.3.0.tar.gz
 rm gcc-9.3.0.tar.gz
@@ -52,13 +52,13 @@ export PATH="$PREFIX/bin:$PATH"
 
 
 # Building binutils
-cd $HOME/Special/src/cross-compiler/binutils2.30/build
+cd $HOME/src/cross-compiler/binutils2.30/build
 ../binutils-2.30/configure --target=$TARGET --prefix="$PREFIX" --with-sysroot --disable-nls --disable-werror
 make 
 make install
 
 # Building GCC
-cd $HOME/Special/src/cross-compiler/gcc9.3.0/build
+cd $HOME/src/cross-compiler/gcc9.3.0/build
 which -- $TARGET-as || echo $TARGET-as is not in the PATH
 ../gcc-9.3.0/configure --target=$TARGET --prefix="$PREFIX" --disable-nls --enable-language=c,c++ --without-headers
 make all-gcc
