@@ -1,17 +1,29 @@
 # Installs programms for the osdev
+read -p "Package Manager: " pm_var
 
 # DNF Installations
-# Install the dependencies
-sudo dnf -y install gcc gcc-c++ make bison flex gmp-devel libmpc-devel mpfr-devel texinfo automake autoconf xorriso
+if [ $pm_var == dnf ]; then
+  # Install the dependencies
+  sudo dnf -y install gcc gcc-c++ make bison flex gmp-devel libmpc-devel mpfr-devel texinfo automake autoconf xorriso
 
-# Packages 
-sudo dnf -y install binutils @development-tools nasm
-sudo dnf install kernel-headers kernel-devel
+  # Packages 
+  sudo dnf -y install binutils @development-tools nasm
+  
+  # Kernel headers(for linux device drivers)
+  sudo dnf install kernel-headers kernel-devel
+fi
 
-
-# APT Installation
-#sudo apt install linux-headers-(uname -r) # if does not work update and use 'sudo apt-cache search linux-headers' then install 'sudo apt install linux-headers-<available-version>' e.g4.19.0-8-amd64
-
+# APT Installations
+if [ $pm_var == apt ]; then
+  # Kernel headers
+  sudo apt -y install linux-headers-(uname -r) # If does not work check "ls -l /usr/src/linux-headers-$(uname -r)"(if does not exist then there are no headers), insetad try to find the latest version if not installed
+  
+  # Packages 
+  sudo apt -y install build-essential nasm binutils
+  
+  # Dependencies
+  sudo apt -y install build-essential bison flex libgmp3-dev libmpc-dev libmpfr-dev texinfo
+fi
 
 
 
