@@ -16,7 +16,7 @@ fi
 # APT Installations
 if [ $pm_var == apt ]; then
   # Kernel headers
-  sudo apt -y install linux-headers-(uname -r) # If does not work check "ls -l /usr/src/linux-headers-$(uname -r)"(if does not exist then there are no headers), insetad try to find the latest version if not installed
+  sudo apt -y install linux-headers-$(uname -r) # If does not work check "ls -l /usr/src/linux-headers-$(uname -r)"(if does not exist then there are no headers), insetad try to find the latest version if not installed
   
   # Packages 
   sudo apt -y install build-essential nasm binutils
