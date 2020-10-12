@@ -32,8 +32,8 @@
 		
 	+ Workspace
 		+ Workspace Behavior
-			+ General Behavior -> Animation Speed(Instant)
-			+ Desktop Effects -> Screen Edge and ther bloat(OFF)
+			+ General Behavior -> Animation Speed(Instant, if no animations are used else in the middle)
+			+ Desktop Effects -> Screen Edge and ther bloat(OFF), Squash(ON), Slide(ON)
 			+ Screen Edges -> Click on each -> set action(No action)
 			+ Screen Locking
 				+ Appearance -> Change wallpaper
