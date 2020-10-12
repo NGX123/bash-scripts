@@ -58,8 +58,8 @@
 		+ Power Management
 			(On battery)
 			+ Keyboard backlight(OFF)
-			+ Dim screen(3 min)
-			+ Screen Energy Saving(4 min)
+			+ Dim screen(2 min)
+			+ Screen Energy Saving(5 min)
 			+ Suspend Session(Sleep after 10 min)
 			+ Button events handling(When laptop lid close even when exeternal monitor connected - sleep)
 			
