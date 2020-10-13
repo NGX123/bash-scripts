@@ -15,6 +15,7 @@
 		+ Search -> Expand search to bookmarks, files and emails(OFF)
 		+ Keyboard Shortcuts(Meta+1)
 	+ Right click on System tray -> Configure System tray -> Disable unneeded entries
+	+ Right click on Icons only Task Manager -> Configure Icons only... -> Behavior -> Cycle through tasks with mouse wheel(OFF)
 	+ Right click on desktop
 		+ Configure Desktop -> Wallpaper -> Change
 		+ Mouse Actions -> Vertical-Scroll(Switch Desktop) -> (-) Remove
