@@ -48,6 +48,7 @@
 				+ Windows to Desktop num(ctrl + f(num))
 				+ Show Desktop Grid(meta + esc)
 				+ Minimize Windows(Meta + H)
+				+ Maximize Window(Meta + Up)
 			+ Add(+) - terminator(ctrl + alt + t)
 		+ Startup and Shutdown
 			+ Splash Screen(None)
