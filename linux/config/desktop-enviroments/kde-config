@@ -61,7 +61,7 @@
 		+ Applications -> Set default, Diagnostics(OFF)
 	+ Hardware
 		+ Power Management
-			(On battery)
+			(On battery)(If problems occur like screen not turning off - dim screen(OFF), screen energy saving(2 min)
 			+ Keyboard backlight(OFF)
 			+ Dim screen(2 min)
 			+ Screen Energy Saving(3 min)
