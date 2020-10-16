@@ -47,9 +47,15 @@ set functioncolor cyan
 
 
 ## EXTRA SETTINGS ##
-# Allows mouse to place cursor, set mark and execute shortcuts
-#set mouse
-
+# Blue theme
+#set titlecolor brightwhite,blue
+#set statuscolor brightwhite,green
+#set errorcolor brightwhite,red
+#set selectedcolor brightwhite,magenta
+#set stripecolor ,yellow
+#set numbercolor cyan
+#set keycolor cyan
+#set functioncolor green
 
 
 #Include the syntax highlighting for different file types
