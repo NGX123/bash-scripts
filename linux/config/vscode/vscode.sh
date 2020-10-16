@@ -18,3 +18,4 @@ fi
     # https://dev.to/iamismile/my-vs-code-setup-4fcd
     # https://code.visualstudio.com/docs/editor/command-line
     # https://calebporzio.com/my-vs-code-setup-2
+    # https://code.visualstudio.com/docs/getstarted/settings
