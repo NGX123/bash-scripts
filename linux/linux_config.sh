@@ -25,7 +25,7 @@ fi
 mkdir -p ~/Files ~/src ~/.scripts ~/Files/backups/ ~/Files/code ~/Files/github
 
 ## Terminal Configurations ##
-cp -r ../scripts/* ~/.scripts
+cp -r ../config/bash/* ~/.scripts
 echo '[ -f $HOME/.scripts/bash_scripts/color.sh ] && . $HOME/.scripts/bash_scripts/color.sh' >> ~/.bashrc
 echo '[ -f $HOME/.scripts/bash_aliases.sh ] && . $HOME/.scripts/bash_aliases.sh' >> ~/.bashrc
 
@@ -33,22 +33,22 @@ echo '[ -f $HOME/.scripts/bash_aliases.sh ] && . $HOME/.scripts/bash_aliases.sh'
 # GNOME
 if [ $de_var == gnome ]; then
     clear
-    cat ./config/desktop-enviroments/gnome-config
+    cat ./script_includes/desktop-enviroments/gnome-config
 fi
 
 if [ $de_var == kde ]; then
     clear
-    cat ./config/desktop-enviroments/kde-config
+    cat ./script_includes/desktop-enviroments/kde-config
 fi
 
 if [ $de_var == lxqt ]; then
     clear
-    cat ./config/desktop-enviroments/lxqt-config
+    cat ./script_includes/desktop-enviroments/lxqt-config
 fi
 
 if [ $de_var == xfce ]; then
     clear
-    cat ./config/desktop-enviroments/xfce-config
+    cat ./script_includes/desktop-enviroments/xfce-config
 fi
 
 ## Print the final message
