@@ -26,6 +26,9 @@ set tabsize 2
 # Remove two help lines at the bottom
 set nohelp
 
+# Remove trailing whitespaces
+set trimblanks
+
 
 
 ## COLOR SETTINGS ##
