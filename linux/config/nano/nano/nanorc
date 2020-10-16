@@ -1,0 +1,62 @@
+# Put “.nanorc” file in home directory, custom configurations added there will override the systemwide config of nano 
+# To make custom configs for file extensions - 
+#  - “mkdir ~/.config/nano”
+#  - add this line to nano - “include “include “/home/username/.config/nano/*.nanorc”
+#  - add files with name - extension.nanorc into .config/nano and put config into them
+  
+# OTHER OPTIONS CAN BE FOUND WITH - man nanorc
+# When setting colors - not specifying background means removing it
+
+## GENERAL SETTINGS ##
+# Add linenumbers
+set linenumbers
+
+# Add autoindentation(if you make new line it would have same indentation(e.g tab)
+set autoindent
+
+# Make lines go to the next line if they are too long without putting breakpoint
+set softwrap
+
+# Makes scrolling between pages smoother
+set smooth
+
+# Make tab look like 2 spaces instead of 8
+set tabsize 2
+
+# Remove two help lines at the bottom
+set nohelp
+
+
+
+## COLOR SETTINGS ##
+# Change titilebar color
+set titlecolor white
+
+# Change linenumbers colors
+set numbercolor white
+
+# Change color of status notification
+set statuscolor white,black
+
+# Change color of shortcut helper
+set keycolor green
+
+# Change color of text for shortcut helper
+set functioncolor cyan
+
+
+
+## EXTRA SETTINGS ##
+# Blue theme
+#set titlecolor brightwhite,blue
+#set statuscolor brightwhite,green
+#set errorcolor brightwhite,red
+#set selectedcolor brightwhite,magenta
+#set stripecolor ,yellow
+#set numbercolor cyan
+#set keycolor cyan
+#set functioncolor green
+
+
+#Include the syntax highlighting for different file types
+include "/home/ngx123/.config/nano/*.nanorc"
