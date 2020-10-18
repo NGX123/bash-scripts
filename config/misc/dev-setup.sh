@@ -45,8 +45,8 @@ rm gcc-9.3.0.tar.gz
 
 
 # Get ready for the build
-mkdir -p ~/opt/cross-compiler
-export PREFIX="$HOME/opt/cross-compiler"
+mkdir -p ~/opt/
+export PREFIX="$HOME/opt/"
 export TARGET=i686-elf
 export PATH="$PREFIX/bin:$PATH"
 
@@ -71,5 +71,5 @@ make install-target-libgcc
 
 #Check
 qemu-system-i386 --version
-$HOME/opt/cross-compiler/bin/$TARGET-gcc --version
+$TARGET-gcc --version
 grub2-mkrescue --version
