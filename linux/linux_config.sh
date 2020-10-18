@@ -22,7 +22,7 @@ fi
 
 ## CONFIGURATION ##
 # Make Folders
-mkdir -p ~/Files ~/src ~/.scripts ~/Files/backups/ ~/Files/code ~/Files/github
+mkdir -p ~/src ~/opt ~/github ~/.scripts
 
 ## Terminal Configurations ##
 cp -r ../config/bash/* ~/.scripts
