@@ -31,7 +31,7 @@
 			+ Window Decorations
 				+ Theme(Arc Dark(by x-varlesh-x))
 				+ Titlebar Buttons -> Remove "On all desktops", "Context help"
-		+ Icons -> Icons(Papirus-Dark)
+		+ Icons -> Icons(Papirus-Dark, Breeze Dark if unavailable)
 		
 	+ Workspace
 		+ Workspace Behavior
