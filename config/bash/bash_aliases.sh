@@ -1,5 +1,5 @@
-bashs=~/.scripts/bash_scripts
-python_scripts=~/.scripts/python_scripts
+# Files
+[-f ./bash_functions.sh ] && . ./bash_functions.sh || echo 'Function file does not exist' 
 
 #Script Aliases
 alias adda=$bashs/alias_adder.sh
