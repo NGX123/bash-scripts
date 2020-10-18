@@ -1,5 +1,5 @@
 # Files
-[ -f ./bash_functions.sh ] && . ./bash_functions.sh || echo 'Function file does not exist' 
+[ -f $HOME/.scripts/bash_functions.sh ] && . $HOME/.scripts/bash_functions.sh || echo 'Function file does not exist' 
 
 #Script Aliases
 alias adda=$bashs/alias_adder.sh
