@@ -22,7 +22,10 @@ fi
 
 ## CONFIGURATION ##
 # Make Folders
-mkdir -p ~/src ~/opt ~/github ~/.scripts
+mkdir -p ~/src ~/opt/bin ~/github ~/.scripts
+
+# Add the folder with compiled software to path
+echo 'PATH=$PATH:$HOME/opt/bin' >> $HOME/.bashrc
 
 ## Terminal Configurations ##
 cp -r ../config/bash/* ~/.scripts
@@ -55,11 +58,12 @@ fi
 echo "
 1. $apps_list were installed(they might not be installed if you use apt and one of the packages does not exist in repos, becuase for apt to work all packages supplied at once need to be in the repos)
 2. ~/src, ~/opt, ~/github, ~/.scripts folders were made
-3. Custom scripts and system config files were added to ~/.scripts
-3. Bash aliases and function file inclusions were added to .bashrc
-4. Bash color scheme was changed by inclusion of config file in .bashrc
+3. Local binary folder was added to PATH
+4. Custom scripts and system config files were added to ~/.scripts
+5. Bash aliases and function file inclusions were added to .bashrc
+6. Bash color scheme was changed by inclusion of config file in .bashrc
 
-5. (Optional) Bloatware was uninstalled
-6. (Optional) Default folders were deleted
-7. (Optional) SSH server was removed
+1. (Optional) Bloatware was uninstalled
+2. (Optional) Default folders were deleted
+3. (Optional) SSH server was removed
 "
