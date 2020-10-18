@@ -1,10 +1,10 @@
 backup () {
-	cd ~/Files/github/tos-repo
+	cd ~/github/tos-repo
 	git add .
 	git commit -m "backup"
 	git push t master
 
-	cd ~/Files/github/programming-repo
+	cd ~/github/programming-repo
 	git add .
 	git commit -m "backup"
 	git push t master
