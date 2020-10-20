@@ -49,6 +49,18 @@ set functioncolor cyan
 
 
 
+## SHORTCUTS ##
+bind ^c copy main
+bind ^v paste  main
+bind ^x cut main
+
+bind ^f whereis main
+bind ^z undo main
+bind ^y redo main
+bind ^q exit main
+
+
+
 ## EXTRA SETTINGS ##
 # Blue theme
 #set titlecolor brightwhite,blue
