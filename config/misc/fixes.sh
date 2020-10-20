@@ -19,6 +19,7 @@ mkdir -p folder...
 # rmdir or rm "file/folder exists error" - use "-f" option
 rm -rf file/folder...
 
+
 # Remove snaps
 snap list                # currently installed snaps
 sudo snap remove program # remove all installed
@@ -26,7 +27,8 @@ sudo apt-get purge snapd # remove snap
 sudo apt-mark hold snapd # don't install snap with updates
 sudo apt autoremove      # remove leftover
 
-# Script to add extra drives to the system
+
+# Only one drive(system drive) is present
 sudo blkid # List the disks - select the UUID of needed one and copy it
 sudo nano /etc/fstab
 sudo mkdir /media/folder-name
