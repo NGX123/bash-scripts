@@ -4,4 +4,3 @@
 # Aliases
 alias la='ls -a'
 alias lla='ls -al'
-#alias cross='$HOME/opt/cross-compiler/bin/i686-elf-gcc'
