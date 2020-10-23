@@ -1,1 +1,33 @@
-
+-- Settings --
+  + General
+    + Appearance(Dark)
+    + Accent color(Blue)
+  
+  + Desktop & Screen Saver
+    + Screen Saver
+      + Start after(Never)
+  
+  + Dock
+    + Magnification(ON)(In the Middle)
+    + Minimize windows using(Scale effect)
+    + Show recent applications in Dock(OFF)
+   
+  + Mission Control
+    + Automatically...on most recent use(OFF)
+  
+  + Spotlight
+    + Contacts(OFF)
+    + Documents(OFF)
+    + Events and Reminders(OFF)
+    + Folders(OFF)
+    + Fonts(OFF)
+    + Images(OFF)
+    + Mail and Messages(OFF)
+    + Movies(OFF)
+    + Music(OFF
+    + PDF(OFF)
+    + Presentations(OFF)
+    + Spreadsheets(OFF)
+  
+  + Notifications
+    + Change for all apps
