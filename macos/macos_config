@@ -29,5 +29,15 @@
     + Presentations(OFF)
     + Spreadsheets(OFF)
   
-  + Notifications
-    + Change for all apps
+  + Notifications -> Change for all apps
+    
+  + Screen Time -> Options -> Screen Time(OFF)
+  
+  + Trackpad -> Seconary click(Click in bottom right corner)
+  
+  + Display
+    + Automatically adjust brightness(OFF)
+    + True Tone(OFF)
+ 
+  + Energy Saver
+    + Turn off display after(5 min)
