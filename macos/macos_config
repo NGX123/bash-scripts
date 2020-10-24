@@ -27,7 +27,9 @@
   + Notifications -> Change for all apps
   + Accessibility -> Display -> Reduce Transparency(ON)
   + Screen Time -> Options -> Screen Time(OFF)
-  + Keyboard -> Shortcuts -> Launchpad & Dock -> Show Launchpad(Control + A)
+  + Keyboard -> Shortcuts -> 
+    + Launchpad & Dock -> Show Launchpad(Control + A)
+    + Mission Control -> Switch to desktop $n(Command + $n)
   + Trackpad -> Seconary click(Click in bottom right corner)
   + Display
     + Automatically adjust brightness(OFF)
