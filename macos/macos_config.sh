@@ -20,6 +20,6 @@ brew cask install visual-studio-code
 brew cask install google-chrome
 brew cask install transmission
 brew cask install iterm2
-brew cask install virtualbox
+brew cask install virtualbox # allow the kext in Settings->Security->Allow Oracle...
 brew cask install geany
 brew install mpv
