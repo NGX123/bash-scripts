@@ -23,3 +23,5 @@ brew cask install iterm2
 brew cask install virtualbox # allow the kext in Settings->Security->Allow Oracle...
 brew cask install geany
 brew install mpv
+
+mkdir $HOME/vm $HOME/.config
