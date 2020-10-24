@@ -27,6 +27,7 @@
   + Notifications -> Change for all apps
   + Accessibility -> Display -> Reduce Transparency(ON)
   + Screen Time -> Options -> Screen Time(OFF)
+  + Security -> Require password(immediately)
   + Keyboard -> Shortcuts -> 
     + Launchpad & Dock -> Show Launchpad(Control + A)
     + Mission Control -> Switch to desktop $n(Command + $n), Mission Control(Command + Esc)
