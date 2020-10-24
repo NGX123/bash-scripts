@@ -2,19 +2,15 @@
   + General
     + Appearance(Dark)
     + Accent color(Blue)
-  
   + Desktop & Screen Saver
     + Screen Saver
       + Start after(Never)
-  
   + Dock
     + Magnification(ON)(In the Middle)
     + Minimize windows using(Scale effect)
     + Show recent applications in Dock(OFF)
-   
   + Mission Control
     + Automatically...on most recent use(OFF)
-  
   + Spotlight
     + Contacts(OFF)
     + Documents(OFF)
@@ -28,20 +24,17 @@
     + PDF(OFF)
     + Presentations(OFF)
     + Spreadsheets(OFF)
-  
   + Notifications -> Change for all apps
-  
   + Accessibility -> Display -> Reduce Transparency(ON)
-    
   + Screen Time -> Options -> Screen Time(OFF)
-  
   + Keyboard -> Shortcuts -> Launchpad & Dock -> Show Launchpad(Control + A)
-  
   + Trackpad -> Seconary click(Click in bottom right corner)
-  
   + Display
     + Automatically adjust brightness(OFF)
     + True Tone(OFF)
- 
   + Energy Saver
     + Turn off display after(5 min)
+
+-- Finder --
+Preferences -> New Finder windows show(user)
+Customize toolbar - Remove unneeded
