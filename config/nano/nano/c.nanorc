@@ -5,8 +5,6 @@ header "-\*-.*\<C(\+\+)?((;|\s).*)?-\*-"
 magic "^(C|C\+\+) (source|program)"
 comment "//"
 
-color white "*" 
-
 # Constants.
 color green "\<[A-Z_][0-9A-Z_]+\>"
 # Labels.
