@@ -74,4 +74,4 @@ bind ^q exit main
 
 
 #Include the syntax highlighting for different file types
-include "/home/ngx123/.config/nano/*.nanorc"
+include "$HOME/.config/nano/*.nanorc"
