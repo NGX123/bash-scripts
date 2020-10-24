@@ -24,4 +24,4 @@ brew cask install virtualbox # allow the kext in Settings->Security->Allow Oracl
 brew cask install geany
 brew install mpv
 
-mkdir $HOME/vm $HOME/.config
+mkdir -p $HOME/vm $HOME/.config $HOME/github/tos-repo $HOME/github/programming-repo
