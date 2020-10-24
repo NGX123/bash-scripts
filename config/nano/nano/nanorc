@@ -73,5 +73,5 @@ bind ^q exit main
 #set functioncolor green
 
 
-#Include the syntax highlighting for different file types
-include "$HOME/.config/nano/*.nanorc"
+#Include the syntax highlighting for different file types(replace with full path on mac os)
+include "$HOME/.config/nano/*.nanorc" 
