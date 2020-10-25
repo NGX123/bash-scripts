@@ -23,5 +23,6 @@ brew cask install iterm2
 brew cask install virtualbox # allow the kext in Settings->Security->Allow Oracle...
 brew cask install geany
 brew install mpv
+brew install qemu
 
 mkdir -p $HOME/vm $HOME/opt $HOME/src $HOME/.config $HOME/github/tos-repo $HOME/github/programming-repo
