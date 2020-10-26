@@ -1,5 +1,10 @@
 #! /bin/bash
 
+# Variables
+apps_list="terminator mpv transmission chromium nano"
+includesDir_variable=./script_includes
+
+
 ## SCRIPT SETUP ##
 ## User input
 read -p "Package Manager: " pm_var
@@ -14,10 +19,12 @@ if [ $configureInstall_var == y ]; then
 fi
 
 # Package manager local commands code
-[ -f ./script_includes/package_managers.sh ] && . ./script_includes/package_managers.sh
+[ -f $includesDir_variable/package_managers.sh ] && . $includesDir_variable/package_managers.sh
 
 # Remove-bloat code
-[ -f ./script_includes/remove_bloat.sh ] && . ./script_includes/remove_bloat.sh
+[ -f $includesDir_variable/remove_bloat.sh ] && . $includesDir_variable/remove_bloat.sh
+
+
 
 
 ## CONFIGURATION ##
@@ -27,34 +34,44 @@ mkdir -p ~/src ~/opt/bin ~/github ~/.scripts
 # Add the folder with compiled software to path
 echo 'PATH=$PATH:$HOME/opt/bin' >> $HOME/.bashrc
 
-## Terminal Configurations ##
+# Terminal Configurations
 cp -r ../config/bash/* ~/.scripts
 echo '[ -f $HOME/.scripts/color.sh ] && . $HOME/.scripts/color.sh' >> ~/.bashrc
 echo '[ -f $HOME/.scripts/bash_aliases.sh ] && . $HOME/.scripts/bash_aliases.sh' >> ~/.bashrc
 
+# Remove default XDG folders
+if [ $removeFldrs_var == y ]; then
+    mkdir -p ~/.stdfldrs
+    cat $includesDir_variable/dirs > ~/.config/user-dirs.dirs
+    rm -rf ~/Music ~/Pictures ~/Public ~/Templates ~/Videos
+fi
+
+
+
+
+## MESSAGES ##
 # GUI Configurations
-# GNOME
 if [ $de_var == gnome ]; then
     clear
-    cat ./script_includes/desktop-enviroments/gnome-config
+    cat $includesDir_variable/desktop-enviroments/gnome-config
 fi
 
 if [ $de_var == kde ]; then
     clear
-    cat ./script_includes/desktop-enviroments/kde-config
+    cat $includesDir_variable/desktop-enviroments/kde-config
 fi
 
 if [ $de_var == lxqt ]; then
     clear
-    cat ./script_includes/desktop-enviroments/lxqt-config
+    cat $includesDir_variable/desktop-enviroments/lxqt-config
 fi
 
 if [ $de_var == xfce ]; then
     clear
-    cat ./script_includes/desktop-enviroments/xfce-config
+    cat $includesDir_variable/desktop-enviroments/xfce-config
 fi
 
-## Print the final message
+# Print the final message
 echo "
 1. $apps_list were installed(they might not be installed if you use apt and one of the packages does not exist in repos, becuase for apt to work all packages supplied at once need to be in the repos)
 2. ~/src, ~/opt, ~/github, ~/.scripts folders were made
