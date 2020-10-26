@@ -1,7 +1,5 @@
 # Includes the code for package managers configuration for main configurations script
 
-apps_list="terminator mpv transmission chromium nano"
-
 ### Config for APT ###
 if [ $pm_var == apt ]; then
     # Variables
@@ -26,6 +24,11 @@ if [ $pm_var == apt ]; then
 
     # Apps(might not install becuase apt requires all of them to be in repos, otherwise it fails)
     sudo apt-get install -y $apps_list
+
+    # Removing
+    if [ $removeSshd_var == y ]; then
+        sudo apt-get --purge remove openssh-server
+    fi
 fi
 
 ## Config for DNF ##
@@ -50,4 +53,11 @@ if [ $pm_var == dnf ]; then
 
     # Apps
     sudo dnf install -y $apps_list
+
+    # Removing
+    if [ $removeSshd_var == y ]; then
+        sudo chkconfig sshd off
+        sudo service sshd stop
+        sudo dnf erase openssh-server
+    fi
 fi
