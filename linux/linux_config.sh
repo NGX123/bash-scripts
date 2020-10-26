@@ -3,6 +3,7 @@
 # Variables
 apps_list="terminator mpv transmission chromium nano"
 includesDir_variable=./script_includes
+textfilesDir_variable=$includesDir_variable/textfiles
 
 
 ## SCRIPT SETUP ##
@@ -20,9 +21,6 @@ fi
 
 # Package manager local commands code
 [ -f $includesDir_variable/package_managers.sh ] && . $includesDir_variable/package_managers.sh
-
-# Remove-bloat code
-[ -f $includesDir_variable/remove_bloat.sh ] && . $includesDir_variable/remove_bloat.sh
 
 
 
@@ -42,7 +40,7 @@ echo '[ -f $HOME/.scripts/bash_aliases.sh ] && . $HOME/.scripts/bash_aliases.sh'
 # Remove default XDG folders
 if [ $removeFldrs_var == y ]; then
     mkdir -p ~/.stdfldrs
-    cat $includesDir_variable/dirs > ~/.config/user-dirs.dirs
+    cat $textfilesDir_variable/dirs > ~/.config/user-dirs.dirs
     rm -rf ~/Music ~/Pictures ~/Public ~/Templates ~/Videos
 fi
 
@@ -53,22 +51,22 @@ fi
 # GUI Configurations
 if [ $de_var == gnome ]; then
     clear
-    cat $includesDir_variable/desktop-enviroments/gnome-config
+    cat $textfilesDir_variable/gnome-config
 fi
 
 if [ $de_var == kde ]; then
     clear
-    cat $includesDir_variable/desktop-enviroments/kde-config
+    cat $textfilesDir_variable/kde-config
 fi
 
 if [ $de_var == lxqt ]; then
     clear
-    cat $includesDir_variable/desktop-enviroments/lxqt-config
+    cat $textfilesDir_variable/lxqt-config
 fi
 
 if [ $de_var == xfce ]; then
     clear
-    cat $includesDir_variable/desktop-enviroments/xfce-config
+    cat $textfilesDir_variable/xfce-config
 fi
 
 # Print the final message
