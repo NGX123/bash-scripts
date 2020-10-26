@@ -14,10 +14,11 @@ read -p "Destktop Environment: " de_var
 read -p "Configure install(y/n): " configureInstall_var
 
 # Extra script configuration
-if [ $configureInstall_var == y ]; then
-    read -p "Remove bloat(Not recommended for gnome)(y/n): " removeBloat_var
-    read -p "Remove Folders(y/n): " removeFldrs_var
-    read -p "Remove ssh(y/n): " removeSshd_var
+if [ $configureInstall_var == y ]
+    then
+        read -p "Remove bloat(Not recommended for gnome)(y/n): " removeBloat_var
+        read -p "Remove Folders(y/n): " removeFldrs_var
+        read -p "Remove ssh(y/n): " removeSshd_var
 fi
 
 # Package manager local commands code
@@ -39,10 +40,11 @@ echo '[ -f $HOME/.scripts/color.sh ] && . $HOME/.scripts/color.sh' >> $HOME/.bas
 echo '[ -f $HOME/.scripts/bash_aliases.sh ] && . $HOME/.scripts/bash_aliases.sh' >> $HOME/.bashrc
 
 # Remove default XDG folders
-if [ $removeFldrs_var == y ]; then
-    mkdir -p $HOME/.stdfldrs
-    cat $textfilesDir_variable/dirs > $HOME/.config/user-dirs.dirs
-    rm -rf $HOME/Music $HOME/Pictures $HOME/Public $HOME/Templates $HOME/Videos
+if [ $removeFldrs_var == y ]
+    then
+        mkdir -p $HOME/.stdfldrs
+        cat $textfilesDir_variable/dirs > $HOME/.config/user-dirs.dirs
+        rm -rf $HOME/Music $HOME/Pictures $HOME/Public $HOME/Templates $HOME/Videos
 fi
 
 
@@ -50,24 +52,28 @@ fi
 
 ## MESSAGES ##
 # GUI Configurations
-if [ $de_var == gnome ]; then
-    clear
-    cat $textfilesDir_variable/gnome-config
+if [ $de_var == gnome ]
+    then
+        clear
+        cat $textfilesDir_variable/gnome-config
 fi
 
-if [ $de_var == kde ]; then
-    clear
-    cat $textfilesDir_variable/kde-config
+if [ $de_var == kde ]
+    then
+        clear
+        cat $textfilesDir_variable/kde-config
 fi
 
-if [ $de_var == lxqt ]; then
-    clear
-    cat $textfilesDir_variable/lxqt-config
+if [ $de_var == lxqt ]
+    then
+        clear
+        cat $textfilesDir_variable/lxqt-config
 fi
 
-if [ $de_var == xfce ]; then
-    clear
-    cat $textfilesDir_variable/xfce-config
+if [ $de_var == xfce ]
+    then
+        clear
+        cat $textfilesDir_variable/xfce-config
 fi
 
 # Print the final message
