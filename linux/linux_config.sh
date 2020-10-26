@@ -4,6 +4,7 @@
 apps_list="terminator mpv transmission chromium nano"
 includesDir_variable=./script_includes
 textfilesDir_variable=$includesDir_variable/textfiles
+configDir_variable=../config
 
 
 ## SCRIPT SETUP ##
@@ -27,21 +28,21 @@ fi
 
 ## CONFIGURATION ##
 # Make Folders
-mkdir -p ~/src ~/opt/bin ~/github ~/.scripts
+mkdir -p $HOME/src $HOME/opt/bin $HOME/github $HOME/.scripts
 
 # Add the folder with compiled software to path
 echo 'PATH=$PATH:$HOME/opt/bin' >> $HOME/.bashrc
 
 # Terminal Configurations
-cp -r ../config/bash/* ~/.scripts
-echo '[ -f $HOME/.scripts/color.sh ] && . $HOME/.scripts/color.sh' >> ~/.bashrc
-echo '[ -f $HOME/.scripts/bash_aliases.sh ] && . $HOME/.scripts/bash_aliases.sh' >> ~/.bashrc
+cp -r $configDir_variable/bash/* $HOME/.scripts
+echo '[ -f $HOME/.scripts/color.sh ] && . $HOME/.scripts/color.sh' >> $HOME/.bashrc
+echo '[ -f $HOME/.scripts/bash_aliases.sh ] && . $HOME/.scripts/bash_aliases.sh' >> $HOME/.bashrc
 
 # Remove default XDG folders
 if [ $removeFldrs_var == y ]; then
-    mkdir -p ~/.stdfldrs
-    cat $textfilesDir_variable/dirs > ~/.config/user-dirs.dirs
-    rm -rf ~/Music ~/Pictures ~/Public ~/Templates ~/Videos
+    mkdir -p $HOME/.stdfldrs
+    cat $textfilesDir_variable/dirs > $HOME/.config/user-dirs.dirs
+    rm -rf $HOME/Music $HOME/Pictures $HOME/Public $HOME/Templates $HOME/Videos
 fi
 
 
