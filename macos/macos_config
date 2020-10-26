@@ -25,7 +25,7 @@
     + Presentations(OFF)
     + Spreadsheets(OFF)
   + Notifications -> Change for all apps
-  + Accessibility -> Display -> Reduce Transparency(ON)
+  + Accessibility -> Display -> Reduce Transparency(ON), Reduce Motion(ON, if laggy animations)
   + Screen Time -> Options -> Screen Time(OFF)
   + Security -> Require password(immediately)
   + Keyboard -> Shortcuts -> 
