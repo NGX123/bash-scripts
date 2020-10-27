@@ -30,12 +30,13 @@ fi
 
 if [ $pm_var == macos ]
   then
-  # Packages
-  brew install gdb nasm binutils diffutils
+    # Packages
+    brew install gdb nasm binutils diffutils
 
-  # Dependencies
-  brew install gmp mpfr libmpc libiconv
-  brew install libiconv
+    # Dependencies
+    brew install gmp mpfr libmpc libiconv
+    brew install libiconv
+    echo "There maybe problems during the compilation proccess due to wrong attributes, then remove -with-sysroot and add --enable-interwork to both gcc and binutils"
 fi
 
 
