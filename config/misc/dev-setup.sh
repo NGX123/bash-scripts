@@ -1,5 +1,5 @@
 # Installs programms for the osdev
-read -p "Package Manager: " pm_var
+read -p "Package Manager(dnf, apt, macos): " pm_var
 
 ## PACKAGE INSTALLATIONS ##
 # DNF Installations
