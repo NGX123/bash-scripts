@@ -1,6 +1,7 @@
 # Installs programms for the osdev
 read -p "Package Manager: " pm_var
 
+## PACKAGE INSTALLATIONS ##
 # DNF Installations
 if [ $pm_var == dnf ]
   then
@@ -27,9 +28,20 @@ if [ $pm_var == apt ]
     sudo apt -y install build-essential bison flex libgmp3-dev libmpc-dev libmpfr-dev texinfo
 fi
 
+if [ $pm_var == macos ]
+  then
+  # Packages
+  brew install gdb nasm binutils diffutils
+
+  # Dependencies
+  brew install gmp mpfr libmpc libiconv
+  brew install libiconv
+fi
 
 
-# i386 CROSS COMPILER
+
+
+## i386 CROSS COMPILER ##
 # Create directories to store source and build directory
 mkdir -p ~/src/cross-compiler/binutils2.30/build
 mkdir -p ~/src/cross-compiler/gcc9.3.0/build
@@ -45,33 +57,50 @@ wget https://ftp.gnu.org/gnu/gcc/gcc-9.3.0/gcc-9.3.0.tar.gz
 tar -xzf gcc-9.3.0.tar.gz
 rm gcc-9.3.0.tar.gz
 
-
 # Get ready for the build
 mkdir -p ~/opt/
 export PREFIX="$HOME/opt/"
 export TARGET=i686-elf
 export PATH="$PREFIX/bin:$PATH"
 
+# Compilation instructions
+if [ $pm_var != macos ]
+  then
+    # Building binutils
+    cd $HOME/src/cross-compiler/binutils2.30/build
+    ../binutils-2.30/configure --target=$TARGET --prefix="$PREFIX" --with-sysroot --disable-nls --disable-werror
+    make
+    make install
 
-# Building binutils
-cd $HOME/src/cross-compiler/binutils2.30/build
-../binutils-2.30/configure --target=$TARGET --prefix="$PREFIX" --with-sysroot --disable-nls --disable-werror
-make
-make install
+    # Building GCC
+    cd $HOME/src/cross-compiler/gcc9.3.0/build
+    which -- $TARGET-as || echo $TARGET-as is not in the PATH
+    ../gcc-9.3.0/configure --target=$TARGET --prefix="$PREFIX" --disable-nls --enable-language=c,c++ --without-headers
+    make all-gcc
+    make all-target-libgcc
+    make install-gcc
+    make install-target-libgcc
+  else
+    # Building binutils
+    cd $HOME/src/cross-compiler/binutils2.30/build
+    ../binutils-2.30/configure --target=$TARGET --prefix="$PREFIX" --with-sysroot --disable-nls --disable-werror --enable-multilib --with-libiconv-prefix=/usr/local/opt/libiconv/
+    make
+    make install
 
-# Building GCC
-cd $HOME/src/cross-compiler/gcc9.3.0/build
-which -- $TARGET-as || echo $TARGET-as is not in the PATH
-../gcc-9.3.0/configure --target=$TARGET --prefix="$PREFIX" --disable-nls --enable-language=c,c++ --without-headers
-make all-gcc
-make all-target-libgcc
-make install-gcc
-make install-target-libgcc
+    # Building GCC
+    cd $HOME/src/cross-compiler/gcc9.3.0/build
+    which -- $TARGET-as || echo $TARGET-as is not in the PATH
+    ../gcc-9.3.0/configure --target=$TARGET --prefix="$PREFIX" --disable-nls --enable-language=c,c++ --without-headers --enable-multilib --with-libiconv-prefix=/usr/local/opt/libiconv/
+    make all-gcc
+    make all-target-libgcc
+    make install-gcc
+    make install-target-libgcc
+fi
 
 
 
 
-#Check
+# CHECK OF INSTALLTION
 qemu-system-i386 --version
 $TARGET-gcc --version
 grub2-mkrescue --version
