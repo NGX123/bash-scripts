@@ -24,7 +24,6 @@ read -p "Configure install(y/n): " configureInstall_var
 # Extra script configuration
 if [ $configureInstall_var == y ]
     then
-        read -p "Remove bloat(Not recommended for gnome)(y/n): " removeBloat_var
         read -p "Remove Folders(y/n): " removeFldrs_var
         read -p "Remove ssh(y/n): " removeSshd_var
 fi
@@ -93,7 +92,6 @@ echo "
 5. Bash aliases and function file inclusions were added to .bashrc
 6. Bash color scheme was changed by inclusion of config file in .bashrc
 
-1. (Optional) Bloatware was uninstalled
-2. (Optional) Default folders were deleted
-3. (Optional) SSH server was removed
+1. (Optional) Default folders were deleted
+2. (Optional) SSH server was removed
 "
