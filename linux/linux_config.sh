@@ -5,6 +5,14 @@ apps_list="terminator mpv transmission chromium nano"
 includesDir_variable=./script_includes
 textfilesDir_variable=$includesDir_variable/textfiles
 configDir_variable=../config
+folderExists=0
+
+# Folder existance checks
+[ ! -d $includesDir_variable ] && echo "$includesDir_variable does not exist" && exit
+[ ! -d $textfilesDir_variable ] && echo "$textfilesDir_variable does not exist" && exit
+[ ! -d $configDir_variable ] && echo "$configDir_variable does not exist" && exit
+
+
 
 
 ## SCRIPT SETUP ##
