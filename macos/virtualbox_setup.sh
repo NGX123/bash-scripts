@@ -26,7 +26,7 @@ if [ $setupdone_variable == n ]
 fi
 
 # Setup shared folders
-mkdir /media/shared_dir /media/vbxo_add
+mkdir /media/shared_dir /media/vbox_add
 mount /dev/cdrom /media/vbox_add && sudo apt install build-essential dkms linux-headers-$(uname -r)
 cd /media/vbox_add && sudo ./VBoxLinuxAdditions.run
 /sbin/adduser user vboxsf
