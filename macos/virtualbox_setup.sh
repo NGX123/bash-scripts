@@ -4,9 +4,8 @@ read -p "Do you want to setup NAT adapter(y/n): " network_variable
 
 # Messages
 touch setup.txt
-echo "
-Install a Debian in CLI mode" >> setup.txt
 > setup.txt
+
 if [ $network_variable == y ]
   then
     echo "
