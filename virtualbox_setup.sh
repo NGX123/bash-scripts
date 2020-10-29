@@ -23,6 +23,7 @@ if [ $network_variable == 1 ]
         apt install sudo
         /sbin/adduser user sudo
         apt install net-tools
+        exit
         echo "
         Add to /etc/network/interfaces
           auto interface-name
