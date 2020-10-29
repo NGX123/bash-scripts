@@ -45,6 +45,7 @@ if [ $network_variable == 1 ]
   else
     if [ $network_variable == 2 ]
       then
+        apt update
         apt install sudo
         /sbin/adduser user sudo
         apt install net-tools
