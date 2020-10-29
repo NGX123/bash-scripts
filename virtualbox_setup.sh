@@ -5,7 +5,7 @@ read -p "What network to setup NAT/Host-only adapter(1/2): " network_variable
 # Messages
 touch setup.txt
 echo "
-Install a Debian in CLI mode"
+Install a Debian in CLI mode" >> setup.txt
 if [ $network_variable == 1 ]
   then
     echo "
