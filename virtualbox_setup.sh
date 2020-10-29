@@ -26,7 +26,8 @@ if [ $network_variable == 1 ]
 fi
 echo "
  + Vbox -> VM -> Settings -> Shared Folders -> Add new folder -> Select path to folder, Auto-mount(ON), Mount point(/media/shared_dir)
- + VM -> Devices -> Insert guest iso" >> setup.txt
+ + VM -> Devices -> Insert guest iso
+ + VM(Terminal) -> su" >> setup.txt
 cat setup.txt
 
 read -p "Is eveything listed done(y/n): " setupdone_variable
@@ -44,7 +45,6 @@ if [ $network_variable == 1 ]
   else
     if [ $network_variable == 2 ]
       then
-        su
         apt install sudo
         /sbin/adduser user sudo
         apt install net-tools
