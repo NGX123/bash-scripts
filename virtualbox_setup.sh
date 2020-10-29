@@ -58,7 +58,5 @@ cd /media/vbox_add && sudo ./VBoxLinuxAdditions.run
 sudo /sbin/adduser user vboxsf
 sudo /sbin/reboot
 
-cat setup.txt
-
 
     
