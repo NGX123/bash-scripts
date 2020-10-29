@@ -1,13 +1,13 @@
 #! /bin/bash
 
-read -p "What network to setup NAT/Host-only adapter(1/2): " network_variable
+read -p "Do you want to setup NAT adapter(y/n): " network_variable
 
 # Messages
 touch setup.txt
 echo "
 Install a Debian in CLI mode" >> setup.txt
 > setup.txt
-if [ $network_variable == 1 ]
+if [ $network_variable == y ]
   then
     echo "
     + Virtualbox -> VM -> Settings -> Network -> Adapter 1 -> Advanced -> Port Forwarding -> Add(+) -> name(ssh), protocol(TCP), host ip(127.0.0.1), host port(any free e.g. 5679), guest ip(10.0.2.15), guest port(22) -> Press OK
