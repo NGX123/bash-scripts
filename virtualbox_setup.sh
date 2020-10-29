@@ -2,12 +2,10 @@
 
 read -p "What network to setup NAT/Host-only adapter(1/2): " network_variable
 
+# Messages
+touch setup.txt
 echo "
 Install a Debian in CLI mode"
-
-touch setup.txt
-
-# Setup network
 if [ $network_variable == 1 ]
   then
     echo "
@@ -18,28 +16,47 @@ if [ $network_variable == 1 ]
       then
         echo "
         + Virtualbox -> File -> Host Network Manager -> Add
-        + Virtualbox -> VM -> Settings -> Network -> Adapter 2(enable) -> Host only(name: newly created) -> Press OK" >> setup.txt
-        su
-        apt install sudo
-        /sbin/adduser user sudo
-        apt install net-tools
-        exit
-        echo "
+        + Virtualbox -> VM -> Settings -> Network -> Adapter 2(enable) -> Host only(name: newly created) -> Press OK
         Add to /etc/network/interfaces
           auto interface-name
           iface interface-name
             address 192.168.56.103/24" >> setup.txt
       fi
 fi
-
-# Setup shared folders
 echo "
  + Vbox -> VM -> Settings -> Shared Folders -> Add new folder -> Select path to folder, Auto-mount(ON), Mount point(/media/shared_dir)
  + VM -> Devices -> Insert guest iso" >> setup.txt
+cat setup.txt
+
+read -p "Is eveything listed done(y/n): " setupdone_variable
+if [ $setupdone_variable == n ]
+  then
+    exit
+fi
+ 
+
+
+# Setup network
+if [ $network_variable == 1 ]
+  then
+    echo "Nothing to do. Done"
+  else
+    if [ $network_variable == 2 ]
+      then
+        su
+        apt install sudo
+        /sbin/adduser user sudo
+        apt install net-tools
+        exit
+      fi
+fi
+
+# Setup shared folders
 sudo mkdir /media/shared_dir /media/vbxo_add
 sudo mount /dev/cdrom /media/vbox_add && sudo apt install build-essential dkms linux-headers-$(uname -r)
 cd /media/vbox_add && sudo ./VBoxLinuxAdditions.run
 sudo /sbin/adduser user vboxsf
+sudo /sbin/reboot
 
 cat setup.txt
 
