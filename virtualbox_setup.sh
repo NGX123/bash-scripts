@@ -21,7 +21,7 @@ if [ $network_variable == 1 ]
           auto interface-name
           iface interface-name
             address 192.168.56.103/24" >> setup.txt
-      fi
+    fi
 fi
 echo "
  + Vbox -> VM -> Settings -> Shared Folders -> Add new folder -> Select path to folder, Auto-mount(ON), Mount point(/media/shared_dir)
