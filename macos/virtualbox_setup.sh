@@ -27,7 +27,8 @@ fi
 
 # Setup shared folders
 mkdir /media/shared_dir /media/vbox_add
-mount /dev/cdrom /media/vbox_add && apt install build-essential dkms linux-headers-$(uname -r)
+mount /dev/cdrom /media/vbox_add
+apt install build-essential dkms linux-headers-$(uname -r)
 cd /media/vbox_add && ./VBoxLinuxAdditions.run
 /sbin/adduser user vboxsf
 /sbin/reboot
