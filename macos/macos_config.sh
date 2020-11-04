@@ -23,10 +23,26 @@ brew cask install virtualbox # allow the kext in Settings->Security->Allow Oracl
 brew cask install geany
 brew install mpv
 brew install qemu
+brew install git
+
+echo "
+----------------------------------------------------------------------------
+Reopen shell and rerun the script if it is the first time you are running it
+----------------------------------------------------------------------------
+"
+read -p "Continue" continue_var
+if [ continue_var == n ]
+    then
+        exit
+fi
+
+git 
+
 
 echo "
 ------------------------------------------------------
 Install google chrome - https://www.google.com/chrome/
-------------------------------------------------------"
+------------------------------------------------------
+"
 
 mkdir -p $HOME/vm $HOME/opt $HOME/src $HOME/.config $HOME/github/tos-repo $HOME/github/programming-repo
