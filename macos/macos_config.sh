@@ -25,4 +25,9 @@ brew cask install geany
 brew install mpv
 brew install qemu
 
+echo "
+------------------------------------------------------
+Install google chrome - https://www.google.com/chrome/
+------------------------------------------------------"
+
 mkdir -p $HOME/vm $HOME/opt $HOME/src $HOME/.config $HOME/github/tos-repo $HOME/github/programming-repo
