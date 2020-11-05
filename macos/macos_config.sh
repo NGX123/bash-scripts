@@ -1,5 +1,6 @@
 #! /bin/bash
 
+## CHECK ##
 read -p "Is the system updated and xcode is installed from appstore(y/n)?" before_config_check
 if [ $before_config_check == n ]
     then
