@@ -41,13 +41,13 @@ mkdir -p $HOME/vm $HOME/opt $HOME/src $HOME/.config $HOME/github/tos-repo $HOME/
 # Git configuration
 git config --global user.name "NGX123"
 git config --global user.email "NGX123"
-
-# Message to user
 [ -f ~/.gitconfig ] || echo "
 -------------------------------------------------------------------------------
-The ~/.gitconfig file was not created, probably the git config commands failed"
+The ~/.gitconfig file was not created, probably the git config commands failed
 -------------------------------------------------------------------------------
+"
 
+# User message
 echo "
 ---------------------------------------------------------------------------------------------------------
 1. Check if VScode, Transmission, iTerm2, Vbox, Geany, MPV, Qemu and Google Chrome were installed
