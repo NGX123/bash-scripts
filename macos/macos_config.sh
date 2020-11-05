@@ -6,6 +6,8 @@ if [ $before_config_check == n ]
         exit
 fi
 
+
+## INSTALLATIONS ##
 # Install xcode command line tools
 xcode-select --install
 
@@ -23,21 +25,6 @@ brew cask install virtualbox # allow the kext in Settings->Security->Allow Oracl
 brew cask install geany
 brew install mpv
 brew install qemu
-brew install git
-
-echo "
-----------------------------------------------------------------------------
-Reopen shell and rerun the script if it is the first time you are running it
-----------------------------------------------------------------------------
-"
-read -p "Continue" continue_var
-if [ continue_var == n ]
-    then
-        exit
-fi
-
-git 
-
 
 echo "
 ------------------------------------------------------
@@ -45,4 +32,25 @@ Install google chrome - https://www.google.com/chrome/
 ------------------------------------------------------
 "
 
+
+## OTHER ##
+# Folder creation
 mkdir -p $HOME/vm $HOME/opt $HOME/src $HOME/.config $HOME/github/tos-repo $HOME/github/programming-repo
+
+# Git configuration
+git config --global user.name "NGX123"
+git config --global user.email "NGX123"
+
+# Message to user
+[ -f ~/.gitconfig ] || echo "
+-------------------------------------------------------------------------------
+The ~/.gitconfig file was not created, probably the git config commands failed"
+-------------------------------------------------------------------------------
+
+echo "
+---------------------------------------------------------------------------------------------------------
+1. Check if VScode, Transmission, iTerm2, Vbox, Geany, MPV, Qemu and Google Chrome were installed
+2. Check if vm, opt, src, .config, github folders were created
+3. Try pushing commits to private repos to check if macos uses the nickname(NGX123) and not the real name
+---------------------------------------------------------------------------------------------------------
+"
