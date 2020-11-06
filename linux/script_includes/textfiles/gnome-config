@@ -14,7 +14,7 @@ Privacy - Turn off everything except Screen Lock
 Power - Automatic suspend, blank screen, dim when inactive
 Devices - Keyboard Shortcuts
   + nautilus(super + e), terminator(ctrl + alt + t), gnome-system monitor(ctrl + shift + esc)
-  + switch to workspace *(super + f*), move window to workspace *(ctrl + f*), hide all normal windows(super + d), hide window(meta + h), Move to workspace above/below(alt + ->/<)
+  + switch to workspace *(super + f*), move window to workspace *(ctrl + f*), hide all normal windows(super + d), hide window(super + h), Move to workspace above/below(alt + ->/<)
   + change input language(ctrl + space)
 Details - Default Apps - Set
 
