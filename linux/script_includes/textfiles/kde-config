@@ -44,13 +44,16 @@
 				+ Allow unlocking without password for(Immediatly)
 		+ Window Management -> Task Switcher -> Main -> Visulatization(Large Icons)
 		+ Shortcuts
+			+ Add(+) -> KSysGuard(ctrl + shift + esc)
+			+ Add(+) -> Terminator(ctrl + alt + t)
 			+ Kwin
 				+ Switch to Desktop num(meta + f(num))
 				+ Windows to Desktop num(ctrl + f(num))
 				+ Show Desktop Grid(meta + esc)
 				+ Minimize Windows(Meta + H)
 				+ Maximize Window(Meta + Up)
-			+ Add(+) - terminator(ctrl + alt + t)
+				+ Switch to workspace above/below(alt + ->\<)
+			+ Hardware -> Keyboard -> Layout -> Main shortcut(set)
 		+ Startup and Shutdown
 			+ Splash Screen(None)
 			+ Login Screen -> Breeze -> Background(set your own)
