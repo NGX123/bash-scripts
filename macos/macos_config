@@ -29,8 +29,8 @@
   + Screen Time -> Options -> Screen Time(OFF)
   + Security -> Require password(immediately)
   + Keyboard -> Shortcuts -> 
-    + Launchpad & Dock -> Show Launchpad(Control + A)
-    + Mission Control -> Switch to desktop $n(Command + $n), Mission Control(Command + Esc)
+    + Launchpad & Dock -> Show Launchpad(Option + A)
+    + Mission Control -> Switch to desktop $n(Option + $n), Mission Control(Option + Esc), Move left a space(Option + <-) Move right a space(Option + ->)
   + Trackpad -> Seconary click(Click in bottom right corner)
   + Display
     + Automatically adjust brightness(OFF)
