@@ -12,7 +12,10 @@ Notifications - manage notifications
 Search - Turn off search(application search stays)
 Privacy - Turn off everything except Screen Lock 
 Power - Automatic suspend, blank screen, dim when inactive
-Devices - Keyboard Shortcuts - super + e = nautilus, ctrl + alt + t = terminator, ctrl + shift + esc = gnome-system monitor, super + f* = switch to workspace *, ctrl + f* = move window to workspace *, ctrl + space = change input language, super + d = hide all normal windows, ctrl + h = hide window
+Devices - Keyboard Shortcuts
+  + nautilus(super + e), terminator(ctrl + alt + t), gnome-system monitor(ctrl + shift + esc)
+  + switch to workspace *(super + f*), move window to workspace *(ctrl + f*), hide all normal windows(super + d), hide window(ctrl + h), Move to workspace above/below(alt + ->/<)
+  + change input language(ctrl + space)
 Details - Default Apps - Set
 
 Extensions(may be needed in some cases)
