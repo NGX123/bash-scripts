@@ -46,6 +46,7 @@
 		+ Shortcuts
 			+ Add(+) -> KSysGuard(ctrl + shift + esc)
 			+ Add(+) -> Terminator(ctrl + alt + t)
+			+ Check if Dolphin opens on (super + e)
 			+ Kwin
 				+ Switch to Desktop num(meta + f(num))
 				+ Windows to Desktop num(ctrl + f(num))
