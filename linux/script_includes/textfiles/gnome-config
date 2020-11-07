@@ -13,18 +13,18 @@ Search - Turn off search(application search stays)
 Privacy - Turn off everything except Screen Lock 
 Power - Set options(Automatic suspend, Blank screen, Dim when inactive)
 Devices - Keyboard Shortcuts
-  + Apps
-    + nautilus(super + e)
-    + terminator(ctrl + alt + t)
-    + gnome-system monitor(ctrl + shift + esc)
-  + Windows
+  + Navigation
     + Switch to workspace *(super + f*)
     + Move window to workspace *(ctrl + f*)
     + Hide all normal windows(super + d)
-    + Hide window(super + h)
     + Move to workspace above/below(alt + ->/<)
-  + Other
+  + Custom Shortcuts
+    + nautilus(super + e)
+    + terminator(ctrl + alt + t)
+    + gnome-system monitor(ctrl + shift + esc)
+  + Other(Not a settings category)
     + Change input language(ctrl + space)
+    + Hide window(super + h)
 Details - Default Apps - Set
 
 Extensions(may be needed in some cases)
