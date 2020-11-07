@@ -30,7 +30,10 @@
   + Security -> Require password(immediately)
   + Keyboard -> Shortcuts -> 
     + Launchpad & Dock -> Show Launchpad(Option + A)
-    + Mission Control -> Switch to desktop $n(Option + $n), Mission Control(Option + Esc), Move left a space(Option + <-) Move right a space(Option + ->)
+    + Mission Control
+      + Switch to desktop $n(Option + $n)
+      + Move left a workspace(Option + <-) Move right a workspace(Option + ->)
+      + Mission Control(Option + Esc)
   + Trackpad -> Seconary click(Click in bottom right corner)
   + Display
     + Automatically adjust brightness(OFF)
