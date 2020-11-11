@@ -1,7 +1,7 @@
 #! /bin/bash
 
 # Variables
-apps_list="terminator mpv transmission chromium nano"
+apps_list="terminator mpv transmission chromium nano firefox"
 includesDir_variable=./script_includes
 textfilesDir_variable=$includesDir_variable/textfiles
 configDir_variable=../config
