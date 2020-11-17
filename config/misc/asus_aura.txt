@@ -21,4 +21,4 @@
   2. https://www.asus.com/us/supportonly/Armoury%20Crate/HelpDesk_Download/
 2. Extract ArmoryCrateInstallTool.zip
 3. Go to folder with files extracted from ArmoryCrateInstallTool.zip
-4. Run ArmoryCrateInstaller.exe and run it
+4. Run ArmoryCrateInstaller.exe and select "Install Armory Crate"
