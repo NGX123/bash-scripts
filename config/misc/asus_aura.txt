@@ -1,4 +1,12 @@
 ### ON WINDOWS ###
+## Armory Crate ##
+1. Download Armory Crate
+  1. https://rog.asus.com/us/innovation/armoury_crate/ -> Downloads -> Armory Crate -> Install latest version from driver website
+  2. https://www.asus.com/us/supportonly/Armoury%20Crate/HelpDesk_Download/
+2. Extract ArmoryCrateInstallTool.zip
+3. Go to folder with files extracted from ArmoryCrateInstallTool.zip
+4. Run ArmoryCrateInstaller.exe and select "Install Armory Crate"
+
 ## Aura through Laptop ##
 1. Download asus aura(not armory crate)
   1. Laptop Model(https://rog.asus.com/us/Laptops/ROG-Zephyrus/ROG-Zephyrus-M-GM501-Series/) -> Downloads -> Aura sync -> Download the aura sync from the link on the bottom and not the armory crate
@@ -14,11 +22,3 @@
 2. Extract ArmouryCrateInstallTool.zip
 3. Got to folder with files extracted from ArmouryCrateInstallTool.zip
 4. Run ArmoryCrateInstaller.exe and run it
-  
-## Armory Crate ##
-1. Download Armory Crate
-  1. https://rog.asus.com/us/innovation/armoury_crate/ -> Downloads -> Armory Crate -> Install latest version from driver website
-  2. https://www.asus.com/us/supportonly/Armoury%20Crate/HelpDesk_Download/
-2. Extract ArmoryCrateInstallTool.zip
-3. Go to folder with files extracted from ArmoryCrateInstallTool.zip
-4. Run ArmoryCrateInstaller.exe and select "Install Armory Crate"
