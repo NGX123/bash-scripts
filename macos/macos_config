@@ -34,6 +34,8 @@
       + Switch to desktop $n(Option + $n)
       + Move left a workspace(Option + <-) Move right a workspace(Option + ->)
       + Mission Control(Option + Esc)
+    + Input Sources
+      + Select next source in input menu(Option + Space)
   + Trackpad -> Seconary click(Click in bottom right corner)
   + Display
     + Automatically adjust brightness(OFF)
