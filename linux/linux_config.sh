@@ -59,28 +59,10 @@ fi
 
 ## MESSAGES ##
 # GUI Configurations
-if [ $de_var == gnome ]
+if [ $de_var != 0 ]
     then
         clear
-        cat $textfilesDir_variable/gnome-config
-fi
-
-if [ $de_var == kde ]
-    then
-        clear
-        cat $textfilesDir_variable/kde-config
-fi
-
-if [ $de_var == lxqt ]
-    then
-        clear
-        cat $textfilesDir_variable/lxqt-config
-fi
-
-if [ $de_var == xfce ]
-    then
-        clear
-        cat $textfilesDir_variable/xfce-config
+        cat $textfilesDir_variable/$de_var-config
 fi
 
 # Print the final message
