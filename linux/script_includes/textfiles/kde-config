@@ -48,8 +48,8 @@
 			+ Add(+) -> Terminator(Ctrl + Alt + T)
 			+ Check if Dolphin opens on (Super + E)
 			+ Kwin
-				+ Switch to Desktop x(Super + F(x))
-				+ Windows to Desktop x(Ctrl + F(x))
+				+ Switch to Desktop x(Super + x)
+				+ Windows to Desktop x(Ctrl + x)
 				+ Show Desktop Grid(Super + Esc)
 				+ Minimize Windows(Super + H)
 				+ Maximize Window(Super + Up)
