@@ -67,6 +67,7 @@ fi
 
 # Print the final message
 echo "
+CHECK
 1. $apps_list were installed(they might not be installed if you use apt and one of the packages does not exist in repos, becuase for apt to work all packages supplied at once need to be in the repos)
 2. ~/src, ~/opt, ~/github, ~/.scripts folders were made
 3. Local binary folder was added to PATH
@@ -76,4 +77,12 @@ echo "
 
 1. (Optional) Default folders were deleted
 2. (Optional) SSH server was removed
+
+TODO
+1. Clone programming & tos repos to ~/github/programming-repo & ~/github/tos-repo
+2. Configure the GUI
+
+1. (Optional) Install all the VMs through QEMU to the ~/github/vm/vm
+2. (Optional) Compile and install developer tools using dev-setup.sh script
+3. (Optional) Download the books to ~/Documents/Books
 "
