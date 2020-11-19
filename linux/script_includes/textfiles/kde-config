@@ -23,15 +23,15 @@
 -- Configure system --
 	+ Open system settings
 	+ Appearance
-		+ Global theme -> Arc Dark(Install Arc KDE by x-varlesh-x)
-		+ Plasma theme -> Arc Dark(by x-varlesh-x)
+		+ Global theme -> Arc Dark(Install Arc KDE by x-varlesh-x) or Breeze Dark
+		+ Plasma theme -> Arc Dark(by x-varlesh-x) or Breeze Dark
 		+ Application Style
 			+ Application Style(Breeze)
 				+ Configure GTK Application Style -> Breeze Dark
 			+ Window Decorations
-				+ Theme(Arc Dark(by x-varlesh-x))
+				+ Theme(Arc Dark(by x-varlesh-x) or Breeze Dark)
 				+ Titlebar Buttons -> Remove "On all desktops", "Context help"
-		+ Icons -> Icons(Papirus-Dark, Breeze Dark if unavailable)
+		+ Icons -> Icons(Papirus-Dark or Breeze Dark)
 		
 	+ Workspace
 		+ Workspace Behavior
