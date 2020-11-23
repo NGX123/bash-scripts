@@ -12,6 +12,6 @@
 
 
 -- Dualboot fixes --
- + A Linux Live USB Image run on a computer could be used to reinstall grub(instruction not finished, ask on forums)
+ + A Linux Live USB Image run on a computer could be used to reinstall grub if it was overwritten by windows(instruction not finished, ask on forums)
  + https://youtu.be/3oQfnNhk7qU
  + https://youtu.be/gEB6JEYZekE
