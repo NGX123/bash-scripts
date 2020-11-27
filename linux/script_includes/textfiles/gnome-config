@@ -15,7 +15,7 @@ Power - Set options(Automatic suspend, Blank screen, Dim when inactive)
 Devices - Keyboard Shortcuts
   + Navigation
     + Switch to workspace x(Super + x)
-    + Move window to workspace x(Ctrl + x)
+    + Move window to workspace x(Super + Shift + x)
     + Hide all normal windows(Super + D)
     + Move to workspace above/below(Alt + ->/<)
   + Custom Shortcuts
