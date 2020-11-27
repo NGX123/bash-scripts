@@ -49,7 +49,7 @@
 			+ Check if Dolphin opens on (Super + E)
 			+ Kwin
 				+ Switch to Desktop x(Super + x)
-				+ Windows to Desktop x(Ctrl + x)
+				+ Windows to Desktop x(Ctrl + Shift + x)
 				+ Show Desktop Grid(Super + Esc)
 				+ Minimize Windows(Super + H)
 				+ Maximize Window(Super + Up)
