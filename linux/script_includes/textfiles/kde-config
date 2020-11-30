@@ -23,15 +23,8 @@
 -- Configure system --
 	+ Open system settings
 	+ Appearance
-		+ Global theme -> Arc Dark(Install Arc KDE by x-varlesh-x) or Breeze Dark
-		+ Plasma theme -> Arc Dark(by x-varlesh-x) or Breeze Dark
-		+ Application Style
-			+ Application Style(Breeze)
-				+ Configure GTK Application Style -> Breeze Dark
-			+ Window Decorations
-				+ Theme(Arc Dark(by x-varlesh-x) or Breeze Dark)
-				+ Titlebar Buttons -> Remove "On all desktops", "Context help"
-		+ Icons -> Icons(Papirus-Dark or Breeze Dark)
+		+ Window Decorations
+			+ Titlebar Buttons -> Remove "On all desktops", "Context help"
 		
 	+ Workspace
 		+ Workspace Behavior
@@ -80,7 +73,11 @@
 		
 -- Extra --
 + System Appearance(System Settings -> Appearance)
-	+ ChromeOS - Global Theme(ChromeOS by vinceliuice, select the dark version; store.kde.org/p/1354062), Plasma Style(ChromeOS), Applications Style(Breeze), Application Style-Window Decorations(ChromeOS-dark), Application Style-GTK2/3(Orchis Gtk by vinceliuice, select the dark version; store.kde.org/p/1357889), Colors(ChromeOSDark), Icons(Tela by vinceliuice, select dark; store.kde.org/p/1279924
+	+ ChromeOS - Global Theme(ChromeOS by vinceliuice, select the dark version; store.kde.org/p/1354062), Plasma Style(ChromeOS), Applications Style(Breeze), Application Style-Window Decorations(ChromeOS-dark), Application Style-GTK2/3(Orchis Gtk by vinceliuice, select the dark version; store.kde.org/p/1357889), Colors(ChromeOSDark), Icons(Tela by vinceliuice, select dark; store.kde.org/p/1279924)
+	+ Breeze Dark - Global Theme(Breeze Dark), Plasma Style(Breeze Dark), Application Style(Breeze), Application Style-Window Decorations(Breeze), Application-Style-GTK2/3(Breeze Dark), Colors(Breeze Dark), Icons(Breeze Dark)
+	
+	+ Icons
+		+ Tela by vinceliuice, select dark; store.kde.org/p/1279924
 + Remove bloatware
 	+ (terminal) sudo apt/dnf remove skanlite okular vlc kate kcalc
 	+ (terminal) sudo apt/dnf remove kdeconnect # optional 
