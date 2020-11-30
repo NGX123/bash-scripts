@@ -78,13 +78,20 @@
 	
 	+ Icons - Tela(by vinceliuice, select dark; store.kde.org/p/1279924)
 	+ Themes - Dark Breeze, Nordic, Adapta
-		
+
++ System Appearance leftover can be removed from these directories(Themes that can't be uninstalled)
+	+ Global themes - ~/.local/share/plasma/look-and-feel/
+	+ Themes - ~/.local/share/plasma/desktoptheme/
+	+ Windows Decorations - ~/.local/share/aurorae/themes/
+	+ Color Schemes - ~/.kde/share/apps/color-schemes/
+	+ Icons - ~/.local/share/icons/
+
 + Remove bloatware
 	+ (terminal) sudo apt/dnf remove skanlite okular vlc kate kcalc
 	+ (terminal) sudo apt/dnf remove kdeconnect # optional 
 	+ (terminal) sudo apt/dnf remove kvantum	# optional 0 remove if there are theme problems(if there is no such package remove using discover)
   	+ (terminal) sudo apt/dnf autoremove
-+ Cool themes - 
+ 
 + Other
 	+ Config videos
 		+ https://www.youtube.com/watch?v=Vi65-wT3o20
