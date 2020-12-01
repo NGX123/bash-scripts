@@ -28,9 +28,9 @@
 		
 	+ Workspace
 		+ Workspace Behavior
-			+ General Behavior -> Animation Speed(Instant, if no animations are used else in the middle)
-			+ Desktop Effects -> Screen Edge and ther bloat(OFF), Squash(ON), Slide(ON)
-			+ Screen Edges -> Click on each -> set action(No action)
+			+ General Behavior -> Animation Speed(Instant - No animations; In the middle - Normal animations)
+			+ Desktop Effects -> Squash(ON), Slide(ON), Useless effecs(OFF)
+			+ Screen Edges -> Click on each -> Set action(No action)
 			+ Screen Locking
 				+ Appearance -> Change wallpaper
 				+ Lock screen(2 min)
@@ -50,12 +50,13 @@
 			+ Hardware -> Keyboard -> Layout -> Main shortcut(Set - Super + Space) 
 		+ Startup and Shutdown
 			+ Splash Screen(None)
-			+ Login Screen -> Breeze -> Background(set your own)
+			+ Login Screen -> Breeze -> Background(Set)
 		+ Search -> File Search -> Enable File Search(OFF)
 			
 	+ Personalization
 		+ Account Details -> Kde Wallet -> Enable the KDE wallet subsystem(OFF)(No passwords(e.g. WiFi) will be saved)
 		+ Applications -> Set default, Diagnostics(OFF)
+		
 	+ Hardware
 		+ Power Management
 			(On battery)(If problems occur like screen not turning off - dim screen(OFF), screen energy saving(2 min)
