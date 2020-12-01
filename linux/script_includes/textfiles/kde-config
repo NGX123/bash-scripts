@@ -2,26 +2,23 @@
 	+ Go to desktop
 	+ Right click on every panel -> (bin) Remove panel
 	+ Right click on desktop -> Add Panel -> Empty Panel
-	+ Right click on panel -> Add widgets
-		+ Add these widgets in the following order: Application Menu, Icons only task manager, System tray, Digital clock
+	+ Right click on panel -> Add widgets(In the following order: Application Menu, Icons only task manager, System tray, Digital clock)
 	+ Right click on panel -> Edit Panel
-		+ Make height smaller
-		+ Put it on the upper screen edge
-	
+		+ Height(Decrease)
+		+ Screen Edge(Upper)
 	+ Right click on Application Launcher on Panel -> Configure Application Dashboard/menu
 		+ Show categories: 
-			+ Recent application(OFF); 
+			+ Recent application(OFF)
 			+ Recent documents(OFF)
 		+ Search -> Expand search to bookmarks, files and emails(OFF)
 		+ Keyboard Shortcuts(Meta+1)
-	+ Right click on System tray -> Configure System tray -> Disable unneeded entries
+	+ Right click on System tray -> Configure System tray -> Unneeded entries(Disable)
 	+ Right click on Icons only Task Manager -> Configure Icons only... -> Behavior -> Cycle through tasks with mouse wheel(OFF)
 	+ Right click on desktop
 		+ Configure Desktop -> Wallpaper -> Change
 		+ Mouse Actions -> Vertical-Scroll(Switch Desktop) -> (-) Remove
 	
--- Configure system --
-	+ Open system settings
+-- Configure system(System settings) --
 	+ Appearance
 		+ Window Decorations
 			+ Titlebar Buttons -> Remove "On all desktops", "Context help"
@@ -55,7 +52,7 @@
 			
 	+ Personalization
 		+ Account Details -> Kde Wallet -> Enable the KDE wallet subsystem(OFF)(No passwords(e.g. WiFi) will be saved)
-		+ Applications -> Set default, Diagnostics(OFF)
+		+ Applications -> Default(Set), Diagnostics(OFF)
 		
 	+ Hardware
 		+ Power Management
