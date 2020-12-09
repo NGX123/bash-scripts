@@ -36,6 +36,7 @@
 		+ Shortcuts
 			+ Add(+) -> KSysGuard(Ctrl + Shift + Esc)
 			+ Add(+) -> Terminator(Ctrl + Alt + T)
+			+ Remove(-) -> Emoji
 			+ Check if Dolphin opens on (Super + E)
 			+ Kwin
 				+ Switch to Desktop x(Super + x)
