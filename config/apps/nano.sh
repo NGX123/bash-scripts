@@ -2,4 +2,4 @@
 mkdir -p $HOME/.config/nano
 
 # Copy files to the config folder
-cp ./nano/* $HOME/.config/nano
+cp ./textfiles/nano/* $HOME/.config/nano

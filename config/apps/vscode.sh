@@ -6,12 +6,14 @@ code --install-extension ms-python.python
 
 read -p "Platform: " platform_var
 
-if [ $platform_var == macos ]; then
-    cat ./settings.json >> $HOME/Library/ApplicationSupport/Code/User/settings.json
+if [ $platform_var == macos ]
+	then
+    cat ./textfiles/settings.json >> $HOME/Library/ApplicationSupport/Code/User/settings.json
 fi
 
-if [ $platform_var == linux ]; then
-    cat ./settings.json >> $HOME/.config/Code/User/settings.json
+if [ $platform_var == linux ]
+	then
+    cat ./textfiles/settings.json >> $HOME/.config/Code/User/settings.json
 fi
 
 # Configuration articles
