@@ -28,7 +28,7 @@
   + Accessibility -> Display -> Reduce Transparency(ON), Reduce Motion(ON, if laggy animations)
   + Screen Time -> Options -> Screen Time(OFF)
   + Security -> Require password(immediately)
-  + Keyboard -> Shortcuts -> 
+  + Keyboard -> Shortcuts ->
     + Launchpad & Dock -> Show Launchpad(Option + A)
     + Mission Control
       + Switch to desktop $n(Option + $n)
@@ -43,6 +43,18 @@
   + Energy Saver
     + Turn off display after(5 min)
 
+
 -- Finder --
 Preferences -> New Finder windows show(user)
 Customize toolbar - Remove unneeded
+
+
+-- Fixes --
+  + "xcode-select --install" - Can't install the software because it is not currently available from the Software Update server
+    1. Sign in into app store if not signed in, Reboot, Retry "xcode-select --install"
+    2. If signed in already, Sign out, Reboot, Sign in, Retry "xcode-select --install"
+      + If still does not work try installing xcode from app store, Retry "xcode-select --install"
+        + If the installation takes too long -> Download Xcode "developer.apple.com/download/more" -> Doube click on *.xip in finder to extract the xcode -> Drag the extracted xcode app into Applications folder -> (optional)xcode-select --switch /Applications/Xcode*
+
+  + VirtualBox window is very small on retina
+    1. VBox -> Choose VM -> Settings -> Display -> Graphics Controller(VBoxSVGA)
