@@ -29,6 +29,9 @@ if [ $pm_var == apt ]
 
         # Apps(might not install becuase apt requires all of them to be in repos, otherwise it fails)
         sudo apt-get install -y $apps_list
+        
+        # Apps with platform specific names
+        sudo apt install -y build-essential linux-headers-$(uname -r)
 
         # Removing
         if [ $removeSshd_var == y ]
@@ -68,6 +71,9 @@ if [ $pm_var == dnf ]
 
         # Apps
         sudo dnf install -y $apps_list
+        
+        # Apps with platform specific names
+        sudo dnf -y install @development-tools kernel-headers kernel-devel
 
         # Removing
         if [ $removeSshd_var == y ]
