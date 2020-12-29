@@ -15,10 +15,11 @@ xcode-select --install
 # Install homebrew
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 
-# Install cask
-brew install cask mpv qemu geany
-brew cask install visual-studio-code transmission iterm2 
-brew cask install virtualbox # Note: when installing VBox kernel kext should be allowed - Settings->Security->Allow Oracle...
+# Install apps
+brew install binutils diffutils nasm gdb                                # Programming
+brew install cask mpv qemu geany                                        # Install Apps
+brew cask install visual-studio-code transmission iterm2 virtualbox     # Install Cask Apps
+# Note: when installing VBox kernel kext should be allowed - Settings->Security->Allow Oracle...
 
 echo "
 ------------------------------------------------------
