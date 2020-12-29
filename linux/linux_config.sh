@@ -43,7 +43,7 @@ mkdir -p $HOME/src $HOME/opt/bin $HOME/github $HOME/.scripts
 echo 'PATH=$PATH:$HOME/opt/bin' >> $HOME/.bashrc
 
 # Terminal Configurations
-cp -r $configDir_variable/bash/* $HOME/.scripts
+cp -r $configDir_variable/apps/bash/* $HOME/.scripts
 echo '[ -f $HOME/.scripts/color.sh ] && . $HOME/.scripts/color.sh' >> $HOME/.bashrc
 echo '[ -f $HOME/.scripts/bash_aliases.sh ] && . $HOME/.scripts/bash_aliases.sh' >> $HOME/.bashrc
 
