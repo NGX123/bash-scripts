@@ -28,7 +28,7 @@ sudo apt-mark hold snapd # don't install snap with updates
 sudo apt autoremove      # remove leftover
 
 
-# Only one drive(system drive) is present
+# Add second, thrid... drives to the system
 sudo blkid # List the disks - select the UUID of needed one and copy it
 sudo nano /etc/fstab
 sudo mkdir /media/folder-name
