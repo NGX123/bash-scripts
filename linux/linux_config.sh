@@ -35,9 +35,9 @@ fi
 
 
 
-## CONFIGURATION ##
+## MISC ##
 # Make Folders
-mkdir -p $HOME/src $HOME/opt/bin $HOME/github $HOME/.scripts
+mkdir -p $HOME/src $HOME/opt/bin $HOME/github $HOME/vm/iso $HOME/vm/vms $HOME/.scripts
 
 # Add the folder with compiled software to path
 echo 'PATH=$PATH:$HOME/opt/bin' >> $HOME/.bashrc
@@ -55,6 +55,19 @@ if [ $removeFldrs_var == y ]
         rm -rf $HOME/Music $HOME/Pictures $HOME/Public $HOME/Templates $HOME/Videos
 fi
 
+# Clone git repos
+mkdir -p $HOME/github/programming-repo
+cd $HOME/github/programming-repo
+git init
+git remote add p https://github.com/NGX123/programming
+git pull p master
+
+mkdir -p $HOME/github/tos-repo
+cd $HOME/github/tos-repo
+git init
+git remote add t https://github.com/NGX123/tos
+git pull t master
+
 
 
 
@@ -63,27 +76,25 @@ fi
 if [ $de_var != 0 ]
     then
         clear
+        echo "--- DE GUI Configuration ---"
         cat $textfilesDir_variable/$de_var-config
 fi
 
 # Print the final message
 echo "
-CHECK
+--- Check if all points were done ---
 1. $apps_list were installed(they might not be installed if you use apt and one of the packages does not exist in repos, becuase for apt to work all packages supplied at once need to be in the repos)
 2. ~/src, ~/opt, ~/github, ~/.scripts folders were made
 3. Local binary folder was added to PATH
 4. Custom scripts and system config files were added to ~/.scripts
 5. Bash aliases and function file inclusions were added to .bashrc
 6. Bash color scheme was changed by inclusion of config file in .bashrc
+7. Github repos were cloned to ~/github/programming-repo & ~/github/tos-repo
 
-1. (Optional) Default folders were deleted
-2. (Optional) SSH server was removed
+8. (Optional) Default folders were deleted
+9. (Optional) SSH server was removed
 
-TODO
-1. Clone programming & tos repos to ~/github/programming-repo & ~/github/tos-repo
-2. Configure the GUI
-
-1. (Optional) Install all the VMs through QEMU to the ~/github/vm/vm
-2. (Optional) Compile and install developer tools using dev-setup.sh script
-3. (Optional) Download the books to ~/Documents/Books
-"
+--- To do manually ---
+1. Configure the GUI
+2. Install all the VMs through QEMU to the ~/github/vm/vm
+3. (Optional) Download the books to ~/Documents/Books"
