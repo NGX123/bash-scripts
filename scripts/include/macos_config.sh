@@ -1,6 +1,3 @@
-# Folder creation
-mkdir -p $HOME/vm $HOME/opt $HOME/src $HOME/.config $HOME/github/tos-repo $HOME/github/programming-repo
-
 # Git configuration
 git config --global user.name "NGX123"
 git config --global user.email "NGX123"
