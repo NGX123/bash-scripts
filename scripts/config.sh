@@ -3,10 +3,12 @@
 # Variables
 apps_list="terminator mpv transmission firefox \
 nasm nano binutils diffutils valgrind clang"
-includesDir_variable=./script_includes
+includesDir_variable=./include
 textfilesDir_variable=$includesDir_variable/textfiles
 configDir_variable=../config
-folderExists=0
+
+removeFldrs_var=n
+removeSshd_var=n
 
 # Folder existance checks
 [ ! -d $includesDir_variable ] && echo "$includesDir_variable does not exist" && exit
@@ -18,6 +20,7 @@ folderExists=0
 
 ## SCRIPT SETUP ##
 ## User input
+read -p "OS: " os_var
 read -p "Package Manager: " pm_var
 read -p "Destktop Environment: " de_var
 read -p "Configure install(y/n): " configureInstall_var
@@ -29,10 +32,10 @@ if [ $configureInstall_var == y ]
         read -p "Remove ssh(y/n): " removeSshd_var
 fi
 
-# Package manager local commands code
+# Package manager code
 [ -f $includesDir_variable/package_managers.sh ] && . $includesDir_variable/package_managers.sh
 
-
+[ -f $includesDir_variable/"$os_var"_config.sh ]
 
 
 ## MISC ##
