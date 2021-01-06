@@ -28,16 +28,16 @@ if [ $pm_var == apt ]
         rm ./google-chrome-stable_current_amd64.deb
 
         # Apps(might not install becuase apt requires all of them to be in repos, otherwise it fails)
-        sudo apt-get install -y $apps_list
+        sudo apt-get install -y $apps_list firefox-esr
 
         # Apps with platform specific names
         sudo apt install -y build-essential linux-headers-$(uname -r)
 
         # Removing
-        if [ $removeSshd_var == y ]
-            then
-                sudo apt-get --purge remove openssh-server
-        fi
+        # if [ $removeSshd_var == y ]
+        #     then
+        #         sudo apt-get --purge remove openssh-server
+        # fi
 fi
 
 ## Config for DNF ##
@@ -70,18 +70,18 @@ if [ $pm_var == dnf ]
         rm ./google-chrome-stable_current_*.rpm
 
         # Apps
-        sudo dnf install -y $apps_list
+        sudo dnf install -y $apps_list firefox
 
         # Apps with platform specific names
         sudo dnf -y install @development-tools kernel-headers kernel-devel
 
         # Removing
-        if [ $removeSshd_var == y ]
-            then
-                sudo chkconfig sshd off
-                sudo service sshd stop
-                sudo dnf erase openssh-server
-        fi
+        # if [ $removeSshd_var == y ]
+        #     then
+        #         sudo chkconfig sshd off
+        #         sudo service sshd stop
+        #         sudo dnf erase openssh-server
+        # fi
 fi
 
 ## Config for Homebrew ##
