@@ -29,7 +29,7 @@ if [ $pm_var == apt ]
 
         # Apps(might not install becuase apt requires all of them to be in repos, otherwise it fails)
         sudo apt-get install -y $apps_list
-        
+
         # Apps with platform specific names
         sudo apt install -y build-essential linux-headers-$(uname -r)
 
@@ -50,7 +50,7 @@ if [ $pm_var == dnf ]
 
         # Update
         sudo dnf -y update
-        
+
         # Dependencies
         sudo dnf -y install curl wget
 
@@ -71,7 +71,7 @@ if [ $pm_var == dnf ]
 
         # Apps
         sudo dnf install -y $apps_list
-        
+
         # Apps with platform specific names
         sudo dnf -y install @development-tools kernel-headers kernel-devel
 
@@ -82,4 +82,29 @@ if [ $pm_var == dnf ]
                 sudo service sshd stop
                 sudo dnf erase openssh-server
         fi
+fi
+
+## Config for Homebrew ##
+if [ $pm_var == brew ]
+    then
+        # Install xcode command line tools(brew dependency)
+        if [ os_var == macos ]
+            then
+                xcode-select --install
+        fi
+
+        # Install homebrew
+        /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+
+        # Install apps
+        brew install binutils diffutils nasm gdb                                # Programming
+        brew install cask mpv qemu geany                                        # Install Apps
+        brew cask install visual-studio-code transmission iterm2 virtualbox     # Install Cask Apps
+        # Note: when installing VBox kernel kext should be allowed - Settings->Security->Allow Oracle...
+
+        echo "
+        ------------------------------------------------------
+        Install google chrome - https://www.google.com/chrome/
+        ------------------------------------------------------
+        "
 fi
