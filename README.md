@@ -1,6 +1,5 @@
 # Scripts
-##### Credits
-
-###### Color.sh
-`Copyright (c) 2018, Andres Gongora <mail@andresgongora.com>, GNU GPL v3+`
-
+## Credits
+* unix/config/apps/bash/color.sh
+    * Original Author: Copyright 2018, Andres Gongora <mail@andresgongora.com>
+    * Original License: GNU GPL v3+
