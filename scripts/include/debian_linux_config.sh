@@ -5,7 +5,7 @@
 read -p "What is the username: " username_variable
 
 # Add sbin to the path
-echo 'PATH=$PATH:/sbin:/usr/sbin' >> $HOME/.bashrc
+[ ! $(cat $HOME/.bashrc | grep 'PATH=$PATH:/sbin:/usr/sbin') ] && echo 'PATH=$PATH:/sbin:/usr/sbin' >> $HOME/.bashrc
 source $HOME/.bashrc
 
 # Make normal user sudo
@@ -19,3 +19,6 @@ apt-add-repository contrib
 apt-add-repository non-free
 apt update && sudo apt upgrade
 exit
+
+clear
+echo "--- Reboot and Rerun the script ---"
