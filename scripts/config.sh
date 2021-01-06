@@ -72,7 +72,7 @@ git pull t master
 
 ## Script End Messages ##
 # GUI Configurations
-if [ $de_var != 0 && $(echo $os_var | grep linux) ]
+if [[ $de_var != 0 && $(echo $os_var | grep linux) ]]
     then
         clear
         echo "--- DE GUI Configuration ---"
@@ -105,4 +105,4 @@ echo "
 
 --- To do manually ---
 1. Configure the GUI
-2. Install all the VMs through QEMU to the ~/vm/vms
+2. Install all the VMs through QEMU to the ~/vm/vms"
