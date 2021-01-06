@@ -97,9 +97,9 @@ if [ $pm_var == brew ]
         /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 
         # Install apps
-        brew install binutils diffutils nasm gdb                                # Programming
-        brew install cask mpv qemu geany                                        # Install Apps
-        brew cask install visual-studio-code transmission iterm2 virtualbox     # Install Cask Apps
+        brew install binutils diffutils nasm gdb nano                               # Programming
+        brew install cask mpv qemu geany                                            # Install Apps
+        brew cask install visual-studio-code transmission iterm2 virtualbox firefox # Install Cask Apps
         # Note: when installing VBox kernel kext should be allowed - Settings->Security->Allow Oracle...
 
         echo "
