@@ -38,7 +38,7 @@ read -p "Destktop Environment(Default: none): " de_var
 
 ## System-specific Configuration
 # Include platform specific scripts
-[ -f $includesDir_variable/"$os_var"_config.sh ] && . $includesDir_variable/"$os_var"_config.sh || fail_function "$includesDir_variable/"$os_var"_config.sh does not exist"                                                 # Distro/platform specific configs
+[ -f $includesDir_variable/"$os_var"_config.sh ] && . $includesDir_variable/"$os_var"_config.sh                                                                                                                             # Distro/platform specific configs
 [ $(echo $os_var | grep linux) ] && [ -f $includesDir_variable/global_linux_config.sh ] && . $includesDir_variable/global_linux_config.sh || fail_function "$includesDir_variable/global_linux_config.sh does not exist"    # Configs that apply to all linuxes
 
 # Include package manager script
