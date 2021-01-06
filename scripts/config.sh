@@ -14,6 +14,7 @@ fail_function () {             # Called when program fails
 apps_list="terminator mpv transmission firefox \
 nasm nano binutils diffutils valgrind clang"
 dirs_list="$HOME/src $HOME/opt/bin $HOME/github $HOME/vm/iso $HOME/vm/vms $HOME/.scripts"
+workspace_directory=$PWD
 
 includesDir_variable=./include
 textfilesDir_variable=$includesDir_variable/textfiles
@@ -66,6 +67,7 @@ cd $HOME/github/tos-repo || fail_function "Can't setup tos-repo"
 git init
 git remote add t https://github.com/NGX123/tos
 git pull t master
+cd $workspace_directory
 
 
 
