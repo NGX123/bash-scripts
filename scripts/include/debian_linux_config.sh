@@ -21,4 +21,8 @@ apt update && sudo apt upgrade
 exit
 
 clear
-echo "--- Reboot and Rerun the script ---"
+read -p "--- If this is the first time the script is run reboot and rerun it, reboot(y/n): " reboot_var
+if [ $reboot_var == y ]
+    then
+        reboot
+fi
