@@ -31,7 +31,7 @@ configDir_variable=../config
 # User input
 read -p "OS: " os_var
 read -p "Package Manager: " pm_var
-read -p "Destktop Environment: " de_var
+read -p "Destktop Environment(Default: none): " de_var
 
 
 
@@ -72,11 +72,18 @@ git pull t master
 
 ## Script End Messages ##
 # GUI Configurations
-if [ $de_var != 0 ]
+if [ $de_var != 0 && $(echo $os_var | grep linux) ]
     then
         clear
         echo "--- DE GUI Configuration ---"
         cat $textfilesDir_variable/$de_var-config
+    else
+        if [ $os_var == macos ]
+            then
+                clear
+                echo "--- GUI Configuration ---"
+                cat $textfilesDir_variable/macos-config
+        fi
 fi
 
 # Print the final message
