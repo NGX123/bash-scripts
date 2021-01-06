@@ -42,7 +42,7 @@ read -p "Destktop Environment(Default: none): " de_var
 [ $(echo $os_var | grep linux) ] && [ -f $includesDir_variable/global_linux_config.sh ] && . $includesDir_variable/global_linux_config.sh || fail_function "$includesDir_variable/global_linux_config.sh does not exist"    # Configs that apply to all linuxes
 
 # Include package manager script
-[ -f $includesDir_variable/package_managers.sh ] && . $includesDir_variable/package_managers.sh || fail_function "$includesDir_variable/package_managers.sh does not exist"
+[ -f $includesDir_variable/package_management.sh ] && . $includesDir_variable/package_management.sh || fail_function "$includesDir_variable/package_management.sh does not exist"
 
 
 
