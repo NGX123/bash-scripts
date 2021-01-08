@@ -1,38 +1,71 @@
-# Binaries(programms) can't be found, add to .bashrc the following 
-export PATH="$PATH:/sbin:/usr/sbin:usr/local/sbin"
+### Binaries(programms) can't be found
+* **Fix:** Add the following to bashrc
+    *   ```
+        export PATH="$PATH:/sbin:/usr/sbin:usr/local/sbin"
+        ```
+
+### User not in sudoers file
+* **Fix:** complete the following
+    *   ```
+        su
+        adduser <username> sudo
+        reboot
+        ```
+
+### Install nvidia drivers
+* **Fedora:**
+    *   ```
+        sudo dnf update
+        sudo dnf install nvidia-akmod
+        reboot
+        lsmod | grep nvidia # check if kernel modules are present
+        ```
 
 
-# User not in sudoers file - enter the following line as root into terminal and reboot
-adduser <username> sudo
+### Mkdir error "folder exists error"
+* **Fix:** use "-p" option(this option also creates all parent dirs if non existant)
+    *   ```
+        mkdir -p folder...
+        ```
+
+### Rm error "file/folder exists error"
+* **Fix:** use "-f" option(forces to do the operation)
+    *   ```
+        rm -rf file/folder...
+        ```
+
+### Remove snaps
+*   ```
+    snap list                # List installed
+    sudo snap remove program # Remove installed packages before removing snap
+    sudo apt-get purge snapd
+    sudo apt-mark hold snapd
+    sudo apt autoremove
+    ```
 
 
-# Fedora nvidia drivers
-sudo dnf update
-sudo dnf install nvidia-akmod
-reboot
-lsmod | grep nvidia           # check if nvidia modules are running, check if nvidia control panel is an application
-
-
-# mkdir "folder exists error" - use "-p" option and it will not try to create if already exists(the option also has another effect)
-mkdir -p folder...
-
-# rmdir or rm "file/folder exists error" - use "-f" option
-rm -rf file/folder...
-
-
-# Remove snaps
-snap list                # currently installed snaps
-sudo snap remove program # remove all installed
-sudo apt-get purge snapd # remove snap
-sudo apt-mark hold snapd # don't install snap with updates
-sudo apt autoremove      # remove leftover
-
-
-# Add second, thrid... drives to the system
-sudo blkid # List the disks - select the UUID of needed one and copy it
-sudo nano /etc/fstab
-sudo mkdir /media/folder-name
-add line - UUID=COPIED /media/folder-name ext4 rw,user,exec 0 0 
-sudo mount -a # if error - undo changes in /etc/fstab
-reboot
-sudo chown group:user /media/folder-name
+### Mount additional drives
+1. List disks and choose one
+    *   ```
+        sudo lsblk
+        ```
+2. List disk identifiers and copy UUID of chosen disk
+    *   ```
+        sudo blkid
+        ```
+3.  ```
+    sudo mkdir /media/folder-name
+    ```
+4.  ```
+    sudo nano /etc/fstab
+    ```
+5. Add the following line to /etc/fstab - `UUID=COPIED /media/folder-name ext4 defaults 0 0`
+6. Check if everything works in fstab, if it does not - undo all changes in fstab
+    *   ```
+        sudo mount -a # if error - undo changes in /etc/fstab
+        ```
+7. Change ownership and reboot
+    *   ```
+        sudo chown group:user /media/folder-name
+        reboot
+        ```
