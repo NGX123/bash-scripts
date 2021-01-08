@@ -121,3 +121,23 @@
         sudo systemctl stop smb
         sudo `<package manager>` remove samba
         ```
+
+## Ubuntu Server Configuration
+1. Start the live installer in safe graphics mode
+2. **Advice:** Select mostly the default options in the ubuntu installer
+3. Mount all of the drives(using fstab)
+4. Update the system
+	* 	```
+		sudo apt update && sudo apt upgrade && sudo apt autoremove
+		```
+5. Remove snaps
+6. Setup samba
+* **(Optional)** Setup SSH
+* **(Optional)** Install the GUI
+	* Install xfce4(lightest GUI. Apart from xfce4 package, xubuntu-desktop package is available which includes a lot of software together with the DE)
+		* 	```
+			sudo apt install xfce4
+			```
+		* [XFCE Installation Tutorial](https://itsfoss.com/install-xfce-desktop-xubuntu/)
+* **Error:** On boot the login prompt might be not shown(seem like freeze)
+	* **Fix:** Press enter several times and wait for login prompt to appear
