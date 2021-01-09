@@ -112,10 +112,10 @@
                 ```
     11. Connect to `smb://<ip address>/ShareName/` and enter the credentials of users that have access to it
 * Remove smb
-    *   ```sh
-        sudo systemctl stop smb
-        sudo `<package manager>` remove samba
-        ```
+    * Ubuntu
+        *   ```sh
+            sudo apt purge samba samba-common
+            ```
 
 ### SSH
 * Install on Debian
