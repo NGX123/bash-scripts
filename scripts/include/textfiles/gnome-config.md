@@ -1,32 +1,32 @@
 ## Tweaks
-General - Suspend when laptop lid is closed, turn off animations
-Appearance - Applications(Adwaita-dark)
-Extensions - Turn off. Install: TopIcons(system tray)
-Keyboard & mouse - Mouse click emulation set to area(OPTIONAL)
-Top Bar - Disable everything
-Windows Titlebars - Titlebar Buttons - Turn on minimize and maximize
+* General -> Suspend when laptop lid is closed`(ON)`, Turn off animations`(ON)`
+* Appearance -> Applications`(Adwaita-dark)`
+* Extensions`(OFF)`
+* Keyboard & mouse -> *On Laptop:* (Mouse click emulation`(Area)`)
+* Top Bar -> Everything`(OFF)`
+* Windows Titlebars -> Titlebar Buttons -> Maximize`(ON)`, Minimize`(ON)`
 
 
-Settings
-Notifications - manage notifications
-Search - Turn off search(application search stays)
-Privacy - Turn off everything except Screen Lock
-Power - Set options(Automatic suspend, Blank screen, Dim when inactive)
-Devices - Keyboard Shortcuts
-  + Navigation
-    + Switch to workspace x(Super + x/Super + Alt + x)
-    + Move window to workspace x(Super + Shift + x)
-    + Hide all normal windows(Super + D)
-    + Move to workspace above/below(Alt + ->/<)
-  + Custom Shortcuts
-    + nautilus(Super + E)
-    + terminator(Ctrl + Alt + T)
-    + gnome-system monitor(Ctrl + Shift + Esc)
-  + Other(Not a settings category)
-    + Switch to next input source(Super + Space)
-    + Hide window(Super + H)
-Details - Default Apps - Set
+## Settings
+* Notifications`(Configure)`
+* Search`(OFF)`
+* Privacy -> Everything, except Screen Lock`(OFF)`
+* Power -> Automatic suspend`(ON)`, Blank screen`(ON)`, Dim when inactive`(ON)`
+* Devices -> Keyboard Shortcuts
+  * Navigation
+    * Switch to workspace x`(Super + x/Super + Alt + x)`
+    * Move window to workspace x`(Super + Shift + x)`
+    * Hide all normal windows`(Super + D)`
+    * Move to workspace above/below`(Alt + ->/<)`
+  * Custom Shortcuts
+    * nautilus`(Super + E)`
+    * terminator`(Ctrl + Alt + T)`
+    * gnome-system monitor`(Ctrl + Shift + Esc)`
+  * Other(Not a settings category)
+    * Switch to next input source`(Super + Space)`
+    * Hide window`(Super + H)`
+* Details -> Default Apps`(Set needed)`
 
-Extensions(may be needed in some cases)
-TopIcons by ag - adds system tray back
-Desktop Icons by rastersoft/type Desktop icons in Software and find one from(https://gitlab.gnome.org/World/ShellExtensions/desktop-icons)
+## Extensions(may be needed in some cases)
+* TopIcons by ag - adds system tray back
+* [Desktop Icons by rastersoft/type Desktop icons in Software and find one from](https://gitlab.gnome.org/World/ShellExtensions/desktop-icons)
