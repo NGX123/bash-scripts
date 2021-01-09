@@ -68,7 +68,7 @@
         *   ```sh
             sudo mkdir -p `</path/to/samba_dir/>`/`<admin_share_dir>`
             sudo chown `<samba-admin-username>`: `</path/to/samba_dir/>`/`<admin_share_dir>`
-            sudo chmod 0770 `</path/to/samba_dir/>`/`<admin_share_dir>`
+            sudo chmod 0700 `</path/to/samba_dir/>`/`<admin_share_dir>`
             ```
     8. **`SHARE`** Make the share directory for everyone to use inside the samba directory
         *   ```sh
@@ -92,7 +92,6 @@
                 read only = no                  # Enables write access to the share(same as "writable = yes")
                 force create mode = 0660        # Makes files not have execute permissions when created
                 force directory mode = 2770     # Make folders be accessible for anything
-                valid users = @`<samba-groupname>` `<samba-admin-username>`
 
             [<admin-samba-share-name>]
                 comment = Description
@@ -101,7 +100,6 @@
                 read only = no                  # Enables write access to the share(same as "writable = yes")
                 force create mode = 0660        # Makes files not have execute permissions when created
                 force directory mode = 2770     # Make folders be accessible for anything
-                valid users = `<samba-admin-username>`
             ```
     10. Enable samba service
         * RHEL
