@@ -33,11 +33,11 @@
             * 	```sh
                 sudo apt install samba
                 ```
-    2. **`SAMBA`** Add a group which will own the samba_dir so all users in it have access to shares inside(but only to shares that permit them with their internal permission)
+    2. **`SAMBA`** Add a group which will own the samba_dir and have all SMB users in it so all SMB users in it have access to shares inside(but only to shares that permit them with their internal permission)
         *   ```sh
             sudo groupadd `<samba-groupname>`
             ```
-    3. **`SAMBA`** Create a directory where all samba share directories will be stored and make samba group the owner for reason above
+    3. **`SAMBA`** Create a directory where all SMB share directories will be stored and make samba group the owner for reason above
         *   ```sh
             sudo mkdir -p `</path/to/samba_dir/>`
             sudo chown :`<samba-groupname>` `</path/to/samba_dir/>`
@@ -55,7 +55,7 @@
             sudo smbpasswd -a `<username>`
             sudo smbpasswd -e `<username>`
             ```
-    7. **`ADMIN`** Add an administrator to own all the shares in the samba folder
+    7. **`ADMIN`** Add an administrator to own all the shares in the samba folder(proccess of adding is same as with normal user)
         *   ```sh
             sudo useradd --shell /sbin/nologin --groups `<samba-groupname>` --no-create-home `<samba-admin-username>`
             passwd `<samba-admin-username>`
@@ -64,11 +64,17 @@
 
             sudo chown `<samba-admin-username>`:`<samba-groupname>` `</path/to/samba_dir/>`
             ```
-    8. **`SHARE`** Make the share directory for everyone inside the samba directory
+    8. **`ADMIN`** Create an Admin only share
+        *   ```sh
+            sudo mkdir -p `</path/to/samba_dir/>`/`<admin_share_dir>`
+            sudo chown `<samba-admin-username>`: `</path/to/samba_dir/>`/`<admin_share_dir>`
+            sudo chmod 0770 `</path/to/samba_dir/>`/`<admin_share_dir>`
+            ```
+    8. **`SHARE`** Make the share directory for everyone to use inside the samba directory
         *   ```sh
             sudo mkdir -p `</path/to/samba_dir/>`/`<share_dir>`
             ```
-    9. **`SHARE`** Set the correct permissions for the everyones share folder - so only people who you want can access and set the access they have(e.g. exec)
+    9. **`SHARE`** Set the correct permissions for the everyones share folder
         *   ```sh
             sudo chown `<samba-admin-username>`:`<samba-groupname>` `</path/to/samba_dir/>`/`<share_dir>`
             sudo chmod 2770 `</path/to/samba_dir/>`/`<share_dir>`
@@ -77,13 +83,25 @@
     9. Add the configuration
         * 	```sh
             sudo nano /etc/samba/smb.conf
+
             workgroup = WORKGROUP
-            [<samba-share-name>]
+            [<everyones-samba-share-name>]
                 comment = Description
                 path = </path/to/sambashare/>
-                browsable = yes								# Enables windows clients to browse using Explorer
-                read only = no                              # Enables write access to the share(same as "writable = yes")
-                create mask = 0770							# Permissions for files created inside
+                browsable = yes	                # Enables clients to see the share existance
+                read only = no                  # Enables write access to the share(same as "writable = yes")
+                force create mode = 0660        # Makes files not have execute permissions when created
+                force directory mode = 2770     # Make folders be accessible for anything
+                valid users = @`<samba-groupname>` `<samba-admin-username>`
+
+            [<admin-samba-share-name>]
+                comment = Description
+                path = </path/to/sambashare/>
+                browsable = yes	                # Enables clients to see the share existance
+                read only = no                  # Enables write access to the share(same as "writable = yes")
+                force create mode = 0660        # Makes files not have execute permissions when created
+                force directory mode = 2770     # Make folders be accessible for anything
+                valid users = `<samba-admin-username>`
             ```
     10. Enable samba service
         * RHEL
