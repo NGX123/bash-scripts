@@ -1,4 +1,4 @@
-Tweaks
+## Tweaks
 General - Suspend when laptop lid is closed, turn off animations
 Appearance - Applications(Adwaita-dark)
 Extensions - Turn off. Install: TopIcons(system tray)
@@ -10,7 +10,7 @@ Windows Titlebars - Titlebar Buttons - Turn on minimize and maximize
 Settings
 Notifications - manage notifications
 Search - Turn off search(application search stays)
-Privacy - Turn off everything except Screen Lock 
+Privacy - Turn off everything except Screen Lock
 Power - Set options(Automatic suspend, Blank screen, Dim when inactive)
 Devices - Keyboard Shortcuts
   + Navigation
