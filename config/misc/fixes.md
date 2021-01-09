@@ -23,3 +23,9 @@
     *   ```
         rm -rf file/folder...
         ```
+
+### Passwd gives error when changing your own password with some warning(e.g. passwords are similar)
+* **Fix:** change your users password as sudo
+    *   ```
+        sudo passwd `<username>`
+        ```
