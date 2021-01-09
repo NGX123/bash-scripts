@@ -78,13 +78,13 @@ if [[ $de_var != 0 && $(echo $os_var | grep linux) ]]
     then
         clear
         echo "--- DE GUI Configuration ---"
-        cat $textfilesDir_variable/$de_var-config
+        cat $textfilesDir_variable/$de_var-config.md
     else
         if [ $os_var == macos ]
             then
                 clear
                 echo "--- GUI Configuration ---"
-                cat $textfilesDir_variable/macos-config
+                cat $textfilesDir_variable/macos-config.md
         fi
 fi
 
