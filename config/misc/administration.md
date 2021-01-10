@@ -1,4 +1,4 @@
-## Ubuntu Server Configuration
+## [Ubuntu Server Configuration](https://ubuntu.com/server/docs)
 1. Start the live installer in safe graphics mode
 2. **Advice:** Select mostly the default options in the ubuntu installer
 3. Update the system
