@@ -33,16 +33,16 @@
             * 	```sh
                 sudo apt install samba
                 ```
-    2. **`SAMBA`** Add a group which will own the samba_dir and have all SMB users in it so all SMB users in it have access to shares inside(but only to shares that permit them with their internal permission)
+    2. **`SAMBA`** Add a group to ber owner of SMB directory where all shares dirs are stored, so users can just be added to it to gain access to shares directory
         *   ```sh
             sudo groupadd `<samba-groupname>`
             ```
-    3. **`SAMBA`** Create a directory where all SMB share directories will be stored and make samba group the owner for reason above
+    3. **`SAMBA`** Create SMB directory to store share dirs and make newly added group the owner for reason above
         *   ```sh
             sudo mkdir -p `</path/to/samba_dir/>`
             sudo chown :`<samba-groupname>` `</path/to/samba_dir/>`
             ```
-    4. **`USER`** Add a local user as he is required to make a samba user
+    4. **`USER`** Add a local user as it is required to make a samba user
         * 	```sh
             sudo useradd --shell /sbin/nologin --groups `<samba-groupname>` --no-create-home `<username>`
             ```
@@ -50,7 +50,7 @@
         *   ```sh
             passwd `<username>`
             ```
-    6. **`USER`** SMB has it's own password database to which existing unix are added(they need to be added manualy), only users added to the SMB database can access the SMB shares
+    6. **`USER`** SMB has it's own password database and only users added to it can try to connect to shares(and then samba determines if they have access), existing unix users should be manually added to this database
         *   ```sh
             sudo smbpasswd -a `<username>`
             sudo smbpasswd -e `<username>`
@@ -70,16 +70,12 @@
             sudo chown `<samba-admin-username>`: `</path/to/samba_dir/>`/`<admin_share_dir>`
             sudo chmod 0700 `</path/to/samba_dir/>`/`<admin_share_dir>`
             ```
-    8. **`SHARE`** Make the share directory for everyone to use inside the samba directory
+    8. **`SHARE`** Make a share dir for everyone and set the permissions so everyone in sambagroup has r/w/x access
         *   ```sh
             sudo mkdir -p `</path/to/samba_dir/>`/`<share_dir>`
-            ```
-    9. **`SHARE`** Set the correct permissions for the everyones share folder
-        *   ```sh
             sudo chown `<samba-admin-username>`:`<samba-groupname>` `</path/to/samba_dir/>`/`<share_dir>`
             sudo chmod 2770 `</path/to/samba_dir/>`/`<share_dir>`
             ```
-
     9. Add the configuration
         * 	```sh
             sudo nano /etc/samba/smb.conf
