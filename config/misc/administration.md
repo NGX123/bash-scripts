@@ -79,7 +79,7 @@
             workgroup = WORKGROUP
             [<everyones-samba-share-name>]
                 comment = Description
-                path = </path/to/sambashare/>
+                path = $SAMBA_DIR/$EVERYONE_SHARE_DIR
                 browsable = yes	                # Enables clients to see the share existance
                 read only = no                  # Enables write access to the share(same as "writable = yes")
                 force create mode = 0660        # Makes files not have execute permissions when created
@@ -87,7 +87,7 @@
 
             [<admin-samba-share-name>]
                 comment = Description
-                path = </path/to/sambashare/>
+                path = $SAMBA_DIR/$ADMIN_SHARE_DIR
                 browsable = yes	                # Enables clients to see the share existance
                 read only = no                  # Enables write access to the share(same as "writable = yes")
                 force create mode = 0660        # Makes files not have execute permissions when created
