@@ -91,7 +91,7 @@
                 browsable = yes	                # Enables clients to see the share existance
                 read only = no                  # Enables write access to the share(same as "writable = yes")
                 force create mode = 0660        # Makes files not have execute permissions when created
-                force directory mode = 2770     # Make folders be accessible for anything
+                force directory mode = 0770     # Make folders be accessible for anything
             ```
     10. Enable samba service
         * RHEL
