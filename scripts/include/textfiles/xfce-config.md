@@ -41,5 +41,6 @@
       * `(+ Icon)`Add -> Notification Plugin
       * `(+ Icon)`Add -> Clock
       
-        
+## Settings
+ * 
   
