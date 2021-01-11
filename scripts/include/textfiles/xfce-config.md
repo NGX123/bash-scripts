@@ -18,10 +18,28 @@
       * Mode`(Vertical)`
       * `(On the esktop)` Drag panel to left bar
       * Lock panel`(ON)`
-      * Row Size`(25)`
+      * Automatically hide the panel`(Intelligently)`
+      * Row Size`(32)`
       * Length`(100)`
       * Automatically increase the length`(OFF)`
     * Items
-      * `(Terminal Emulator`) sudo <pm> install xfce4-whiskermenu-plugin 
-      * `(+ Icons)`Add -> Whisker Menu
+      * `(Terminal Emulator)` sudo `<pm>` install xfce4-whiskermenu-plugin 
+      * `(+ Icon)`Add -> Whisker Menu
+       * Edit -> Appearance -> Menu`(ALL OFF)`
+      * `(+ Icon)`Add -> Window Buttons
+       * Edit
+        * Show button lables`(OFF)`
+        * Show handle`(OFF)`
+        * Sorting order`(Timestamp)`
+        * Window grouping`(Never)`
+        * Switch windows using the mouse wheel`(OFF)`
+      * `(+ Icon)`Add -> Separator
+       * Edit
+        * Style`(Transparent)`
+        * Expand`(ON)`
+      * `(+ Icon)`Add -> PulseAudio Plugin
+      * `(+ Icon)`Add -> Notification Plugin
+      * `(+ Icon)`Add -> Clock
+      
+        
   
