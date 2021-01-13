@@ -24,7 +24,7 @@
 * Workspace
 	* Workspace Behavior
 		* General Behavior -> Animation Speed`(Instant - No animations; In the middle - Normal animations)`
-		* Desktop Effects -> Squash`(ON)`, Slide`(ON)`, Useless effecs`(OFF)`
+		* Desktop Effects
 			* Appearance -> (Background contrast, Fading Popups, Login, Logout, Maximize, Squash)`(ON)`
 			* Focus - > Dialog Parent`(ON)`
 			* Virtual Desktop Switching Animations`(Slide)`
