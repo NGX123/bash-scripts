@@ -30,6 +30,7 @@
 			* Virtual Desktop Switching Animations`(Slide)`
 			* Window Management -> Dektop Grid`(ON)`
 			* Window Open/Close Animation`(Scale. or Glide)`
+			* Others`(OFF, in most cases)`
 		* Screen Edges -> Click on each -> Set action`(No action)`
 		* Screen Locking
 			* Appearance`(Change wallpaper)`
