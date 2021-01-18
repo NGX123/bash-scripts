@@ -40,8 +40,8 @@
 	* Shortcuts
 		* `(+ Icon)`Add -> KSysGuard`(Ctrl + Shift + Esc)`
 		* `(+ Icon)`Add -> Terminator`(Ctrl + Alt + T)`
+		* `(+ Icon)`Add -> Dolphin`(Super + E)`
 		* `(- Icon)`Remove -> Emoji
-		* Check if Dolphin opens on`(Super + E)`
 		* Kwin
 			* Switch to Desktop x`(Super + x)`
 			* Windows to Desktop x`(Super + Shift + x)`
