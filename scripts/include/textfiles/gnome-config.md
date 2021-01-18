@@ -17,7 +17,7 @@
     * Switch to workspace x`(Super + x/Super + Alt + x)`
     * Move window to workspace x`(Super + Shift + x)`
     * Hide all normal windows`(Super + D)`
-    * Move to workspace above/below`(Alt + ->/<)`
+    * Move to workspace above/below`(Super + Alt + ->/<)`
   * Custom Shortcuts
     * nautilus`(Super + E)`
     * terminator`(Ctrl + Alt + T)`
@@ -25,6 +25,7 @@
   * Other(Not a settings category)
     * Switch to next input source`(Super + Space)`
     * Hide window`(Super + H)`
+    * Maximize window`(Super + Up)`
 * Details -> Default Apps`(Set needed)`
 
 ## Extensions(may be needed in some cases)
