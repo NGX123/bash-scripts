@@ -53,6 +53,7 @@
 	* Startup and Shutdown
 		* Splash Screen`(None)`
 		* Login Screen -> Breeze -> Background`(Set)`
+		* Desktop Session -> On Login`(Start with an empty session)`
 	* Search -> File Search -> Enable File Search`(OFF)`
 
 + Personalization
