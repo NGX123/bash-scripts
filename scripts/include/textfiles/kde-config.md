@@ -2,12 +2,13 @@
 * Go to desktop
 * Right click on every panel -> `(Bin icon)`Remove panel
 * Right click on desktop -> Add Panel`(Empty Panel)`
-* Right click on panel -> Add widgets in the following order: `Application Menu`, `Icons only task manager`, `System tray`, `Digital clock`
-* Right click on panel -> Edit Panel
-	* Height`(Decrease until icons deform)`
-	* Screen Edge`(Upper)`
+* Right click on panel
+	* Add widgets in the following order: `Application Menu`, `Icons only task manager`, `System tray`, `Digital clock`
+	* Edit Panel
+		* Height`(Decrease until icons deform)`
+		* Screen Edge`(Upper)`
 * Right click on Application Launcher on Panel -> Configure Application Dashboard/menu
-	* Show categories:
+	* Show categories
 		* Recent application`(OFF)`
 		* Recent documents`(OFF)`
 	* Search -> Expand search to bookmarks, files and emails`(OFF)`
@@ -49,7 +50,6 @@
 			* Minimize Windows`(Super + H)`
 			* Maximize Window`(Super + Up)`
 			* Switch to workspace above/below`(Super + Alt + ->\<)`
-		* Hardware -> Input Devices -> Keyboard -> Layout -> Main shortcut`(Set - Super + Space)`
 	* Startup and Shutdown
 		* Splash Screen`(None)`
 		* Login Screen -> Breeze -> Background`(Set)`
@@ -60,6 +60,7 @@
 	+ Applications -> Default`(Set)`, Diagnostics`(OFF)`
 
 + Hardware
+	+ Input Devices -> Keyboard -> Layout -> Main shortcut`(Set - Super + Space)`
 	+ Power Management
 		On battery:(If problems occur like screen not turning off - dim screen`(OFF)`, screen energy saving`(2 min)`
 		+ Keyboard backlight`(OFF)`
