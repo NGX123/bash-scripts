@@ -1,9 +1,15 @@
 ## System Appearance(System Settings -> Appearance)
-* Breeze Dark - Global Theme`(Breeze Dark)`, Plasma Style`(Breeze Dark)`, Application Style`(Breeze)`, Application Style-Window Decorations`(Breeze)`, Application-Style-GTK2/3`(Breeze Dark)`, Colors`(Breeze Dark)`, Icons`(Breeze Dark)`
-* ChromeOS - Global Theme`(ChromeOS by vinceliuice, select the dark version; store.kde.org/p/1354062)`, Plasma Style`(ChromeOS)`, Applications Style`(Breeze)`, Application Style-Window Decorations`(ChromeOS-dark)`, Application Style-GTK2/3`(Orchis Gtk by vinceliuice, select the dark version; store.kde.org/p/1357889)`, Colors`(ChromeOSDark)`, Icons`(Tela by vinceliuice, select dark; store.kde.org/p/1279924)`
+* Breeze Dark
+	- Global Theme`(Breeze Dark)`
+	- Plasma Style`(Breeze Dark)`
+	- Application Style`(Breeze)`
+	- Application Style-Window Decorations`(Breeze)`
+	- Application-Style-GTK2/3`(Breeze Dark)`
+	- Colors`(Breeze Dark)`
+	- Icons`(Breeze Dark)`
 
 * Icons - Tela`(by vinceliuice, download the black version and select the black-dark in settings; store.kde.org/p/1279924)`
-* Themes - Dark Breeze, Nordic, Adapta
+* Themes - Dark Breeze, Arc, Nordic, Adapta
 
 ## Remove bloat and leftover
 * System themes... location
