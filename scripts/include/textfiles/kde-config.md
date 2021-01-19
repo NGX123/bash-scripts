@@ -20,7 +20,7 @@
 	* Mouse Actions -> Vertical-Scroll(Switch Desktop) -> `(- Icon)`Remove
 
 ## Configure system(System settings)
-* Appearance -> Application Style -> Window Decorations -> Titlebar Buttons -> Remove: `On all desktops`, `Context help`
+* Appearance -> Application Style -> Window Decorations -> Titlebar Buttons -> Remove: `On all desktops`, `Context help`, `Menu`
 
 * Workspace
 	* Workspace Behavior
