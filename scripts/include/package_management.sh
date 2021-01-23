@@ -65,12 +65,12 @@ if [ $pm_var == dnf ]
         sudo dnf install -y code
 
         # Google Chrome
-        wget https://dl.google.com/linux/direct/google-chrome-stable_current_x86_64.rpm
-        sudo dnf install -y ./google-chrome-stable_current_*.rpm
-        rm ./google-chrome-stable_current_*.rpm
+        # wget https://dl.google.com/linux/direct/google-chrome-stable_current_x86_64.rpm
+        # sudo dnf install -y ./google-chrome-stable_current_*.rpm
+        # rm ./google-chrome-stable_current_*.rpm
 
         # Apps
-        sudo dnf install -y $apps_list firefox
+        sudo dnf install -y $apps_list firefox google-chrome-stable
 
         # Apps with platform specific names
         sudo dnf -y install @development-tools kernel-headers kernel-devel
