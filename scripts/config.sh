@@ -107,4 +107,8 @@ echo "
 
 --- To do manually ---
 1. Configure the GUI
-2. Install all the VMs through QEMU to the ~/vm/vms"
+2. Virtualization
+    1. Install QEMU-KVM Virt-Manger
+        - Fedora - sudo dnf install @virtualization
+        - Ubuntu - sudo apt install -y qemu qemu-kvm libvirt-daemon libvirt-clients bridge-utils virt-manager
+    2. Install all the VMs through QEMU to the ~/vm/vms"
