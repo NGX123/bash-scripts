@@ -134,12 +134,18 @@
 
 ### Remove snaps
 *   ```sh
-    snap list                # List installed
-    sudo snap remove program # Remove installed packages before removing snap
-    sudo apt-get purge snapd
+    snap list               
+    sudo snap remove --purge <package> # Order of removal: apps, lxd, core*, snapd
+    # Do next two steps only if the snap folders are still mounted
+    sudo umount /snap/snapd/XXXX       # Replace XXXX with ID of a snap direcotry(find by runnning "df")
+    sudo umount /var/snap
+    sudo apt purge snapd && sudo apt autoremove
     sudo apt-mark hold snapd
-    sudo apt autoremove
+    sudo rm -rf ~/snap /snap /var/snap /var/lib/snapd /var/cache/snapd
     ```
+* Links
+	* [Complete removal](https://cialu.net/how-to-disable-and-remove-completely-snaps-in-ubuntu-linux/)
+	* [Extra removal steps](https://www.google.com/amp/s/techwiser.com/remove-snap-ubuntu/amp/)
 
 ## Hardware
 ### Partition drives
