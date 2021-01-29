@@ -62,15 +62,15 @@
 + Hardware
 	+ Input Devices -> Keyboard -> Layout -> Main shortcut`(Set - Super + Space)`
 	+ Power Management
-		On battery:(If problems occur like screen not turning off - dim screen`(OFF)`, screen energy saving`(2 min)`
-		+ Keyboard backlight`(OFF)`
-		+ Dim screen`(2 min)`
-		+ Screen Energy Saving`(3 min)`
-		+ Suspend Session`(Sleep after 10 min)`
-		+ Button events handling`(When laptop lid close even when exeternal monitor connected - sleep)`
+		+ On battery:(If problems occur like screen not turning off - dim screen`(OFF)`, screen energy saving`(2 min)`
+			+ Keyboard backlight`(OFF)`
+			+ Dim screen`(3 min)`
+			+ Screen Energy Saving`(4 min)`
+			+ Suspend Session`(Sleep after 10 min)`
+			+ Button events handling`(When laptop lid close even when exeternal monitor connected - sleep)`
 
-		On AC
-		+ Dim screen`(5 min)`
-		+ Screen Energy Saving`(10 min)`
-		+ Suspend session`(Sleep after 20 min)`
-		+ Button events handling`(When laptop lid closed - sleep)`
+		+ On AC
+			+ Dim screen`(5 min)`
+			+ Screen Energy Saving`(10 min)`
+			+ Suspend session`(Sleep after 20 min)`
+			+ Button events handling`(When laptop lid closed - sleep)`
