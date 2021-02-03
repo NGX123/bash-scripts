@@ -136,11 +136,11 @@
 *   ```sh
     snap list               
     sudo snap remove --purge <package> # Order of removal: apps(<app-name>, do only if some are installed), lxd, core*, snapd
-    # Do next two steps only if the snap folders are still mounted
-    sudo umount /snap/snapd/XXXX       # Replace XXXX with ID of a snap direcotry(find by runnning "df")
-    sudo umount /var/snap
     sudo apt purge snapd && sudo apt autoremove
     sudo apt-mark hold snapd
+    # Do next three steps only if the snap folders are still mounted and/or present
+    sudo umount /snap/snapd/XXXX       # Replace XXXX with ID of a snap direcotry(find by runnning "df")
+    sudo umount /var/snap
     sudo rm -rf ~/snap /snap /var/snap /var/lib/snapd /var/cache/snapd
     ```
 * Links
