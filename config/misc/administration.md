@@ -135,7 +135,7 @@
 ### Remove snaps
 *   ```sh
     snap list               
-    sudo snap remove --purge <package> # Order of removal: apps, lxd, core*, snapd
+    sudo snap remove --purge <package> # Order of removal: apps(<app-name>, do only if some are installed), lxd, core*, snapd
     # Do next two steps only if the snap folders are still mounted
     sudo umount /snap/snapd/XXXX       # Replace XXXX with ID of a snap direcotry(find by runnning "df")
     sudo umount /var/snap
