@@ -11,7 +11,7 @@ fail_function () {             # Called when program fails
 
 
 ## Variables ##
-apps_list="terminator mpv transmission \
+apps_list="terminator mpv transmission firefox \
 nasm nano binutils diffutils valgrind clang"
 dirs_list="$HOME/src $HOME/opt/bin $HOME/github $HOME/vm/iso $HOME/vm/vms $HOME/.scripts"
 workspace_directory=$PWD
