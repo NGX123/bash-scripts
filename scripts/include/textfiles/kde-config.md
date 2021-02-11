@@ -36,7 +36,9 @@
 			* Appearance`(Change wallpaper)`
 			* Lock screen`(2 min)`
 			* Allow unlocking without password for`(Immediatly)`
-	* Window Management -> Task Switcher -> Main -> Visulatization`(Large Icons)`
+	* Window Management
+		* Window Behavior -> Advanced -> Window placement`(Centered)`
+		* Task Switcher -> Main -> Visulatization`(Large Icons)`
 	* Shortcuts
 		* `(+ Icon)`Add -> KSysGuard`(Ctrl + Shift + Esc)`
 		* `(+ Icon)`Add -> Terminator`(Ctrl + Alt + T)`
