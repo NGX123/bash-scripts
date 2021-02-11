@@ -28,10 +28,9 @@
 		* Desktop Effects
 			* Appearance -> (Background contrast, Fading Popups, Login, Logout, Maximize, Squash)`(ON)`
 			* Focus - > Dialog Parent`(ON)`
-			* Virtual Desktop Switching Animations`(Slide)`
 			* Window Management -> Dektop Grid`(ON)`
 			* Window Open/Close Animation`(Scale. or Glide)`
-			* Others`(OFF, in most cases)`
+			* Others`(OFF)`
 		* Screen Edges -> Click on each -> Set action`(No action)`
 		* Screen Locking
 			* Appearance`(Change wallpaper)`
