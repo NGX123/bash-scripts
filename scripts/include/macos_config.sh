@@ -12,7 +12,7 @@ sudo chsh -s /usr/local/bin/bash && \
 bash_installed=y
 if [ $bash_installed == y ]
   then
-    touch $HOME/.bash_profile
+    touch $HOME/.bash_profile $HOME/.bashrc
     echo '[[ -r "/usr/local/etc/profile.d/bash_completion.sh" ]] && . "/usr/local/etc/profile.d/bash_completion.sh"' >> $HOME/.bash_profile
     
     mkdir -p $HOME/.scripts
