@@ -9,7 +9,6 @@ fail_function () {             # Called when program fails
 
 
 
-
 ## Variables ##
 apps_list="terminator mpv transmission firefox \
 nasm nano binutils diffutils valgrind clang"
@@ -19,7 +18,6 @@ workspace_directory=$PWD
 includesDir_variable=./include
 textfilesDir_variable=$includesDir_variable/textfiles
 configDir_variable=../config
-
 
 
 
@@ -45,7 +43,6 @@ read -p "Destktop Environment(Default: none): " de_var
 
 
 
-
 ## Cross-platform ##
 # Make folders
 mkdir -p $dirs_list
@@ -66,7 +63,6 @@ git init
 git remote add t https://github.com/NGX123/tos
 git pull t master
 cd $workspace_directory
-
 
 
 
