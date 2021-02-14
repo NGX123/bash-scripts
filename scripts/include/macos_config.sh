@@ -14,6 +14,11 @@ if [ $bash_installed == y ]
   then
     touch ~/.bash_profile
     echo '[[ -r "/usr/local/etc/profile.d/bash_completion.sh" ]] && . "/usr/local/etc/profile.d/bash_completion.sh"' >> ~/.bash_profile
+    
+    mkdir -p $HOME/.scripts
+    cp -r $configDir_variable/apps/bash/* $HOME/.scripts
+    [ ! $(cat $HOME/.bashrc | grep '[ -f $HOME/.scripts/color.sh ] && . $HOME/.scripts/color.sh') ] && echo '[ -f $HOME/.scripts/color.sh ] && . $HOME/.scripts/color.sh' >> $HOME/.bashrc
+    [ ! $(cat $HOME/.bashrc | grep '[ -f $HOME/.scripts/bash_aliases.sh ] && . $HOME/.scripts/bash_aliases.sh') ] && echo '[ -f $HOME/.scripts/bash_aliases.sh ] && . $HOME/.scripts/bash_aliases.sh' >> $HOME/.bashrc
 fi
 
 
