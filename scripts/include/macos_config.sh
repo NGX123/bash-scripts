@@ -17,8 +17,8 @@ if [ $bash_installed == y ]
     
     mkdir -p $HOME/.scripts
     cp -r $configDir_variable/apps/bash/* $HOME/.scripts
-    [ ! $(cat $HOME/.bashrc | grep '[ \-f $HOME/.scripts/color.sh ] && . $HOME/.scripts/color.sh') ] && echo '[ -f $HOME/.scripts/color.sh ] && . $HOME/.scripts/color.sh' >> $HOME/.bashrc
-    [ ! $(cat $HOME/.bashrc | grep '[ \-f $HOME/.scripts/bash_aliases.sh ] && . $HOME/.scripts/bash_aliases.sh') ] && echo '[ -f $HOME/.scripts/bash_aliases.sh ] && . $HOME/.scripts/bash_aliases.sh' >> $HOME/.bashrc
+    [ ! $(cat $HOME/.bashrc | grep -q '[ \-f $HOME/.scripts/color.sh ] && . $HOME/.scripts/color.sh') ] && echo '[ -f $HOME/.scripts/color.sh ] && . $HOME/.scripts/color.sh' >> $HOME/.bashrc
+    [ ! $(cat $HOME/.bashrc | grep -q '[ \-f $HOME/.scripts/bash_aliases.sh ] && . $HOME/.scripts/bash_aliases.sh') ] && echo '[ -f $HOME/.scripts/bash_aliases.sh ] && . $HOME/.scripts/bash_aliases.sh' >> $HOME/.bashrc
 fi
 
 
