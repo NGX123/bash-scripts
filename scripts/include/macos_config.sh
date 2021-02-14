@@ -22,7 +22,7 @@ if [ $bash_installed == y ]
     
     [ ! $(cat $HOME/.bashrc | grep '. $HOME/.scripts/bash_aliases.sh') ] && echo '[ -f $HOME/.scripts/bash_aliases.sh ] && . $HOME/.scripts/bash_aliases.sh' >> $HOME/.bashrc
     echo 'export CLICOLOR=1' >> $HOME/.bashrc
-    echo 'export PS1="\[\e[34m\]\u\[\e[m\]\[\e[34m\]:\[\e[m\]\[\e[32m\]\w\[\e[m\]\[\e[32m\]>\[\e[m\] "' >> $HOME/.bashrc
+    echo 'export PS1="\[\e[31m\]\u\[\e[m\]\[\e[34m\]@\[\e[m\]\[\e[32m\]\w\[\e[m\]\[\e[32m\]\\$\[\e[m\] "' >> $HOME/.bashrc
 fi
 
 
