@@ -2,6 +2,21 @@
 git config --global user.name "NGX123"
 git config --global user.email "NGX123"
 
+# Change zsh to bash
+bash_installed=n
+brew install bash bash-completion
+ls /usr/local/bin/bash && \
+sudo sh -c "echo '/usr/local/bin/bash' >> /etc/shells" && \
+chsh -s /usr/local/bin/bash && \
+sudo chsh -s /usr/local/bin/bash && \
+bash_installed=y
+if [ $bash_installed == y ]
+  then
+    touch ~/.bash_profile
+    echo '[[ -r "/usr/local/etc/profile.d/bash_completion.sh" ]] && . "/usr/local/etc/profile.d/bash_completion.sh"' >> ~/.bash_profile
+fi
+
+
 # User message
 # echo "
 # ---------------------------------------------------------------------------------------------------------
