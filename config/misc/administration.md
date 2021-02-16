@@ -222,3 +222,12 @@
     sudo apt install net-tools
     sudo netstat -tunlp
     ```
+    
+### COnnect Multiple Drives into one
+1. [Mount all the drives](#mount-drives)
+2. Select one of the drives which will be the main one(any drive out of the ones you want to connect together)
+3. Make symlinks to other drives in this main drive and name them as folders so users think they are using one drive but actually each of the symlinked folders i s a seperate drive
+	*   ```sh
+        ln -s /drive/to/symlink/mount/point /main/drive/mount/point
+            ```
+	
