@@ -5,9 +5,10 @@
     * 	```sh
 		sudo apt update && sudo apt upgrade && sudo apt autoremove
 		```
-4. [Mount all of the drives](#mount-drives)
-5. [Remove snaps](#remove-snaps)
-6. [Setup samba](#smb)
+4. [Format the extra drives](#partition-drives)
+5. [Mount all of the drives](#mount-drives)
+6. [Remove snaps](#remove-snaps)
+7. [Setup samba](#smb)
 * **(Optional)** [Setup SSH](#ssh)
 * **(Optional)** Install the GUI
 	* [Install xfce4](https://itsfoss.com/install-xfce-desktop-xubuntu/) (Lightest GUI. Apart from xfce4 package, xubuntu-desktop package is available which includes a lot of software together with the DE)
