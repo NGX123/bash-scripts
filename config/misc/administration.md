@@ -36,41 +36,41 @@
     2. **`GROUP`** Add a group to be owner of SMB directory where all shares dirs are stored, so users can just be added to it to gain access to shares directory(the direcotry can be named in any way not only samba_group and samba_group_admin)
         *   ```sh
             sudo groupadd samba_group
-            sudo groupadd $SAMBA_ADMIN_GROUP
+            sudo groupadd samba_admin_group
             ```
     3. **`ADMIN`** Add an administrator to own the samba folder(proccess of adding is same as with normal user)
         *   ```sh
-            sudo useradd --shell /sbin/nologin --groups samba_group --groups $SAMBA_ADMIN_GROUP --no-create-home $SAMBA_ADMIN_USER
-            passwd $SAMBA_ADMIN_USER
-            sudo smbpasswd -a $SAMBA_ADMIN_USER
-            sudo smbpasswd -e $SAMBA_ADMIN_USER
+            sudo useradd --shell /sbin/nologin --groups samba_group --groups samba_admin_group --no-create-home sambaAdmin
+            passwd sambaAdmin
+            sudo smbpasswd -a sambaAdmin
+            sudo smbpasswd -e sambaAdmin
             ```
     4. **`USER`** Add a local user as it is required to make a samba user and enable him by adding him a password(needed for use with samba)
         * 	```sh
-            sudo useradd --shell /sbin/nologin --groups samba_group --no-create-home $SAMBA_USER
-            passwd $SAMBA_USER
+            sudo useradd --shell /sbin/nologin --groups samba_group --no-create-home sambaUser
+            passwd sambaUser
             ```
     5. **`USER`** SMB has it's own password database and only users added to it can try to connect to shares(and then samba determines if they have access), existing unix users should be manually added to this database
         *   ```sh
-            sudo smbpasswd -a $SAMBA_USER
-            sudo smbpasswd -e $SAMBA_USER
+            sudo smbpasswd -a sambaUser
+            sudo smbpasswd -e sambaUser
             ```
     6. **`SAMBA`** Create SMB directory to store share dirs and make newly added group the owner for reason above
         *   ```sh
             sudo mkdir -p $SAMBA_DIR
-            sudo chown $SAMBA_ADMIN_USER:samba_group $SAMBA_DIR
+            sudo chown sambaAdmin:samba_group $SAMBA_DIR
 		    sudo chmod 0750 $SAMBA_DIR
             ```
     7. **`SHARE`** Create an Admin only share
         *   ```sh
             sudo mkdir -p $SAMBA_DIR/$ADMIN_SHARE_DIR
-            sudo chown $SAMBA_ADMIN_USER:$SAMBA_ADMIN_GROUP $SAMBA_DIR/$ADMIN_SHARE_DIR
+            sudo chown sambaAdmin:samba_admin_group $SAMBA_DIR/$ADMIN_SHARE_DIR
             sudo chmod 0700 $SAMBA_DIR/$ADMIN_SHARE_DIR
             ```
     8. **`SHARE`** Make a share dir for everyone and set the permissions so everyone in sambagroup has r/w/x access
         *   ```sh
             sudo mkdir -p $SAMBA_DIR/$EVERYONE_SHARE_DIR
-            sudo chown $SAMBA_ADMIN_USER:samba_group $SAMBA_DIR/$EVERYONE_SHARE_DIR
+            sudo chown sambaAdmin:samba_group $SAMBA_DIR/$EVERYONE_SHARE_DIR
             sudo chmod 2770 $SAMBA_DIR/$EVERYONE_SHARE_DIR
             ```
     9. Add the configuration
@@ -134,7 +134,7 @@
 
 ### Remove snaps
 *   ```sh
-    snap list               
+    snap list
     sudo snap remove --purge <package> # Order of removal: apps(<app-name>, do only if some are installed), lxd, core*, snapd
     sudo apt purge snapd && sudo apt autoremove
     sudo apt-mark hold snapd
