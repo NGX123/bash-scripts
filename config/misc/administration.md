@@ -59,7 +59,7 @@
         *   ```sh
             sudo mkdir -p $SAMBA_DIR
             sudo chown $SAMBA_ADMIN_USER:$SAMBA_GROUP $SAMBA_DIR
-		    sudo chmod 0750
+		    sudo chmod 0750 $SAMBA_DIR
             ```
     7. **`SHARE`** Create an Admin only share
         *   ```sh
