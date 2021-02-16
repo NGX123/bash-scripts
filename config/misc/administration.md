@@ -187,7 +187,7 @@
 4.  ```sh
     sudo nano /etc/fstab
     ```
-5. Add the following line to /etc/fstab - `UUID=COPIED /media/folder-name ext4 defaults 0 0`
+5. Add the following line to /etc/fstab(copy only the UUID, but no the quotes surrounding it) - `UUID=COPIED_FROM_BLKID /media/folder-name ext4 defaults 0 0`
 6. Check if everything works in fstab, if it does not - undo all changes in fstab
     *   ```sh
         sudo mount -a # if error - undo changes in /etc/fstab
