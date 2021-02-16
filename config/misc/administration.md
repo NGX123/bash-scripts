@@ -1,6 +1,7 @@
 ## [Ubuntu Server Configuration](https://ubuntu.com/server/docs)
 1. Start the live installer in safe graphics mode
-2. **Advice:** Select mostly the default options in the ubuntu installer
+2. Select default options in the ubuntu installer except:
+	* When selecting drive to install - uncheck the LVM option
 3. Update the system
     * 	```sh
 		sudo apt update && sudo apt upgrade && sudo apt autoremove
