@@ -1,3 +1,6 @@
+# Install the tools
+xcode-select --install
+
 # Git configuration
 git config --global user.name "NGX123"
 git config --global user.email "NGX123"
@@ -24,7 +27,6 @@ if [ $bash_installed == y ]
     echo 'export CLICOLOR=1' >> $HOME/.bashrc
     echo 'export PS1="\[\e[31m\]\u\[\e[m\]\[\e[34m\]@\[\e[m\]\[\e[32m\]\w\[\e[m\]\[\e[32m\]\\$\[\e[m\] "' >> $HOME/.bashrc
 fi
-
 
 # User message
 # echo "
