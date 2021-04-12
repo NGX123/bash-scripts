@@ -64,6 +64,9 @@ git remote add t https://github.com/NGX123/tos
 git pull t master
 cd $workspace_directory
 
+echo 'PS1="\[\e[36m\][\[\e[m\]\[\e[34m\]\u\[\e[m\] \[\e[33m\]\w\[\e[m\] \[\e[32m\]\\$\[\e[m\]\[\e[36m\]]\[\e[m\] "' >> ~/.bashrc
+# Good PS1 Generator - https://ezprompt.net/
+
 
 
 ## Script End Messages ##
