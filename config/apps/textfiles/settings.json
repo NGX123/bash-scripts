@@ -1,4 +1,6 @@
 {
+    "__FILE_DESCRIPTION__" : "contains visual stduo code settings",
+    
     "files.trimTrailingWhitespace" : true,
     "files.trimFinalNewlines" : true,
 
