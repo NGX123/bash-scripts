@@ -5,15 +5,16 @@ code --install-extension ms-vscode.cpptools
 code --install-extension ms-python.python
 
 read -p "Platform: " platform_var
+vscode_config=./textfiles/vscode-config.json
 
 if [ $platform_var == macos ]
-	then
-    cat ./textfiles/settings.json >> $HOME/Library/ApplicationSupport/Code/User/settings.json
+then
+	cat "$vscode_config" > $HOME/Library/ApplicationSupport/Code/User/settings.json
 fi
 
 if [ $platform_var == linux ]
-	then
-    cat ./textfiles/settings.json >> $HOME/.config/Code/User/settings.json
+then
+	cat "$vscode_config" > $HOME/.config/Code/User/settings.json
 fi
 
 # Configuration articles
