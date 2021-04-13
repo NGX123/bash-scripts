@@ -17,7 +17,6 @@ workspace_directory=$PWD
 
 includesDir_variable=./include
 textfilesDir_variable=$includesDir_variable/textfiles
-configDir_variable=../config
 
 
 
@@ -25,7 +24,6 @@ configDir_variable=../config
 # Folder existance checks
 [ ! -d $includesDir_variable ] && fail_function "$includesDir_variable does not exist"
 [ ! -d $textfilesDir_variable ] && fail_function "$textfilesDir_variable does not exist"
-[ ! -d $configDir_variable ] && fail_function "$configDir_variable does not exist"
 
 # User input
 read -p "OS: " os_var

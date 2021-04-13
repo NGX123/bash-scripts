@@ -17,13 +17,10 @@ if [ $bash_installed == y ]
   then
     touch $HOME/.bash_profile $HOME/.bashrc
     mkdir -p $HOME/.scripts
-    
-    cp -r $configDir_variable/apps/bash/* $HOME/.scripts
-    
+
+
     echo '. $HOME/.bashrc' >> $HOME/.bash_profile
     echo '[[ -r "/usr/local/etc/profile.d/bash_completion.sh" ]] && . "/usr/local/etc/profile.d/bash_completion.sh"' >> $HOME/.bash_profile
-    
-    [ ! $(cat $HOME/.bashrc | grep '. $HOME/.scripts/bash_aliases.sh') ] && echo '[ -f $HOME/.scripts/bash_aliases.sh ] && . $HOME/.scripts/bash_aliases.sh' >> $HOME/.bashrc
     echo 'export CLICOLOR=1' >> $HOME/.bashrc
 fi
 
