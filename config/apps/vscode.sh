@@ -1,8 +1,11 @@
 # Install vscode extensions
 # Format author.extension(this info is displayed next to extension name on it's store page)
-code --install-extension aaronthomas.vscode-snazzy-operator
 code --install-extension ms-vscode.cpptools
 code --install-extension ms-python.python
+code --install-extension twxs.cmake
+code --install-extension ms-vscode.hexeditor
+code --install-extension zixuanwang.linkerscript
+code --install-extension 13xforever.language-x86-64-assembly
 
 read -p "Platform: " platform_var
 vscode_config=./textfiles/vscode-config.json
