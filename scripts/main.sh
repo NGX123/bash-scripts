@@ -1,20 +1,10 @@
 #! /bin/bash
 
-## Functions ##
-fail_function () {             # Called when program fails
-    clear
-    echo "--- Fail - $1 ---"
-    exit
-}
-
-
-
 ## Variables ##
 apps_list="terminator mpv transmission firefox \
 nasm nano binutils diffutils valgrind clang"
 dirs_list="$HOME/src $HOME/opt/bin $HOME/github $HOME/vm/iso $HOME/vm/vms $HOME/.scripts"
 workspace_directory=$PWD
-
 includesDir_variable=./include
 textfilesDir_variable=$includesDir_variable/textfiles
 
@@ -22,22 +12,37 @@ textfilesDir_variable=$includesDir_variable/textfiles
 
 ## Script setup ##
 # Folder existance checks
-[ ! -d $includesDir_variable ] && fail_function "$includesDir_variable does not exist"
-[ ! -d $textfilesDir_variable ] && fail_function "$textfilesDir_variable does not exist"
+[ ! -d $includesDir_variable ] || exit
+[ ! -d $textfilesDir_variable ] || exit
 
-# User input
-read -p "OS: " os_var
-read -p "Package Manager: " pm_var
-read -p "Destktop Environment(Default: none): " de_var
+# Get information about the system #
+# Get the OS
+current_os="none"
+case $(uname -s) in
+	Linux*) current_os="linux" ;;
+	Darwin*) current_os="macos" ;;
+	*) read -p "OS: " current_os ;;
+esac
+
+# Get the Desktop Environment
+current_de="none"
+case "$DESKTOP_SESSION" in
+	gnome*) current_de="gnome" ;;
+	plasma*) current_de="kde" ;;
+	*) read -p "Destktop Environment: " current_de ;;
+esac
+
+# Get the Package Manager
+read -p "Package Manager: " current_pm
+
 
 
 ## System-specific Configuration
-# Include package manager script
-[ -f $includesDir_variable/package_management.sh ] && . $includesDir_variable/package_management.sh || fail_function "$includesDir_variable/package_management.sh does not exist"
+# Include package manager script or exit if it does not exist
+. "$includesDir_variable"/package_management.sh || exit
 
 # Include platform specific scripts
-[ -f $includesDir_variable/"$os_var"_config.sh ] && . $includesDir_variable/"$os_var"_config.sh                                                                                                                             # Distro/platform specific configs
-[ $(echo $os_var | grep linux) ] && [ -f $includesDir_variable/global_linux_config.sh ] && . $includesDir_variable/global_linux_config.sh || fail_function "$includesDir_variable/global_linux_config.sh does not exist"    # Configs that apply to all linuxes
+. "$includesDir_variable"/"$current_os"_config.sh || exit                                                                                                                             # Distro/platform specific configs
 
 
 
@@ -45,24 +50,8 @@ read -p "Destktop Environment(Default: none): " de_var
 # Make folders
 mkdir -p $dirs_list
 
-# Add local binary directory to PATH
-[ ! $(cat $HOME/.bashrc | grep 'PATH=$PATH:$HOME/opt/bin') ] && echo 'PATH=$PATH:$HOME/opt/bin' >> $HOME/.bashrc
-
-# Setup git repos
-mkdir -p $HOME/github/programming-repo
-cd $HOME/github/programming-repo || fail_function "Can't setup programming-repo"
-git init
-git remote add p https://github.com/NGX123/programming
-git pull p master
-
-mkdir -p $HOME/github/tos-repo
-cd $HOME/github/tos-repo || fail_function "Can't setup tos-repo"
-git init
-git remote add t https://github.com/NGX123/tos
-git pull t master
-cd $workspace_directory
-
 # Change the shell colors
+touch ~/.bashrc
 echo 'PS1="\[\e[36m\][\[\e[m\]\[\e[34m\]\u\[\e[m\] \[\e[33m\]\w\[\e[m\] \[\e[32m\]\\$\[\e[m\]\[\e[36m\]]\[\e[m\] "' >> ~/.bashrc
 # Good PS1 Generator - https://ezprompt.net/
 
@@ -70,13 +59,13 @@ echo 'PS1="\[\e[36m\][\[\e[m\]\[\e[34m\]\u\[\e[m\] \[\e[33m\]\w\[\e[m\] \[\e[32m
 
 ## Script End Messages ##
 # GUI Configurations
-if [[ $de_var != 0 && $(echo $os_var | grep linux) ]]
+if [[ $current_de != 0 && $current_os == "linux" ]]
     then
         clear
         echo "--- DE GUI Configuration ---"
-        cat $textfilesDir_variable/$de_var-config.md
+        cat $textfilesDir_variable/$current_de-config.md
     else
-        if [ $os_var == macos ]
+        if [ $current_os == "macos" ]
             then
                 clear
                 echo "--- GUI Configuration ---"

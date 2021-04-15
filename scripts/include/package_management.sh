@@ -1,7 +1,7 @@
 # Includes the code for package managers configuration for main configurations script
 
 ### Config for APT ###
-if [ $pm_var == apt ]
+if [ $current_pm == apt ]
     then
         # Variables
         inst=install
@@ -41,7 +41,7 @@ if [ $pm_var == apt ]
 fi
 
 ## Config for DNF ##
-if [ $pm_var == dnf ]
+if [ $current_pm == dnf ]
     then
         # Variables
         inst=install
@@ -85,7 +85,7 @@ if [ $pm_var == dnf ]
 fi
 
 ## Config for Homebrew ##
-if [ $pm_var == brew ]
+if [ $current_pm == brew ]
     then
         # Install xcode command line tools(brew dependency)
         if [ os_var == macos ]
