@@ -10,6 +10,7 @@
     "explorer.openEditors.visible": 0,
     "editor.emptySelectionClipboard": false,
     
+    "editor.acceptSuggestionOnEnter": "false",
     "editor.detectIndentation": false,
     "editor.insertSpaces": false,
     "editor.tabSize": 4,
