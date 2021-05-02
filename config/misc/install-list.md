@@ -6,8 +6,8 @@
 * **Code Editor** - Visual Studio Code/Nano/Geany ***(Win, Lin, Mac)***
 
 # Linux Special
-* **Terminator** - sudo dnf install terminator(terminal emulator)
-* **TLP(Not useful on fedora, in general only install if battery life is very bad)** - sudo dnf install tlp(Background battery saver)
+* **Terminator** - terminal emulator
+* **TLP(Not useful on fedora, in general only install if battery life is very bad)** - background battery saver
 * **QEMU-KVM(GUI - Virt-manager)** - kernel virtualization
 
 # Tools
