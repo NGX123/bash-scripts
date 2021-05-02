@@ -1,8 +1,8 @@
 # Base
 * **Media Viewer** - MPV ***(Win, Lin, Mac)***
-* **Office Suite** - libreoffice ***(Win, Lin, Mac)***
+* **Office Suite** - Libreoffice ***(Win, Lin, Mac)***
 * **Browser** - Chrome, Firefox ***(Win, Lin, Mac)***
-* **Torrent** - qbittorrent, transmission ***(Win, Lin, Mac)***
+* **Torrent** - qBitTorrent, Transmission ***(Win, Lin, Mac)***
 * **Code Editor** - Visual Studio Code/Nano/Geany ***(Win, Lin, Mac)***
 
 # Linux Special
