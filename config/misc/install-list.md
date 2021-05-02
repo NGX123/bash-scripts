@@ -16,6 +16,7 @@
 * **GCC/Clang** - c and c++ compiler ***(Lin, Mac)***
 * **Valgrind** - memory error checker ***(Lin)***
 * **Memscan/Cheatengine** - memory address value modifiers ***(Memscan - Lin, Cheat Engine - Win)***
+* **PanDoc** - converts between different WYSIWYM(What You See Is What You Mean) text formats and also converting these formats info PDF(each # is section in pdf from markdown, ## is subsection, ### - is sub-sub-section…) ***(Win, Lin, Mac)***
 ## Other
 * **Wireshark** - packet scanner ***(Win, Lin, Mac)***
 * **Fedora media writer** - iso burning software ***(Win, Lin, Mac)***
