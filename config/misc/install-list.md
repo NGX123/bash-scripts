@@ -19,8 +19,8 @@
 ## Other
 * **Wireshark** - packet scanner ***(Win, Lin, Mac)***
 * **Fedora media writer** - iso burning software ***(Win, Lin, Mac)***
-* **Virtualization** -  VirtualBox ***(Win, Lin, Mac)***
-* **Virtual Media Devices(Microphone, Webcam)** - OBS ***(Win, Lin, Mac)***
+* **VirtualBox** - virtualization software ***(Win, Lin, Mac)***
+* **OBS** - virtual media devices e.g. webcam ***(Win, Lin, Mac)***
 
 # Editing
 * **Image Editor** - Gimp ***(Win, Lin, Mac)***
