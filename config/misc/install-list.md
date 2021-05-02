@@ -13,7 +13,6 @@
 # Tools
 ## Programming
 * **GIT** - terminal github utility ***(Win, Lin, Mac)***
-* **Python** - python interpreter ***(Win, Lin, Mac)***
 * **GCC/Clang** - c and c++ compiler ***(Lin, Mac)***
 * **Valgrind** - memory error checker ***(Lin)***
 * **Memscan/Cheatengine** - memory address value modifiers ***(Memscan - Lin, Cheat Engine - Win)***
