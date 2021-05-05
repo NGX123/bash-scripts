@@ -1,8 +1,7 @@
 #! /bin/bash
 
 ## Variables ##
-apps_list="terminator mpv transmission firefox \
-nasm nano binutils diffutils valgrind clang"
+apps_list="terminator mpv transmission firefox nasm nano binutils diffutils valgrind clang"
 dirs_list="$HOME/src $HOME/opt/bin $HOME/github $HOME/vm/iso $HOME/vm/vms $HOME/.scripts"
 workspace_directory=$PWD
 includesDir_variable=./include
@@ -12,8 +11,8 @@ textfilesDir_variable=$includesDir_variable/textfiles
 
 ## Script setup ##
 # Folder existance checks
-[ ! -d $includesDir_variable ] || exit
-[ ! -d $textfilesDir_variable ] || exit
+[ -d $includesDir_variable ] || exit
+[ -d $textfilesDir_variable ] || exit
 
 # Get information about the system #
 # Get the OS
