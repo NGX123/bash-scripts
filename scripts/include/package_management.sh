@@ -70,7 +70,7 @@ if [ $current_pm == dnf ]
         # rm ./google-chrome-stable_current_*.rpm
 
         # Apps
-        sudo dnf install -y $apps_list firefox google-chrome-stable
+        sudo dnf install -y $apps_list
 
         # Apps with platform specific names
         sudo dnf -y install @development-tools kernel-headers kernel-devel
