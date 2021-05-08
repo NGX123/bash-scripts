@@ -31,6 +31,6 @@
 * **PCB/Circuit Design** - KiCAD ***(Win, Lin, Mac)***
 
 # OS
-* **Daily driver** - Fedora(Workstation/KDE)/Kubuntu
+* **Daily driver** - Fedora Workstation/Kubuntu
 * **Lightweight** - Lubuntu
 * **Server** - Debian/Ubuntu Server
