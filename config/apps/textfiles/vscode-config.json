@@ -18,4 +18,5 @@
     "workbench.startupEditor": "none",
     "zenMode.fullScreen": false,
     "workbench.statusBar.visible": false,
+    "window.titleBarStyle" : "custom",
 }
