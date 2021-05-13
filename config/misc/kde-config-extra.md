@@ -4,7 +4,7 @@
 	- Plasma Style`(Breeze Dark)`
 	- Application Style`(Breeze)`
 	- Application Style-Window Decorations`(Breeze)`
-	- Application-Style-GTK2/3`(Breeze Dark)`
+	- Application-Style-GTK2/3`(Orchis-grey by vinceliuice, use orchis-grey-dark. Or use Breeze-Dark)`
 	- Colors`(Breeze Dark)`
 	- Icons`(Breeze Dark)`
 
