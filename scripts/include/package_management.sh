@@ -28,7 +28,7 @@ if [ $current_pm == apt ]
         rm ./google-chrome-stable_current_amd64.deb
 
         # Apps(might not install becuase apt requires all of them to be in repos, otherwise it fails)
-        sudo apt-get install -y $apps_list firefox-esr
+        sudo apt-get install -y $apps_list
 
         # Apps with platform specific names
         sudo apt install -y build-essential linux-headers-$(uname -r)
