@@ -1,13 +1,8 @@
 # Includes the code for package managers configuration for main configurations script
 
 ### Config for APT ###
-if [ $current_pm == apt ]
+if [ "$current_pm" == apt ]
     then
-        # Variables
-        inst=install
-        rmc=purge
-        up=upgrade
-
         # Update
         sudo apt -y update && sudo apt -y upgrade
 
@@ -31,7 +26,7 @@ if [ $current_pm == apt ]
         sudo apt-get install -y $apps_list
 
         # Apps with platform specific names
-        sudo apt install -y build-essential linux-headers-$(uname -r)
+        sudo apt install -y build-essential linux-headers-"$(uname -r)"
 
         # Removing
         # if [ $removeSshd_var == y ]
@@ -41,13 +36,8 @@ if [ $current_pm == apt ]
 fi
 
 ## Config for DNF ##
-if [ $current_pm == dnf ]
+if [ "$current_pm" == dnf ]
     then
-        # Variables
-        inst=install
-        rmc=remove
-        up=update
-
         # Update
         sudo dnf -y update
 
@@ -85,13 +75,10 @@ if [ $current_pm == dnf ]
 fi
 
 ## Config for Homebrew ##
-if [ $current_pm == brew ]
+if [ "$current_pm" == brew ]
     then
         # Install xcode command line tools(brew dependency)
-        if [ os_var == macos ]
-            then
-                xcode-select --install
-        fi
+        xcode-select --install
 
         # Install homebrew
         /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
