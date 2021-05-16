@@ -1,3 +1,5 @@
+#! /bin/bash
+
 # Install the tools
 xcode-select --install
 
@@ -15,13 +17,13 @@ sudo chsh -s /usr/local/bin/bash && \
 bash_installed=y
 if [ $bash_installed == y ]
   then
-    touch $HOME/.bash_profile $HOME/.bashrc
-    mkdir -p $HOME/.scripts
+    touch "$HOME"/.bash_profile "$HOME"/.bashrc
+    mkdir -p "$HOME"/.scripts
 
 
-    echo '. $HOME/.bashrc' >> $HOME/.bash_profile
-    echo '[[ -r "/usr/local/etc/profile.d/bash_completion.sh" ]] && . "/usr/local/etc/profile.d/bash_completion.sh"' >> $HOME/.bash_profile
-    echo 'export CLICOLOR=1' >> $HOME/.bashrc
+    echo '. "$HOME"/.bashrc' >> "$HOME"/.bash_profile
+    echo '[[ -r "/usr/local/etc/profile.d/bash_completion.sh" ]] && . "/usr/local/etc/profile.d/bash_completion.sh"' >> "$HOME"/.bash_profile
+    echo 'export CLICOLOR=1' >> "$HOME"/.bashrc
 fi
 
 # User message
