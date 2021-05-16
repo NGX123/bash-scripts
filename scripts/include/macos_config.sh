@@ -1,5 +1,3 @@
-#! /bin/bash
-
 # Install the tools
 xcode-select --install
 
