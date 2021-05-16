@@ -3,16 +3,15 @@
 ## Variables ##
 apps_list="terminator mpv nano binutils clang nasm"
 dirs_list="$HOME/src $HOME/opt/bin $HOME/github $HOME/vm/iso $HOME/vm/vms $HOME/.scripts"
-workspace_directory=$PWD
-includesDir_variable=./include
-textfilesDir_variable=$includesDir_variable/textfiles
+include_dir=./include
+textfiles_dir=$include_dir/textfiles
 
 
 
 ## Script setup ##
 # Folder existance checks
-[ -d $includesDir_variable ] || exit
-[ -d $textfilesDir_variable ] || exit
+[ -d "$include_dir" ] || exit
+[ -d "$textfiles_dir" ] || exit
 
 # Get information about the system #
 # Get the OS
@@ -38,10 +37,10 @@ read -p "Package Manager: " current_pm
 
 ## System-specific Configuration
 # Include package manager script or exit if it does not exist
-. "$includesDir_variable"/package_management.sh || exit
+. "$include_dir"/package_management.sh || exit
 
 # Include platform specific scripts
-. "$includesDir_variable"/"$current_os"_config.sh || exit                                                                                                                             # Distro/platform specific configs
+. "$include_dir"/"$current_os"_config.sh || exit                                                                                                                             # Distro/platform specific configs
 
 
 
@@ -62,13 +61,13 @@ if [[ $current_de != 0 && $current_os == "linux" ]]
     then
         clear
         echo "--- DE GUI Configuration ---"
-        cat $textfilesDir_variable/$current_de-config.md
+        cat "$textfiles_dir"/$current_de-config.md
     else
         if [ $current_os == "macos" ]
             then
                 clear
                 echo "--- GUI Configuration ---"
-                cat $textfilesDir_variable/macos-config.md
+                cat "$textfiles_dir"/macos-config.md
         fi
 fi
 
