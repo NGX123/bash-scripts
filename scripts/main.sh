@@ -1,7 +1,7 @@
 #! /bin/bash
 
 ## Variables ##
-apps_list="terminator mpv transmission nasm nano binutils diffutils valgrind clang"
+apps_list="terminator mpv nano binutils clang nasm"
 dirs_list="$HOME/src $HOME/opt/bin $HOME/github $HOME/vm/iso $HOME/vm/vms $HOME/.scripts"
 workspace_directory=$PWD
 includesDir_variable=./include
