@@ -77,15 +77,11 @@ echo "
 1. All of the apps were installed by the package manager:
     - On Linux - $apps_list(some or all might not be installed if apt is used becuase it fails if any package is missing)
     - On MacOS - binutils diffutils nasm gdb nano cask mpv qemu geany code transmission iterm2 vbox firefox chrome
-2. Following folders were made - $dirs_list
-3. Local binary folder was added to PATH
-4. Github repos were cloned to ~/github/programming-repo & ~/github/tos-repo
-5. On Linux
+2. Following folders were made - $dirs_listls
+3. On Linux
     - Default folders were removed
-    - Custom scripts and system config files were added to ~/.scripts
-    - Bash aliases and function file inclusions were added to .bashrc
-    - Bash color scheme was changed by inclusion of config file in .bashrc
-6. On MacOS
+    - PS1 variable was changed
+4. On MacOS
     - Username and email were changed for git
 
 --- To do manually ---
