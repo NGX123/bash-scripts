@@ -57,13 +57,13 @@ echo 'PS1="\[\e[36m\][\[\e[m\]\[\e[34m\]\u\[\e[m\] \[\e[33m\]\w\[\e[m\] \[\e[32m
 
 ## Script End Messages ##
 # GUI Configurations
-if [[ $current_de != 0 && $current_os == "linux" ]]
+if [[ "$current_de" != 0 && "$current_os" == "linux" ]]
     then
         clear
         echo "--- DE GUI Configuration ---"
         cat "$textfiles_dir"/$current_de-config.md
     else
-        if [ $current_os == "macos" ]
+        if [ "$current_os" == "macos" ]
             then
                 clear
                 echo "--- GUI Configuration ---"
