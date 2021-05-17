@@ -24,6 +24,7 @@ if [ "$current_pm" == apt ]
 
         # Apps(might not install becuase apt requires all of them to be in repos, otherwise it fails)
         sudo apt-get install -y $apps_list
+        sudo apt-get install -y firefox
 
         # Apps with platform specific names
         sudo apt install -y build-essential linux-headers-"$(uname -r)"
@@ -61,6 +62,7 @@ if [ "$current_pm" == dnf ]
 
         # Apps
         sudo dnf install -y $apps_list
+        sudo dnf install -y firefox
 
         # Apps with platform specific names
         sudo dnf -y install @development-tools kernel-headers kernel-devel
