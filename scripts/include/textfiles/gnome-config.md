@@ -2,6 +2,12 @@
 * General -> Suspend when laptop lid is closed`(ON)`, Turn off animations`(ON)`
 * Appearance
     * Applications`(Adwaita-dark)`
+      * On ubuntu the shell theme also needs to be changed
+         1. Terminal -> sudo apt install gnome-shell-extensions
+         2. Log out and Log In from Ubuntu
+         3. Gnome Tweaks -> Extensions(ON) -> User Themes(ON)
+         4. Restart Gnome Tweaks
+         5. Gnome Tweaks -> Appearance -> Shell(Yaru-dark) 
     * Cursor`(DMZ-Black)`
     * Icons`(Adwaita)`
 * Extensions`(OFF)`
