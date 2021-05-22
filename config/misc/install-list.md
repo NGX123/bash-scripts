@@ -1,5 +1,5 @@
 # Base
-* **Media Viewer** - MPV ***(Win, Lin, Mac)***
+* **Media Viewer** - VLC ***(Win, Lin, Mac)***
 * **Office Suite** - Libreoffice ***(Win, Lin, Mac)***
 * **Browser** - Chrome, Firefox ***(Win, Lin, Mac)***
 * **Torrent** - qBitTorrent, Transmission ***(Win, Lin, Mac)***
