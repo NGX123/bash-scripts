@@ -3,7 +3,7 @@
 * **Office Suite** - Libreoffice ***(Win, Lin, Mac)***
 * **Browser** - Chrome, Firefox ***(Win, Lin, Mac)***
 * **Torrent** - qBitTorrent, Transmission ***(Win, Lin, Mac)***
-* **Code Editor** - Visual Studio Code/Nano/Geany ***(Win, Lin, Mac)***
+* **Code Editor** - Visual Studio Code(IDE, Electron)/Nano(Terminal)/Geany(Native - in C) ***(Win, Lin, Mac)***
 
 # Linux Special
 * **Terminator** - terminal emulator
