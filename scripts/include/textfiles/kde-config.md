@@ -5,7 +5,7 @@
 * Right click on panel
 	* Add widgets in the following order: `Application Menu`, `Icons only task manager`, `System tray`, `Digital clock`
 	* Edit Panel
-		* Height`(Decrease until icons deform)`
+		* Height`(Small)`
 		* Screen Edge`(Upper)`
 * Right click on Application Launcher on Panel -> Configure Application Dashboard/menu
 	* Show categories
@@ -36,14 +36,10 @@
 			* Appearance`(Change wallpaper)`
 			* Lock screen`(2 min)`
 			* Allow unlocking without password for`(Immediatly)`
-	* Window Management
-		* Window Behavior -> Advanced -> Window placement`(Centered)`
-		* Task Switcher -> Main -> Visulatization`(Large Icons)`
+	* Window Management -> Task Switcher -> Main -> Visulatization`(Large Icons)`
 	* Shortcuts
 		* `(+ Icon)`Add -> KSysGuard`(Ctrl + Shift + Esc)`
 		* `(+ Icon)`Add -> Terminator`(Ctrl + Alt + T)`
-		* `(+ Icon)`Add -> Dolphin`(Super + E)`
-		* `(- Icon)`Remove -> Emoji
 		* Kwin
 			* Switch to Desktop x`(Super + x)`
 			* Windows to Desktop x`(Super + Shift + x)`
@@ -52,13 +48,9 @@
 			* Maximize Window`(Super + Up)`
 			* Switch to workspace above/below`(Super + Alt + ->\<)`
 	* Startup and Shutdown
-		* Splash Screen`(None)`
 		* Login Screen -> Breeze -> Background`(Set)`
 		* Desktop Session -> On Login`(Start with an empty session)`
 	* Search -> File Search -> Enable File Search`(OFF)`
-
-+ Personalization
-	+ Applications -> Default`(Set)`, Diagnostics`(OFF)`
 
 + Hardware
 	+ Input Devices -> Keyboard -> Layout -> Main shortcut`(Set - Super + Space)`
