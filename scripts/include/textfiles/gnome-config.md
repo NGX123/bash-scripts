@@ -8,7 +8,7 @@
          3. Gnome Tweaks -> Extensions(ON) -> User Themes(ON)
          4. Restart Gnome Tweaks
          5. Gnome Tweaks -> Appearance -> Shell(Yaru-dark) 
-    * Cursor`(DMZ-Black/Adwaita)`
+    * Cursor`(Adwaita/DMZ-Black)`
     * Icons`(Adwaita)`
 * Extensions`(OFF)`
 * Keyboard & mouse -> *On Laptop:*Mouse click emulation`(Area)`
