@@ -167,7 +167,7 @@
             ```
 3. Create a partition on the drive(with size of 100% of it's capacity)
     * 	```sh
-        sudo parted /dev/`<sd*>` -a opt mkpart primary ext4 0% 100%
+        sudo parted /dev/`<sd*>` -a opt mkpart primary 0% 100%
         ```
 4. Format the partition to ext4
     * 	```sh
