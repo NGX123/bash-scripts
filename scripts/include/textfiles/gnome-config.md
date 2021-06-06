@@ -37,3 +37,7 @@
     * Hide window`(Super + H)`
     * Maximize window`(Super + Up)`
 * Default Applications`(Set default apps)`
+
+
+## Extra
+* Remove(All these apps can be removed and are not system apps starting from GNOME 40): gnome-tour gnome-characters gnome-logs gnome-font-viewer
