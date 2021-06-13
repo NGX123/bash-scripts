@@ -19,4 +19,8 @@
     "zenMode.fullScreen": false,
     "workbench.statusBar.visible": false,
     "window.titleBarStyle" : "custom",
+    
+    "files.associations" : {
+		"Makefile.inc" : "makefile",
+	}
 }
