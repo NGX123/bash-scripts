@@ -29,7 +29,7 @@
 	* Assign a static IP to the computer through routers settings
 	* Enable SSH on the computer
 	* Add a normal password to the admin
-	* Format all data drives to ext4 and mount them using fstab in media/folder
+	* [Format all data drives to ext4](#partition-drives) and [mount them using fstab(using UUID) in media/folder](#mount-drives)
 * Setup Samba
     1. Install samba
         * Fedora
