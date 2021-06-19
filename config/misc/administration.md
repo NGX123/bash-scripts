@@ -25,6 +25,11 @@
 * [Samba Docs Guide 2](https://wiki.samba.org/index.php/Setting_up_a_Share_Using_POSIX_ACLs)
 * [Comprehensive Samba Guide](https://www.digitalocean.com/community/tutorials/how-to-set-up-a-samba-share-for-a-small-organization-on-ubuntu-16-04)
 * [Samba Setup Basics](https://www.techrepublic.com/article/how-to-set-up-quick-and-easy-file-sharing-with-samba/)
+* PC Setup
+	* Assign a static IP to the computer through routers settings
+	* Enable SSH on the computer
+	* Add a normal password to the admin
+	* Format all data drives to ext4 and mount them using fstab in media/folder
 * Setup Samba
     1. Install samba
         * Fedora
