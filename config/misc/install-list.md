@@ -12,13 +12,13 @@
 
 # Tools
 ## Programming
-* **GIT** - terminal github utility ***(Win, Lin, Mac)***
-* **GCC/Clang** - c and c++ compiler ***(Lin, Mac)***
-* **Valgrind** - memory error checker ***(Lin)***
-* **Memscan/Cheatengine** - memory address value modifiers ***(Memscan - Lin, Cheat Engine - Win)***
+* **GIT** - source control system(upload source and record changes using it) ***(Win, Lin, Mac)***
+* **GCC/Clang** - c compiler ***(Lin, Mac)***
+* **GNU Make** - build system(builds sources into binaries accoring to the script) ***(Win, Lin, Mac)*** 
+* **Valgrind** - memory errors/leaks checker ***(Lin)***
 * **PanDoc** - converts between different WYSIWYM(What You See Is What You Mean) text formats and also converting these formats info PDF(each # is section in pdf from markdown, ## is subsection, ### - is sub-sub-section…) ***(Win, Lin, Mac)***
-* **Cmake + GNU Make** - modern build system ***(Win, Lin, Mac)*** 
 ## Other
+* **Memscan/Cheatengine** - memory address value modifiers ***(Memscan - Lin, Cheat Engine - Win)***
 * **Wireshark** - packet scanner ***(Win, Lin, Mac)***
 * **Fedora media writer** - iso burning software ***(Win, Lin, Mac)***
 * **VirtualBox** - virtualization software ***(Win, Lin, Mac)***
