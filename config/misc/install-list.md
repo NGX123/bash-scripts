@@ -12,7 +12,7 @@
 
 # Tools
 ## Programming
-* **GIT** - source control system(upload source and record changes using it) ***(Win, Lin, Mac)***
+* **Git** - source control system(upload source and record changes using it) ***(Win, Lin, Mac)***
 * **GCC/Clang** - c compiler ***(Lin, Mac)***
 * **GNU Make** - build system(builds sources into binaries accoring to the script) ***(Win, Lin, Mac)*** 
 * **Valgrind** - memory errors/leaks checker ***(Lin)***
