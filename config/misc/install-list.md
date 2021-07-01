@@ -2,7 +2,7 @@
 * **Media Viewer** - VLC ***(Win, Lin, Mac)***
 * **Office Suite** - Libreoffice ***(Win, Lin, Mac)***
 * **Browser** - Chrome, Firefox ***(Win, Lin, Mac)***
-* **Torrent** - qBitTorrent, Transmission ***(Win, Lin, Mac)***
+* **Torrent** - qBitTorrent(Large, Feature Rich), Transmission(Small, Easy Minimalistic, for qt use transmission-qt) ***(Win, Lin, Mac)***
 * **Code Editor** - Visual Studio Code(IDE, Electron)/Nano(Terminal)/Geany(Native - in C) ***(Win, Lin, Mac)***
 
 # Linux Special
