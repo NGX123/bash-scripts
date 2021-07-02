@@ -85,8 +85,9 @@ echo "
     - Username and email were changed for git
 
 --- To do manually ---
-1. Configure the GUI
-2. Virtualization
+1. Go to the config/misc in root of the repo and run dev.sh to configure pc for software development
+2. Configure the GUI
+3. Virtualization
     1. Install QEMU-KVM Virt-Manger
         - Fedora - sudo dnf install @virtualization
         - Ubuntu - sudo apt install -y qemu qemu-kvm libvirt-daemon libvirt-clients bridge-utils virt-manager
