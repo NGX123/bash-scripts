@@ -85,7 +85,7 @@ echo "
     - Username and email were changed for git
 
 --- To do manually ---
-1. Go to the config/misc in root of the repo and run dev.sh to configure pc for software development
+1. Go to the config/misc in root of this repo/project and run dev.sh to configure pc for software development
 2. Configure the GUI
 3. Virtualization
     1. Install QEMU-KVM Virt-Manger
