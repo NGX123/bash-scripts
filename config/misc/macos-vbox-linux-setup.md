@@ -12,6 +12,7 @@
 	* Linux VM Running Window -> Devices -> Insert Guest ISO
 	* Mount the guest ISO -> (Terminal in the VM)`sudo mkdir /media/guest && sudo mount /dev/cdrom /media/guest`
 	* Run the Guest ISO -> (Terminal in the VM)`cd /media/guest && sudo ./VBoxLinuxAdditions.run && sudo adduser user vboxsf`
+- Give user permissions to access the shared directory - `sudo addgroup user vboxsf`
 - Reboot -> (Terminal in the VM)`sudo reboot now`
 
 ### Usage
