@@ -1,7 +1,7 @@
 ## Tutorial to setup a linux VM that you can ssh in on MacOS using VBox
 ### Setup Virtual Machine
 - Create a VM - `VirtualBox App -> Machine -> New -> Create the VM, Insert linux ISO and Install Linux`
-	* Add a description to the VM - `VirtualBox App -> Linux VM -> Settings -> General -> Description -> Add notes thayt inlude: Hostname, Username, Password, SSH port`
+	* Add a description to the VM - `VirtualBox App -> Linux VM -> Settings -> General -> Description -> Add notes that inlude: Hostname, Username, Password, SSH port`
 	* Make sure that ssh is installed on the Linux VM
 - Setup network - `VirtualBox App -> Linux VM -> Settings -> Network -> Adapter 1 -> Advanced -> Port forwarding -> Add(+) -> Name(SSH), Protocol(TCP), Host IP(127.0.0.1), Host port(64400(Random Port)), Guest IP(10.0.2.15, if problems occur find current IP on VM usin "ip addr"), Guest Port(22) -> Ok`
 - Setup Shared Folder - `VirtualBox App -> Linux VM(Setup Before) -> Settings -> Shared Folders -> Add(+) -> Path(Select on Host), Auto-Mount(On), Mount Point(/media/shared)
