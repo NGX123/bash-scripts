@@ -15,4 +15,4 @@
 - Reboot -> (Terminal in the VM)`sudo reboot now`
 
 ### Usage
-- SSH into VM - `ssh -p \<selected host port\> 127.0.0.1`
+- SSH into VM - `ssh -p \<selected host port\> user@127.0.0.1`
