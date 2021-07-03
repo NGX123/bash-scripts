@@ -6,7 +6,7 @@
 - Setup network - `VirtualBox App -> Linux VM -> Settings -> Network -> Adapter 1 -> Advanced -> Port forwarding -> Add(+) -> Name(SSH), Protocol(TCP), Host IP(127.0.0.1), Host port(64400(Random Port)), Guest IP(10.0.2.15, if problems occur find current IP on VM usin "ip addr"), Guest Port(22) -> Ok`
 - Setup Shared Folder - `VirtualBox App -> Linux VM(Setup Before) -> Settings -> Shared Folders -> Add(+) -> Path(Select on Host), Auto-Mount(On), Mount Point(/media/shared)
 
-### Setup Shared Folders in the VM
+### Setup Shared Folders in the linux inside the VM
 - Create the folder on the path where the shared direcotry will be mounted - (Terminal in the VM)`sudo mkdir /media/shared`
 - Mount and run VBox Guest CD
 	* Linux VM Running Window -> Devices -> Insert Guest ISO
