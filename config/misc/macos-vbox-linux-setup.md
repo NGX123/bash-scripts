@@ -7,7 +7,7 @@
 - Setup Shared Folder - `VirtualBox App -> Linux VM -> Settings -> Shared Folders -> Add(+) -> Path(Select a folder on host), Auto-Mount(On), Mount Point(/media/shared) -> Ok`
 
 ### Setup Shared Folders in the linux inside the VM
-- Create the folder on the path where the shared direcotry will be mounted - (Terminal in the VM)`sudo mkdir /media/shared`
+- Create the folder on the path where the shared direcotry will be mounted - (Terminal in linux in the VM)`sudo mkdir /media/shared`
 - Mount and run VBox Guest CD
 	* Linux VM Running Window -> Devices -> Insert Guest ISO
 	* Mount the guest ISO -> (Terminal in the VM)`sudo mkdir /media/guest && sudo mount /dev/cdrom /media/guest`
@@ -16,3 +16,4 @@
 
 ### Usage
 - SSH into VM - `ssh -p \<selected host port\> user@127.0.0.1`
+- Shared Folder is mounted automatically into /media/shared(this is where the tOS code will be)
