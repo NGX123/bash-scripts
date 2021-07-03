@@ -4,7 +4,7 @@
 	* Add a description to the VM - `VirtualBox App -> Linux VM -> Settings -> General -> Description -> Add notes that inlude: Hostname, Username, Password, SSH port(all this data needs to be of the linux VM and not the host, except SSH port which should be the host exposed port(e.g. 64400 and not 22)`
 	* Make sure that ssh is installed on the Linux VM
 - Setup network - `VirtualBox App -> Linux VM -> Settings -> Network -> Adapter 1 -> Advanced -> Port forwarding -> Add(+) -> Name(SSH), Protocol(TCP), Host IP(127.0.0.1), Host port(64400(Random Port)), Guest IP(10.0.2.15, if problems occur find current IP on VM usin "ip addr"), Guest Port(22) -> Ok`
-- Setup Shared Folder - `VirtualBox App -> Linux VM -> Settings -> Shared Folders -> Add(+) -> Path(Select on Host), Auto-Mount(On), Mount Point(/media/shared)`
+- Setup Shared Folder - `VirtualBox App -> Linux VM -> Settings -> Shared Folders -> Add(+) -> Path(Select a folder on host), Auto-Mount(On), Mount Point(/media/shared)`
 
 ### Setup Shared Folders in the linux inside the VM
 - Create the folder on the path where the shared direcotry will be mounted - (Terminal in the VM)`sudo mkdir /media/shared`
