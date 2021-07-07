@@ -20,6 +20,7 @@
     "workbench.statusBar.visible": false,
     "window.titleBarStyle" : "custom",
     
+    "security.workspace.trust.enabled": false,
     "files.associations" : {
 		"Makefile.inc" : "makefile",
 	}
