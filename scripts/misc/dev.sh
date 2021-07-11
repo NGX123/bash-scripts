@@ -1,7 +1,7 @@
 #! /bin/bash
 ## Setup machine for development ##
 # Setup git repos
-mkdir -p $HOME/github
+mkdir -p $HOME/opt/bin $HOME/opt/src
 cd $HOME/github || exit
 git clone https://github.com/NGX123/programming
 git clone https://github.com/NGX123/tos
