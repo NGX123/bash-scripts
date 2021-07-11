@@ -35,3 +35,4 @@
 * **Daily driver** - Fedora(Workstation)/Ubuntu(Gnome)
 * **Lightweight** - K/Lubuntu
 * **Server** - Ubuntu Server(It is a better debian alternative)/CentOS Stream(or Fedora Server, for RHEL based server distro)
+* **Tests** - Arch/Debian
