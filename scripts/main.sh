@@ -2,7 +2,7 @@
 
 ## Variables ##
 apps_list="terminator vlc nano binutils clang cmake make nasm" # firefox(install it with a seperate dnf/apt command as firefox package may have a different name and fail)
-dirs_list="$HOME/src $HOME/opt/bin $HOME/github $HOME/vm/iso $HOME/vm/vms $HOME/.scripts"
+dirs_list="$HOME/github $HOME/vm/iso $HOME/vm/vms"
 include_dir=./include
 textfiles_dir=$include_dir/textfiles
 
